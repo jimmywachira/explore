@@ -1,0 +1,132 @@
+<?php require_once('views/partials/head.php'); ?>
+<?php require_once('views/partials/banner.php'); ?>
+
+<main class="w-full flex-1 text-slate-900">
+    <div class="w-full lg:w-4/5 xl:w-3/4 mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10 lg:py-12 space-y-8 sm:space-y-10">
+        <section class="text-center max-w-3xl mx-auto space-y-4 sm:space-y-5">
+            <p class="inline-flex items-center gap-2 rounded-full bg-emerald-100 px-4 py-1.5 text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-emerald-700">
+                <ion-icon name="mail-open-outline" class="icon-lg"></ion-icon>
+                Get In Touch
+            </p>
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black leading-tight">
+                We're Here to Help You Import with Confidence
+            </h1>
+            <p class="text-sm sm:text-base lg:text-lg text-slate-700 leading-relaxed">
+                Have questions about importing a vehicle from Japan? Our team will guide you through sourcing,
+                verification, shipping, and delivery with practical support every step of the way.
+            </p>
+        </section>
+
+        <section class="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
+            <div class="lg:col-span-2 rounded-3xl border border-slate-200 bg-white/90 p-6 sm:p-8 lg:p-10 shadow-sm">
+                <div class="mb-7 sm:mb-8">
+                    <h2 class="text-2xl sm:text-3xl font-black mb-2 inline-flex items-center gap-2"><ion-icon name="paper-plane-outline" class="icon-lg"></ion-icon>Send Us a Message</h2>
+                    <p class="text-sm text-slate-600">
+                        Fill in your details and our team will respond as soon as possible during business hours.
+                    </p>
+                </div>
+
+                <form action="#" method="post" class="space-y-5 sm:space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
+                        <div>
+                            <label for="name" class="block text-sm font-semibold mb-2">Full Name <span class="text-red-600">*</span></label>
+                            <input id="name" name="name" type="text" placeholder="John Doe" required class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition" />
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-semibold mb-2">Email Address <span class="text-red-600">*</span></label>
+                            <input id="email" name="email" type="email" placeholder="john@example.com" required class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition" />
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
+                        <div>
+                            <label for="phone" class="block text-sm font-semibold mb-2">Phone Number <span class="text-red-600">*</span></label>
+                            <input id="phone" name="phone" type="tel" placeholder="+254 757 356 989" required class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition" />
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-semibold mb-2">Subject <span class="text-red-600">*</span></label>
+                            <select id="subject" name="subject" required class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition">
+                                <option value="">Select a subject</option>
+                                <option value="Car Inquiry">Car Inquiry</option>
+                                <option value="Inspection Report">Inspection Report</option>
+                                <option value="Shipping Question">Shipping Question</option>
+                                <option value="General Inquiry">General Inquiry</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="message" class="block text-sm font-semibold mb-2">Message <span class="text-red-600">*</span></label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us what vehicle you are looking for and your budget range..." required class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm resize-none focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition"></textarea>
+                        <p class="mt-2 text-xs text-slate-500">Tip: Include preferred make, model, and timeline for faster support.</p>
+                    </div>
+
+                    <button type="submit" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-linear-to-r from-emerald-600 to-emerald-500 px-6 py-3.5 text-white font-bold hover:from-emerald-700 hover:to-emerald-600 transition">
+                        <ion-icon name="send-outline" class="icon-lg"></ion-icon>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+            <aside class="lg:col-span-1 space-y-4 sm:space-y-5">
+                <article class="rounded-2xl border border-slate-200 bg-white/90 p-5 sm:p-6 shadow-sm">
+                    <h3 class="text-sm font-bold uppercase tracking-wide text-emerald-700 mb-2 inline-flex items-center gap-2"><ion-icon name="call-outline" class="icon-lg"></ion-icon>Call or Text</h3>
+                    <p class="text-lg font-black text-slate-900">+254 757 356 989</p>
+                    <p class="text-sm text-slate-600 mt-1">Available 24/7 for urgent inquiries</p>
+                </article>
+
+                <article class="rounded-2xl border border-slate-200 bg-white/90 p-5 sm:p-6 shadow-sm">
+                    <h3 class="text-sm font-bold uppercase tracking-wide text-emerald-700 mb-2 inline-flex items-center gap-2"><ion-icon name="logo-whatsapp" class="icon-lg"></ion-icon>WhatsApp</h3>
+                    <a href="https://wa.me/254757356989" target="_blank" class="text-base font-black text-emerald-700 hover:text-emerald-800 transition">
+                        Chat with our team
+                    </a>
+                    <p class="text-sm text-slate-600 mt-1">Quick replies for pricing and process questions</p>
+                </article>
+
+                <article class="rounded-2xl border border-slate-200 bg-white/90 p-5 sm:p-6 shadow-sm">
+                    <h3 class="text-sm font-bold uppercase tracking-wide text-emerald-700 mb-2 inline-flex items-center gap-2"><ion-icon name="mail-outline" class="icon-lg"></ion-icon>Email</h3>
+                    <a href="mailto:info@xplorecar.com" class="text-base font-black text-emerald-700 hover:text-emerald-800 transition">
+                        info@xplorecar.com
+                    </a>
+                    <p class="text-sm text-slate-600 mt-1">Typical response within a few business hours</p>
+                </article>
+
+                <article class="rounded-2xl border border-slate-200 bg-white/90 p-5 sm:p-6 shadow-sm">
+                    <h3 class="text-sm font-bold uppercase tracking-wide text-emerald-700 mb-2 inline-flex items-center gap-2"><ion-icon name="location-outline" class="icon-lg"></ion-icon>Office Location</h3>
+                    <p class="text-sm text-slate-700">New Rain, Kenyatta Road, Nairobi</p>
+                    <p class="text-sm text-slate-600 mt-1">Visits are available by appointment</p>
+                </article>
+
+                <article class="rounded-2xl border border-emerald-200 bg-linear-to-br from-emerald-50 to-lime-50 p-5 sm:p-6 shadow-sm">
+                    <h3 class="text-sm font-bold uppercase tracking-wide text-emerald-700 mb-2 inline-flex items-center gap-2"><ion-icon name="time-outline" class="icon-lg"></ion-icon>Business Hours</h3>
+                    <p class="text-sm text-slate-700"><span class="font-semibold">Mon - Fri:</span> 8:00 AM - 6:00 PM</p>
+                    <p class="text-sm text-slate-700"><span class="font-semibold">Sat - Sun:</span> 10:00 AM - 4:00 PM</p>
+                </article>
+            </aside>
+        </section>
+
+        <section class="rounded-3xl border border-emerald-300 bg-linear-to-r from-emerald-600 via-emerald-500 to-green-500 text-white p-6 sm:p-8 lg:p-10 text-center shadow-xl">
+            <p class="text-xs uppercase tracking-[0.2em] font-bold text-emerald-100">Need A Faster Start?</p>
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black mt-2 mb-3">Get Your Import Plan Today</h2>
+            <p class="text-sm sm:text-base text-emerald-50 max-w-2xl mx-auto mb-6">
+                Share your budget and preferred vehicle type. We will guide you on the best options,
+                estimated landed costs, and the next practical step.
+            </p>
+            <div class="flex flex-wrap justify-center gap-3">
+                <a href="https://wa.me/254757356989" target="_blank" class="inline-flex items-center gap-2 rounded-xl bg-white px-5 py-3 text-emerald-700 font-black hover:bg-emerald-50 transition">
+                    <ion-icon name="logo-whatsapp" class="icon-lg"></ion-icon>
+                    Chat on WhatsApp
+                </a>
+                <a href="/" class="inline-flex items-center gap-2 rounded-xl border border-white/60 px-5 py-3 text-white font-black hover:bg-white/15 transition">
+                    <ion-icon name="home-outline" class="icon-lg"></ion-icon>
+                    Back to Home
+                </a>
+            </div>
+        </section>
+    </div>
+</main>
+<?php require_once('views/partials/footer.php'); ?>
+
+</body>
+
+</html>
