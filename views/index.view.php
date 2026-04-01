@@ -13,7 +13,7 @@
                             Japan Direct Imports
                         </p>
                         <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black leading-tight">
-                            Import Your Next Car With Clarity, Speed, and Confidence
+                            Japanese Car Imports in Kenya Made Clear, Fast, and Reliable
                         </h1>
                         <p class="text-sm sm:text-base lg:text-lg text-slate-800/90 max-w-3xl">
                             Xplore Car Imports helps Kenyan buyers source premium Japanese vehicles with verified history,
@@ -66,7 +66,7 @@
         <section class="rounded-3xl border border-slate-200 bg-white/85 p-5 sm:p-7 lg:p-8 shadow-sm">
             <div class="max-w-3xl mb-6">
                 <p class="text-xs uppercase tracking-[0.2em] text-emerald-600 font-bold">Our Core Services</p>
-                <h2 class="text-2xl sm:text-3xl font-black mt-2 mb-2 inline-flex items-center gap-2"><ion-icon name="layers-outline" class="icon-lg"></ion-icon>End-to-End Car Import Support</h2>
+                <h2 class="text-2xl sm:text-3xl font-black mt-2 mb-2 inline-flex items-center gap-2"><ion-icon name="layers-outline" class="icon-lg"></ion-icon>End-to-End Japanese Car Import Support</h2>
                 <p class="text-sm sm:text-base text-slate-700">Everything is structured to reduce risk, save time, and keep you informed from selection to delivery.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
@@ -111,7 +111,7 @@
 
             <div class="rounded-3xl border border-emerald-200 bg-linear-to-br from-emerald-50 to-lime-50 p-5 sm:p-7 shadow-sm">
                 <p class="text-xs uppercase tracking-[0.2em] text-emerald-700 font-bold">Why Buyers Choose Xplore</p>
-                <h2 class="text-2xl sm:text-3xl font-black mt-2 mb-4 text-slate-900 inline-flex items-center gap-2"><ion-icon name="medal-outline" class="icon-lg"></ion-icon>Professional Import Partner for Kenya</h2>
+                <h2 class="text-2xl sm:text-3xl font-black mt-2 mb-4 text-slate-900 inline-flex items-center gap-2"><ion-icon name="medal-outline" class="icon-lg"></ion-icon>Trusted Japanese Car Import Partner in Kenya</h2>
                 <ul class="space-y-3 text-sm sm:text-base text-slate-800">
                     <li>Transparent communication at each stage</li>
                     <li>Practical, non-hyped recommendations</li>
@@ -123,7 +123,7 @@
 
         <section class="rounded-3xl border border-slate-200 bg-white/90 p-6 sm:p-8 text-center shadow-sm">
             <p class="text-xs uppercase tracking-[0.2em] text-emerald-600 font-bold">Ready To Start?</p>
-            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black mt-2 mb-3">Get Expert Help Before You Commit</h2>
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black mt-2 mb-3">Get a Japanese Car Import Quote Before You Commit</h2>
             <p class="text-sm sm:text-base text-slate-700 max-w-2xl mx-auto mb-6">
                 Book a consultation with Xplore Car Imports and get a clear plan for your next import,
                 including realistic timelines, expected costs, and vehicle options that match your goals.

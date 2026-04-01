@@ -18,11 +18,10 @@
                         Verified Client Experiences
                     </p>
                     <h1 class="text-3xl sm:text-4xl lg:text-6xl font-black leading-tight">
-                        Trusted by Buyers Who Wanted Confidence,
-                        <span class="bg-linear-to-r from-emerald-300 to-cyan-300 bg-clip-text text-transparent">Not Guesswork</span>
+                        Japanese Car Import Testimonials from Kenyan Buyers
                     </h1>
                     <p class="text-sm sm:text-base lg:text-lg text-slate-100/95 max-w-3xl leading-relaxed">
-                        These stories come from real clients who imported with Xplore Cars Imports and received guided support
+                        These stories come from real clients who imported with Xplore Car Imports and received guided support
                         from vehicle selection to customs clearance and delivery.
                     </p>
                     <div class="flex flex-wrap gap-3 pt-1">
@@ -65,7 +64,7 @@
         <section class="rounded-3xl border border-slate-200 bg-white/90 p-6 sm:p-8 lg:p-10 shadow-sm">
             <div class="text-center mb-8 sm:mb-10">
                 <p class="uppercase tracking-[0.2em] text-xs font-bold text-emerald-600 mb-3">Video Stories</p>
-                <h2 class="inline-flex items-center justify-center text-2xl sm:text-4xl lg:text-5xl font-black mb-3"><ion-icon name="videocam" class="icon-xl mr-3 text-emerald-600"></ion-icon>Hear It Directly From Our Clients</h2>
+                <h2 class="inline-flex items-center justify-center text-2xl sm:text-4xl lg:text-5xl font-black mb-3"><ion-icon name="videocam" class="icon-xl mr-3 text-emerald-600"></ion-icon>Hear Real Car Import Stories From Our Clients</h2>
                 <p class="text-sm sm:text-base text-slate-700 max-w-2xl mx-auto">Real voices. Real delivery experiences. Real outcomes for Kenyan car buyers importing from Japan.</p>
             </div>
 
@@ -115,7 +114,7 @@
         <section class="rounded-3xl border border-slate-200 bg-white/90 p-6 sm:p-8 lg:p-10 shadow-sm">
             <div class="text-center mb-8 sm:mb-10">
                 <p class="uppercase tracking-[0.2em] text-xs font-bold text-cyan-600 mb-3">Client Reviews</p>
-                <h2 class="inline-flex items-center justify-center text-2xl sm:text-4xl font-black mb-3"><ion-icon name="ribbon" class="icon-xl mr-3 text-cyan-600"></ion-icon>What Clients Appreciate Most</h2>
+                <h2 class="inline-flex items-center justify-center text-2xl sm:text-4xl font-black mb-3"><ion-icon name="ribbon" class="icon-xl mr-3 text-cyan-600"></ion-icon>What Buyers Appreciate Most</h2>
                 <p class="text-sm sm:text-base text-slate-700 max-w-2xl mx-auto">From communication quality to final handover, these are the moments clients remember.</p>
             </div>
 
@@ -133,7 +132,7 @@
                             <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon>
                         </div>
                     </div>
-                    <p class="text-sm text-slate-700 leading-relaxed">Xplore Cars Imports handled everything from selection to customs with professionalism. I saved money and time, and the process felt fully managed end to end.</p>
+                    <p class="text-sm text-slate-700 leading-relaxed">Xplore Car Imports handled everything from selection to customs with professionalism. I saved money and time, and the process felt fully managed end to end.</p>
                 </article>
 
                 <article class="rounded-2xl border border-slate-200 bg-slate-50/80 p-6 sm:p-7 hover:border-emerald-400/40 transition">
@@ -222,7 +221,7 @@
             <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_top,white,transparent_60%)]"></div>
             <div class="relative p-6 sm:p-8 lg:p-10 text-center">
                 <p class="text-xs uppercase tracking-[0.2em] font-bold text-emerald-100">Start Your Journey</p>
-                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black mt-2 mb-3">Ready to Import Your Next Car with Confidence?</h2>
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black mt-2 mb-3">Ready to Import Your Next Japanese Car?</h2>
                 <p class="text-sm sm:text-base text-emerald-50 max-w-2xl mx-auto mb-6">
                     Work with a team that keeps pricing clear, timelines realistic, and communication consistent from day one.
                 </p>

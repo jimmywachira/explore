@@ -1,10 +1,73 @@
+<?php
+$currentPath = strtok($_SERVER['REQUEST_URI'] ?? '/', '?') ?: '/';
+$currentPath = $currentPath === '/index.php' ? '/' : $currentPath;
+$scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
+$host = $_SERVER['HTTP_HOST'] ?? 'localhost';
+$siteUrl = $scheme . '://' . $host;
+$siteName = 'Xplore Car Imports';
+$defaultTitle = 'Xplore Car Imports | Japanese Car Imports in Kenya';
+$pageTitle = $metaTitle ?? (($heading ?? '') === 'Home' ? $defaultTitle : (($heading ?? '') !== '' ? $heading . ' | ' . $siteName : $defaultTitle));
+$pageDescription = $metaDescription ?? 'Xplore Car Imports helps Kenyan buyers source, inspect, ship, clear, and collect quality Japanese vehicles with transparent guidance.';
+$canonicalUrl = $metaCanonical ?? ($siteUrl . $currentPath);
+$pageType = $metaType ?? (($currentPath === '/') ? 'website' : 'article');
+$metaImage = $metaImage ?? '';
+$robots = $metaRobots ?? 'index,follow';
+$extraSchemas = $metaSchema ?? [];
+$extraSchemas = isset($extraSchemas['@context']) ? [$extraSchemas] : $extraSchemas;
+$organizationSchema = [
+    '@context' => 'https://schema.org',
+    '@type' => 'Organization',
+    'name' => $siteName,
+    'url' => $siteUrl . '/',
+    'email' => 'info@xplorecar.com',
+    'telephone' => '+254757356989',
+];
+$websiteSchema = [
+    '@context' => 'https://schema.org',
+    '@type' => 'WebSite',
+    'name' => $siteName,
+    'url' => $siteUrl . '/',
+    'description' => $pageDescription,
+];
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title><?= htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8') ?></title>
+    <meta name="description" content="<?= htmlspecialchars($pageDescription, ENT_QUOTES, 'UTF-8') ?>">
+    <meta name="robots" content="<?= htmlspecialchars($robots, ENT_QUOTES, 'UTF-8') ?>">
+    <meta name="theme-color" content="#10b981">
+    <link rel="canonical" href="<?= htmlspecialchars($canonicalUrl, ENT_QUOTES, 'UTF-8') ?>">
+
+    <meta property="og:site_name" content="<?= htmlspecialchars($siteName, ENT_QUOTES, 'UTF-8') ?>">
+    <meta property="og:title" content="<?= htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8') ?>">
+    <meta property="og:description" content="<?= htmlspecialchars($pageDescription, ENT_QUOTES, 'UTF-8') ?>">
+    <meta property="og:type" content="<?= htmlspecialchars($pageType, ENT_QUOTES, 'UTF-8') ?>">
+    <meta property="og:url" content="<?= htmlspecialchars($canonicalUrl, ENT_QUOTES, 'UTF-8') ?>">
+    <?php if ($metaImage !== ''): ?>
+        <meta property="og:image" content="<?= htmlspecialchars($metaImage, ENT_QUOTES, 'UTF-8') ?>">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="<?= htmlspecialchars($metaImage, ENT_QUOTES, 'UTF-8') ?>">
+    <?php else: ?>
+        <meta name="twitter:card" content="summary">
+    <?php endif; ?>
+    <meta name="twitter:title" content="<?= htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8') ?>">
+    <meta name="twitter:description" content="<?= htmlspecialchars($pageDescription, ENT_QUOTES, 'UTF-8') ?>">
+
+    <script type="application/ld+json">
+        <?= json_encode($organizationSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) ?>
+    </script>
+    <script type="application/ld+json">
+        <?= json_encode($websiteSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) ?>
+    </script>
+    <?php foreach ($extraSchemas as $schema): ?>
+        <script type="application/ld+json">
+            <?= json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) ?>
+        </script>
+    <?php endforeach; ?>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -89,6 +152,20 @@
 
         .icon-xl {
             font-size: 2.1rem;
+        }
+
+        @media (min-width: 1024px) {
+            ion-icon {
+                font-size: 1.55rem;
+            }
+
+            .icon-lg {
+                font-size: 2rem;
+            }
+
+            .icon-xl {
+                font-size: 2.5rem;
+            }
         }
     </style>
 </head>

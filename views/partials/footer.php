@@ -146,7 +146,7 @@
                         <div class="w-3 h-3 rounded-full bg-green-500"></div>
                     </div>
                     <p class="text-xs sm:text-sm text-black/60">
-                        &copy; 2026 Xplore Cars Imports. <br class="hidden sm:block" />All rights reserved.
+                        &copy; 2026 Xplore Car Imports. <br class="hidden sm:block" />All rights reserved.
                     </p>
                 </div>
 

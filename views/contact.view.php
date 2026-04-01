@@ -9,7 +9,7 @@
                 Get In Touch
             </p>
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black leading-tight">
-                We're Here to Help You Import with Confidence
+                Contact Xplore Car Imports for Japanese Car Import Support
             </h1>
             <p class="text-sm sm:text-base lg:text-lg text-slate-700 leading-relaxed">
                 Have questions about importing a vehicle from Japan? Our team will guide you through sourcing,
@@ -20,7 +20,7 @@
         <section class="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
             <div class="lg:col-span-2 rounded-3xl border border-slate-200 bg-white/90 p-6 sm:p-8 lg:p-10 shadow-sm">
                 <div class="mb-7 sm:mb-8">
-                    <h2 class="text-2xl sm:text-3xl font-black mb-2 inline-flex items-center gap-2"><ion-icon name="paper-plane-outline" class="icon-lg"></ion-icon>Send Us a Message</h2>
+                    <h2 class="text-2xl sm:text-3xl font-black mb-2 inline-flex items-center gap-2"><ion-icon name="paper-plane-outline" class="icon-lg"></ion-icon>Send Us a Message About Your Import</h2>
                     <p class="text-sm text-slate-600">
                         Fill in your details and our team will respond as soon as possible during business hours.
                     </p>
@@ -107,7 +107,7 @@
 
         <section class="rounded-3xl border border-emerald-300 bg-linear-to-r from-emerald-600 via-emerald-500 to-green-500 text-white p-6 sm:p-8 lg:p-10 text-center shadow-xl">
             <p class="text-xs uppercase tracking-[0.2em] font-bold text-emerald-100">Need A Faster Start?</p>
-            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black mt-2 mb-3">Get Your Import Plan Today</h2>
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black mt-2 mb-3">Get Your Car Import Plan Today</h2>
             <p class="text-sm sm:text-base text-emerald-50 max-w-2xl mx-auto mb-6">
                 Share your budget and preferred vehicle type. We will guide you on the best options,
                 estimated landed costs, and the next practical step.

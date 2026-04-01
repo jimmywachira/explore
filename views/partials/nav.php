@@ -37,7 +37,7 @@ $isActive = static function (string $href) use ($currentPath): bool {
                                         <ion-icon name="car-sport-outline" class="text-black icon-xl"></ion-icon>
                                 </div>
                                 <div class="leading-tight">
-                                        <p class="text-base sm:text-lg lg:text-xl font-extrabold text-black">Xplore Cars Imports</p>
+                                        <p class="text-base sm:text-lg lg:text-xl font-extrabold text-black">Xplore Car Imports</p>
                                 </div>
                         </a>
 

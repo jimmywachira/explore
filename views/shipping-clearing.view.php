@@ -5,7 +5,7 @@
     <div class="w-full lg:w-4/5 xl:w-3/4 mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10 lg:py-12 space-y-8 sm:space-y-10">
         <section class="rounded-3xl border border-slate-200 bg-white/90 p-6 sm:p-8 lg:p-10 shadow-sm">
             <p class="inline-flex items-center text-xs uppercase tracking-[0.2em] text-emerald-600 font-bold"><ion-icon name="boat" class="icon-lg mr-2"></ion-icon>Logistics Service</p>
-            <h1 class="inline-flex items-center text-3xl sm:text-4xl lg:text-5xl font-black mt-2 mb-4"><ion-icon name="globe" class="icon-xl mr-3 text-emerald-600"></ion-icon>Shipping and Clearing</h1>
+            <h1 class="inline-flex items-center text-3xl sm:text-4xl lg:text-5xl font-black mt-2 mb-4"><ion-icon name="globe" class="icon-xl mr-3 text-emerald-600"></ion-icon>Shipping and Clearing Support for Imported Cars</h1>
             <p class="text-sm sm:text-base text-slate-700 max-w-3xl leading-relaxed">
                 We coordinate shipment milestones and provide guidance through customs and port processes
                 so delivery feels predictable instead of stressful.
@@ -36,7 +36,7 @@
         </section>
 
         <section class="rounded-3xl border border-emerald-300 bg-linear-to-r from-emerald-600 via-emerald-500 to-green-500 text-white p-6 sm:p-8 text-center shadow-xl">
-            <h2 class="inline-flex items-center text-2xl sm:text-3xl font-black mb-3"><ion-icon name="compass" class="icon-xl mr-2"></ion-icon>Track Your Import with Confidence</h2>
+            <h2 class="inline-flex items-center text-2xl sm:text-3xl font-black mb-3"><ion-icon name="compass" class="icon-xl mr-2"></ion-icon>Track Your Import from Japan with Confidence</h2>
             <p class="text-sm sm:text-base text-emerald-50 max-w-2xl mx-auto mb-5">We keep you updated from shipment to final local delivery planning.</p>
             <a href="/contact.php" class="inline-flex items-center rounded-xl bg-white px-5 py-3 text-emerald-700 font-black hover:bg-emerald-50 transition"><ion-icon name="call" class="icon-lg mr-2"></ion-icon>Talk to Logistics Team</a>
         </section>

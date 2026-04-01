@@ -5,7 +5,7 @@
     <div class="w-full lg:w-4/5 xl:w-3/4 mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10 lg:py-12 space-y-8 sm:space-y-10">
         <section class="rounded-3xl border border-slate-200 bg-white/90 p-6 sm:p-8 lg:p-10 shadow-sm">
             <p class="inline-flex items-center text-xs uppercase tracking-[0.2em] text-emerald-600 font-bold"><ion-icon name="shield-checkmark" class="icon-lg mr-2"></ion-icon>Protection First</p>
-            <h1 class="inline-flex items-center text-3xl sm:text-4xl lg:text-5xl font-black mt-2 mb-4"><ion-icon name="scan" class="icon-xl mr-3 text-emerald-600"></ion-icon>Inspection Guidance</h1>
+            <h1 class="inline-flex items-center text-3xl sm:text-4xl lg:text-5xl font-black mt-2 mb-4"><ion-icon name="scan" class="icon-xl mr-3 text-emerald-600"></ion-icon>Imported Car Inspection Guidance in Kenya</h1>
             <p class="text-sm sm:text-base text-slate-700 max-w-3xl leading-relaxed">
                 We help you review condition details before purchase so you can make confident decisions.
                 From auction sheet interpretation to risk notes, our goal is to reduce surprises.
@@ -13,7 +13,7 @@
         </section>
 
         <section class="rounded-3xl border border-slate-200 bg-white/90 p-6 sm:p-8 shadow-sm">
-            <h2 class="inline-flex items-center text-2xl font-black mb-4"><ion-icon name="checkmark-done" class="icon-xl mr-3 text-emerald-600"></ion-icon>What We Check</h2>
+            <h2 class="inline-flex items-center text-2xl font-black mb-4"><ion-icon name="checkmark-done" class="icon-xl mr-3 text-emerald-600"></ion-icon>What We Check Before You Buy</h2>
             <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm sm:text-base text-slate-700 list-disc pl-5">
                 <li>Auction grade and interior/exterior notes</li>
                 <li>Mileage consistency and wear indicators</li>
@@ -25,7 +25,7 @@
         </section>
 
         <section class="rounded-3xl border border-emerald-300 bg-linear-to-r from-emerald-600 via-emerald-500 to-green-500 text-white p-6 sm:p-8 text-center shadow-xl">
-            <h2 class="inline-flex items-center text-2xl sm:text-3xl font-black mb-3"><ion-icon name="help-buoy" class="icon-xl mr-2"></ion-icon>Need Help Reviewing a Unit?</h2>
+            <h2 class="inline-flex items-center text-2xl sm:text-3xl font-black mb-3"><ion-icon name="help-buoy" class="icon-xl mr-2"></ion-icon>Need Help Reviewing an Imported Car?</h2>
             <p class="text-sm sm:text-base text-emerald-50 max-w-2xl mx-auto mb-5">Send us your preferred option and we will advise on whether to proceed.</p>
             <a href="/contact.php" class="inline-flex items-center rounded-xl bg-white px-5 py-3 text-emerald-700 font-black hover:bg-emerald-50 transition"><ion-icon name="chatbox-ellipses" class="icon-lg mr-2"></ion-icon>Get Inspection Support</a>
         </section>
