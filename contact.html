@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -33,10 +33,13 @@
 
     <style>
         :root {
-            --ui-text: #0f172a;
-            --ui-heading: #020617;
+            --ui-text: #000000;
+            --ui-heading: #0A66E0;
             --ui-muted: #475569;
-            --ui-link: #0284c7;
+            --ui-link: #1877F2;
+            --facebook-blue: #1877F2;
+            --facebook-blue-dark: #0A66E0;
+            --facebook-blue-darker: #075ACD;
         }
 
         @media (prefers-color-scheme: dark) {
@@ -44,7 +47,7 @@
                 --ui-text: #e2e8f0;
                 --ui-heading: #f8fafc;
                 --ui-muted: #94a3b8;
-                --ui-link: #34d399;
+                --ui-link: #60a5fa;
             }
         }
 
@@ -52,11 +55,20 @@
             --ui-text: #e2e8f0;
             --ui-heading: #f8fafc;
             --ui-muted: #94a3b8;
-            --ui-link: #34d399;
+            --ui-link: #60a5fa;
         }
 
         body {
-            color: var(--ui-text);
+            color: #000000;
+            font-family: 'Tilt Neon', cursive;
+            font-weight: 500;
+            line-height: 1.65;
+            text-rendering: optimizeLegibility;
+        }
+
+        body::selection {
+            background: rgba(34, 197, 94, 0.2);
+            color: #000000;
         }
 
         h1,
@@ -67,7 +79,10 @@
         h6,
         .ui-title,
         .ui-heading {
-            color: var(--ui-heading);
+            color: #0A66E0;
+            font-family: 'Tilt Neon', cursive;
+            font-weight: 700;
+            letter-spacing: -0.02em;
         }
 
         p,
@@ -78,7 +93,13 @@
         select,
         .ui-body,
         .page-shell {
-            color: var(--ui-text);
+            color: #000000;
+            font-weight: 500;
+        }
+
+        p {
+            color: #000000 !important;
+            line-height: 1.7;
         }
 
         .ui-muted,
@@ -89,6 +110,309 @@
         a.ui-link,
         .ui-link {
             color: var(--ui-link);
+        }
+
+        .hero-kicker,
+        .section-kicker {
+            letter-spacing: 0.3em !important;
+            text-transform: uppercase !important;
+            font-size: 0.75rem !important;
+            font-weight: 700 !important;
+            color: #0fe25c !important;
+            background: linear-gradient(to right, rgba(74, 222, 128, 0.2), rgba(134, 239, 172, 0.2)) !important;
+            padding: 0.5rem 1rem !important;
+            border-radius: 9999px !important;
+            border: 1px solid rgba(74, 222, 128, 0.5) !important;
+            backdrop-filter: blur(20px);
+            transition: all 0.25s ease;
+        }
+
+        .hero-kicker:hover,
+        .section-kicker:hover {
+            background: linear-gradient(to right, rgba(74, 222, 128, 0.3), rgba(134, 239, 172, 0.3)) !important;
+            border-color: rgba(134, 239, 172, 0.7) !important;
+        }
+
+        .hero-title {
+            text-wrap: balance;
+            line-height: 1.02;
+            letter-spacing: -0.04em;
+        }
+
+        .section-title {
+            text-wrap: balance;
+            line-height: 1.08;
+            letter-spacing: -0.03em;
+        }
+
+        .page-surface {
+            background: rgba(255, 255, 255, 0.82);
+            border: 1px solid rgba(34, 197, 94, 0.2);
+            box-shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+            backdrop-filter: blur(14px);
+        }
+
+        .page-surface-strong {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(240, 249, 255, 0.88));
+            border: 1px solid rgba(34, 197, 94, 0.26);
+            box-shadow: 0 22px 60px rgba(15, 23, 42, 0.1);
+            backdrop-filter: blur(16px);
+        }
+
+        .headline-accent {
+            background: linear-gradient(90deg, #16a34a 0%, #1877F2 55%, #22c55e 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        /* Facebook Blue Color Override */
+        .text-blue-50 {
+            color: #F0F4FF !important;
+        }
+
+        .text-blue-100 {
+            color: #E7EFFF !important;
+        }
+
+        .text-blue-200 {
+            color: #CDE0FF !important;
+        }
+
+        .text-blue-300 {
+            color: #A8C8FF !important;
+        }
+
+        .text-blue-400 {
+            color: #7BA7FF !important;
+        }
+
+        .text-blue-500 {
+            color: #5A8FFF !important;
+        }
+
+        .text-blue-600 {
+            color: #1877F2 !important;
+        }
+
+        .text-blue-700 {
+            color: #0A66E0 !important;
+            font-weight: 700 !important;
+        }
+
+        .text-blue-800 {
+            color: #075ACD !important;
+        }
+
+        .text-blue-900 {
+            color: #034DB8 !important;
+        }
+
+        .text-blue-950 {
+            color: #023999 !important;
+        }
+
+        /* Override neutral text colors to black semibold */
+        .text-slate-600,
+        .text-slate-700,
+        .text-slate-800,
+        .text-slate-900,
+        .text-gray-600,
+        .text-gray-700,
+        .text-gray-800,
+        .text-gray-900,
+        .text-stone-600,
+        .text-stone-700,
+        .text-stone-800,
+        .text-stone-900 {
+            color: #000000 !important;
+            font-weight: 600 !important;
+        }
+
+        .bg-blue-50 {
+            background-color: #F0F4FF !important;
+        }
+
+        .bg-blue-100 {
+            background-color: #E7EFFF !important;
+        }
+
+        .bg-blue-200 {
+            background-color: #CDE0FF !important;
+        }
+
+        .bg-blue-300 {
+            background-color: #A8C8FF !important;
+        }
+
+        .bg-blue-400 {
+            background-color: #7BA7FF !important;
+        }
+
+        .bg-blue-500 {
+            background-color: #5A8FFF !important;
+        }
+
+        .bg-blue-600 {
+            background-color: #1877F2 !important;
+        }
+
+        .bg-blue-700 {
+            background-color: #0A66E0 !important;
+        }
+
+        .bg-blue-800 {
+            background-color: #075ACD !important;
+        }
+
+        .bg-blue-900 {
+            background-color: #034DB8 !important;
+        }
+
+        .bg-blue-950 {
+            background-color: #023999 !important;
+        }
+
+        .border-blue-50 {
+            border-color: #F0F4FF !important;
+        }
+
+        .border-blue-100 {
+            border-color: #E7EFFF !important;
+        }
+
+        .border-blue-200 {
+            border-color: #CDE0FF !important;
+        }
+
+        .border-blue-300 {
+            border-color: #A8C8FF !important;
+        }
+
+        .border-blue-400 {
+            border-color: #7BA7FF !important;
+        }
+
+        .border-blue-500 {
+            border-color: #5A8FFF !important;
+        }
+
+        .border-blue-600 {
+            border-color: #1877F2 !important;
+        }
+
+        .border-blue-700 {
+            border-color: #0A66E0 !important;
+        }
+
+        .border-blue-800 {
+            border-color: #075ACD !important;
+        }
+
+        .border-blue-900 {
+            border-color: #034DB8 !important;
+        }
+
+        .border-blue-950 {
+            border-color: #023999 !important;
+        }
+
+        /* Shadow colors with Facebook blue */
+        .shadow-blue-500\/20 {
+            --tw-shadow-color: rgba(90, 143, 255, 0.2) !important;
+            box-shadow: var(--tw-shadow) !important;
+        }
+
+        .shadow-blue-900\/80 {
+            --tw-shadow-color: rgba(3, 77, 184, 0.8) !important;
+            box-shadow: var(--tw-shadow) !important;
+        }
+
+        /* Opacity utilities for blue */
+        .bg-blue-50\/5 {
+            background-color: rgba(240, 244, 255, 0.05) !important;
+        }
+
+        .bg-blue-50\/10 {
+            background-color: rgba(240, 244, 255, 0.1) !important;
+        }
+
+        .bg-blue-100\/10 {
+            background-color: rgba(231, 239, 255, 0.1) !important;
+        }
+
+        .bg-blue-200\/50 {
+            background-color: rgba(205, 224, 255, 0.5) !important;
+        }
+
+        .bg-blue-300\/20 {
+            background-color: rgba(168, 200, 255, 0.2) !important;
+        }
+
+        .bg-blue-400\/15 {
+            background-color: rgba(123, 167, 255, 0.15) !important;
+        }
+
+        .bg-blue-500\/20 {
+            background-color: rgba(90, 143, 255, 0.2) !important;
+        }
+
+        .bg-blue-600\/10 {
+            background-color: rgba(24, 119, 242, 0.1) !important;
+        }
+
+        .bg-blue-900\/80 {
+            background-color: rgba(3, 77, 184, 0.8) !important;
+        }
+
+        .bg-blue-900\/85 {
+            background-color: rgba(3, 77, 184, 0.85) !important;
+        }
+
+        .bg-blue-950\/80 {
+            background-color: rgba(2, 57, 153, 0.8) !important;
+        }
+
+        /* Border opacity */
+        .border-blue-600\/20 {
+            border-color: rgba(24, 119, 242, 0.2) !important;
+        }
+
+        .border-blue-600\/30 {
+            border-color: rgba(24, 119, 242, 0.3) !important;
+        }
+
+        .border-blue-300\/20 {
+            border-color: rgba(168, 200, 255, 0.2) !important;
+        }
+
+        .border-blue-300\/60 {
+            border-color: rgba(168, 200, 255, 0.6) !important;
+        }
+
+        .border-blue-400\/50 {
+            border-color: rgba(123, 167, 255, 0.5) !important;
+        }
+
+        /* Hover state overrides */
+        .hover\:bg-blue-50:hover {
+            background-color: #F0F4FF !important;
+        }
+
+        .hover\:bg-blue-600\/10:hover {
+            background-color: rgba(24, 119, 242, 0.1) !important;
+        }
+
+        .hover\:text-blue-600:hover {
+            color: #1877F2 !important;
+        }
+
+        .hover\:text-blue-700:hover {
+            color: #0A66E0 !important;
+        }
+
+        .hover\:border-blue-600:hover {
+            border-color: #1877F2 !important;
         }
 
         input::placeholder,
@@ -109,6 +433,10 @@
             font-size: 2.1rem;
         }
 
+        .icon-2xl {
+            font-size: 2.45rem;
+        }
+
         @media (min-width: 1024px) {
             ion-icon {
                 font-size: 1.55rem;
@@ -121,28 +449,184 @@
             .icon-xl {
                 font-size: 2.5rem;
             }
+
+            .icon-2xl {
+                font-size: 2.8rem;
+            }
         }
     </style>
 </head>
 
-<body class="w-full min-h-screen font-semibold flex flex-col antialiased transition-colors duration-300 text-slate-900 dark:text-slate-100" style="font-family: 'Tilt Neon', cursive;">
+<body class="w-full min-h-screen flex flex-col antialiased transition-colors duration-300 text-blue-900 dark:text-blue-100">
+    <!-- Facebook Blue CSS Variable Gradient Stops -->
+    <style>
+        :root {
+            --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(24, 119, 242, 0)) !important;
+        }
+
+        /* Gradient FROM stops */
+        .from-blue-50 {
+            --tw-gradient-from: #F0F4FF !important;
+            --tw-gradient-to: rgba(240, 244, 255, 0) !important;
+        }
+
+        .from-blue-100 {
+            --tw-gradient-from: #E7EFFF !important;
+            --tw-gradient-to: rgba(231, 239, 255, 0) !important;
+        }
+
+        .from-blue-200 {
+            --tw-gradient-from: #CDE0FF !important;
+            --tw-gradient-to: rgba(205, 224, 255, 0) !important;
+        }
+
+        .from-blue-300 {
+            --tw-gradient-from: #A8C8FF !important;
+            --tw-gradient-to: rgba(168, 200, 255, 0) !important;
+        }
+
+        .from-blue-400 {
+            --tw-gradient-from: #7BA7FF !important;
+            --tw-gradient-to: rgba(123, 167, 255, 0) !important;
+        }
+
+        .from-blue-500 {
+            --tw-gradient-from: #5A8FFF !important;
+            --tw-gradient-to: rgba(90, 143, 255, 0) !important;
+        }
+
+        .from-blue-600 {
+            --tw-gradient-from: #1877F2 !important;
+            --tw-gradient-to: rgba(24, 119, 242, 0) !important;
+        }
+
+        .from-blue-700 {
+            --tw-gradient-from: #0A66E0 !important;
+            --tw-gradient-to: rgba(10, 102, 224, 0) !important;
+        }
+
+        .from-blue-800 {
+            --tw-gradient-from: #075ACD !important;
+            --tw-gradient-to: rgba(7, 90, 205, 0) !important;
+        }
+
+        .from-blue-900 {
+            --tw-gradient-from: #034DB8 !important;
+            --tw-gradient-to: rgba(3, 77, 184, 0) !important;
+        }
+
+        .from-blue-950 {
+            --tw-gradient-from: #023999 !important;
+            --tw-gradient-to: rgba(2, 57, 153, 0) !important;
+        }
+
+        /* Gradient VIA stops */
+        .via-blue-50 {
+            --tw-gradient-via: #F0F4FF !important;
+        }
+
+        .via-blue-100 {
+            --tw-gradient-via: #E7EFFF !important;
+        }
+
+        .via-blue-200 {
+            --tw-gradient-via: #CDE0FF !important;
+        }
+
+        .via-blue-300 {
+            --tw-gradient-via: #A8C8FF !important;
+        }
+
+        .via-blue-400 {
+            --tw-gradient-via: #7BA7FF !important;
+        }
+
+        .via-blue-500 {
+            --tw-gradient-via: #5A8FFF !important;
+        }
+
+        .via-blue-600 {
+            --tw-gradient-via: #1877F2 !important;
+        }
+
+        .via-blue-700 {
+            --tw-gradient-via: #0A66E0 !important;
+        }
+
+        .via-blue-800 {
+            --tw-gradient-via: #075ACD !important;
+        }
+
+        .via-blue-900 {
+            --tw-gradient-via: #034DB8 !important;
+        }
+
+        .via-blue-950 {
+            --tw-gradient-via: #023999 !important;
+        }
+
+        /* Gradient TO stops */
+        .to-blue-50 {
+            --tw-gradient-to: #F0F4FF !important;
+        }
+
+        .to-blue-100 {
+            --tw-gradient-to: #E7EFFF !important;
+        }
+
+        .to-blue-200 {
+            --tw-gradient-to: #CDE0FF !important;
+        }
+
+        .to-blue-300 {
+            --tw-gradient-to: #A8C8FF !important;
+        }
+
+        .to-blue-400 {
+            --tw-gradient-to: #7BA7FF !important;
+        }
+
+        .to-blue-500 {
+            --tw-gradient-to: #5A8FFF !important;
+        }
+
+        .to-blue-600 {
+            --tw-gradient-to: #1877F2 !important;
+        }
+
+        .to-blue-700 {
+            --tw-gradient-to: #0A66E0 !important;
+        }
+
+        .to-blue-800 {
+            --tw-gradient-to: #075ACD !important;
+        }
+
+        .to-blue-900 {
+            --tw-gradient-to: #034DB8 !important;
+        }
+
+        .to-blue-950 {
+            --tw-gradient-to: #023999 !important;
+        }
+    </style>
     <div class="fixed inset-0 -z-10 pointer-events-none">
         <div class="absolute inset-0 bg-[radial-gradient(circle_at_10%_10%,rgba(14,165,233,0.14),transparent_34%),radial-gradient(circle_at_90%_0%,rgba(16,185,129,0.16),transparent_36%),radial-gradient(circle_at_50%_90%,rgba(255,255,255,0.8),transparent_28%),linear-gradient(165deg,#f8fffe_0%,#f5fbff_48%,#eef7f3_100%)] dark:bg-[radial-gradient(circle_at_10%_10%,rgba(14,165,233,0.18),transparent_34%),radial-gradient(circle_at_90%_0%,rgba(16,185,129,0.2),transparent_38%),linear-gradient(165deg,#020617_0%,#071a2d_52%,#082b2b_100%)]"></div>
         <div class="absolute inset-0 opacity-35 dark:opacity-30 bg-[linear-gradient(to_right,rgba(14,165,233,0.16)_1px,transparent_1px),linear-gradient(to_bottom,rgba(16,185,129,0.14)_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,rgba(51,65,85,0.45)_1px,transparent_1px),linear-gradient(to_bottom,rgba(51,65,85,0.38)_1px,transparent_1px)] bg-[size:7rem_4.5rem]"></div>
         <div class="absolute -top-20 right-0 h-80 w-80 rounded-full bg-sky-400/12 dark:bg-sky-400/20 blur-3xl"></div>
         <div class="absolute -bottom-24 left-0 h-96 w-96 rounded-full bg-emerald-400/12 dark:bg-emerald-400/20 blur-3xl"></div>
     </div><header>
-    
+    ﻿
 <!-- Main Navigation -->
-<nav class="sticky top-0 z-50 w-full backdrop-blur-sm shadow-sm p-2">
+<nav class="sticky top-0 z-50 w-full border-b border-blue-100/70 bg-white/72 backdrop-blur-xl shadow-[0_10px_30px_rgba(2,6,23,0.06)] p-2">
         <!-- Top Contact Bar -->
-        <div class="w-full lg:w-4/5 xl:w-3/4 text-sky-700 mx-auto mb-2 px-3 sm:px-6 lg:px-8">
+        <div class="w-full lg:w-4/5 xl:w-3/4 text-blue-700 mx-auto mb-2 px-3 sm:px-6 lg:px-8">
                 <div class="flex flex-col sm:flex-row items-center justify-center sm:justify-end gap-2 sm:gap-6 py-2 text-xs sm:text-sm">
-                        <a href="tel:+254757356989" class="flex items-center gap-2 hover:text-sky-800 transition-colors group">
+                        <a href="tel:+254757356989" class="flex items-center gap-2 hover:text-blue-700 transition-colors group">
                                 <ion-icon name="call-outline" class="icon-lg group-hover:scale-110 transition-transform"></ion-icon>
                                 <span class="font-medium">+254 757 356 989</span>
                         </a>
-                        <a href="mailto:info@xplorecar.com" class="flex items-center gap-2 hover:text-sky-800 transition-colors group">
+                        <a href="mailto:info@xplorecar.com" class="flex items-center gap-2 hover:text-blue-700 transition-colors group">
                                 <ion-icon name="mail-outline" class="icon-lg group-hover:scale-110 transition-transform"></ion-icon>
                                 <span class="font-medium">info@xplorecar.com</span>
                         </a>
@@ -153,37 +637,37 @@
                 <div class="flex items-center justify-between h-16 lg:h-[72px] gap-4">
                         <!-- Logo -->
                         <a href="/" class="flex items-center gap-2 shrink-0">
-                                <div class="h-10 w-10 rounded-full bg-linear-to-br from-emerald-500 to-sky-500 flex items-center justify-center shadow-md shadow-sky-500/20">
-                                        <ion-icon name="car-sport-outline" class="text-black icon-xl"></ion-icon>
+                                <div class="h-10 w-10 rounded-full bg-linear-to-br from-green-600 to-blue-400 flex items-center justify-center shadow-md shadow-blue-500/20">
+                                        <ion-icon name="car-sport-outline" class="text-black p-2 icon-2xl"></ion-icon>
                                 </div>
                                 <div class="leading-tight">
-                                        <p class="text-base sm:text-lg lg:text-xl font-extrabold text-slate-900">Xplore Car Imports</p>
+                                        <p class="text-base sm:text-lg lg:text-xl font-extrabold text-blue-800">Xplore Car Imports</p>
                                 </div>
                         </a>
 
                         <!-- Desktop Links -->
-                        <div class="hidden md:flex items-center gap-1 rounded-full border border-sky-900/10 bg-white/75 px-4 py-2 shadow-sm backdrop-blur">
+                        <div class="hidden md:flex items-center gap-1 rounded-full border border-blue-200/70 bg-white/90 px-4 py-2 shadow-sm backdrop-blur">
                                                                                                                 <a
                                                 href="/"
-                                                class="px-4 py-2 rounded-full text-sm font-medium transition-all text-slate-700 hover:bg-slate-100">
+                                                class="px-4 py-2 rounded-full text-sm font-medium transition-all text-blue-700 hover:bg-blue-50">
                                                 Home                                        </a>
                                                                                                                 <a
                                                 href="/about"
-                                                class="px-4 py-2 rounded-full text-sm font-medium transition-all text-slate-700 hover:bg-slate-100">
+                                                class="px-4 py-2 rounded-full text-sm font-medium transition-all text-blue-700 hover:bg-blue-50">
                                                 About                                        </a>
                                                                                                                 <a
                                                 href="/testimonials"
-                                                class="px-4 py-2 rounded-full text-sm font-medium transition-all text-slate-700 hover:bg-slate-100">
+                                                class="px-4 py-2 rounded-full text-sm font-medium transition-all text-blue-700 hover:bg-blue-50">
                                                 Testimonials                                        </a>
                                                                                                                 <a
                                                 href="/contact"
-                                                class="px-4 py-2 rounded-full text-sm font-medium transition-all text-slate-700 hover:bg-slate-100">
+                                                class="px-4 py-2 rounded-full text-sm font-medium transition-all text-blue-700 hover:bg-blue-50">
                                                 Contact                                        </a>
                                                         </div>
 
                         <!-- Desktop CTA -->
                         <div class="hidden md:flex items-center gap-2 shrink-0">
-                                <a href="/contact" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-linear-to-r from-sky-600 to-emerald-500 text-white text-sm font-semibold hover:from-sky-700 hover:to-emerald-600 transition-colors shadow-sm">
+                                <a href="/contact" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-linear-to-r from-green-500 to-blue-600 text-white text-sm font-semibold hover:from-green-600 hover:to-blue-700 transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5">
                                         <ion-icon name="chatbubble-ellipses-outline" class="icon-lg"></ion-icon>
                                         <span>Get Started</span>
                                 </a>
@@ -192,7 +676,7 @@
                         <!-- Mobile Menu Button -->
                         <button
                                 id="mobile-menu-btn"
-                                class="md:hidden h-10 w-10 rounded-xl border border-sky-900/10 bg-white/80 text-slate-900 hover:bg-slate-100 transition-colors flex items-center justify-center"
+                                class="md:hidden h-10 w-10 rounded-xl border border-blue-200/70 bg-white/90 text-blue-900 hover:bg-blue-50 transition-colors flex items-center justify-center"
                                 aria-label="Toggle menu"
                                 aria-expanded="false">
                                 <ion-icon name="menu-outline" class="icon-xl"></ion-icon>
@@ -200,24 +684,24 @@
                 </div>
 
                 <!-- Mobile Menu -->
-                <div id="mobile-menu" class="hidden md:hidden border-t border-sky-900/10 py-3 space-y-1">
+                <div id="mobile-menu" class="hidden md:hidden border-t border-blue-200/70 py-3 space-y-1">
                                                                                         <a
                                         href="/"
-                                        class="block px-4 py-3 rounded-xl text-sm font-medium text-slate-700 hover:bg-slate-100">
+                                        class="block px-4 py-3 rounded-xl text-sm font-medium text-blue-700 hover:bg-blue-50">
                                         Home                                </a>
                                                                                         <a
                                         href="/about"
-                                        class="block px-4 py-3 rounded-xl text-sm font-medium text-slate-700 hover:bg-slate-100">
+                                        class="block px-4 py-3 rounded-xl text-sm font-medium text-blue-700 hover:bg-blue-50">
                                         About                                </a>
                                                                                         <a
                                         href="/testimonials"
-                                        class="block px-4 py-3 rounded-xl text-sm font-medium text-slate-700 hover:bg-slate-100">
+                                        class="block px-4 py-3 rounded-xl text-sm font-medium text-blue-700 hover:bg-blue-50">
                                         Testimonials                                </a>
                                                                                         <a
                                         href="/contact"
-                                        class="block px-4 py-3 rounded-xl text-sm font-medium text-slate-700 hover:bg-slate-100">
+                                        class="block px-4 py-3 rounded-xl text-sm font-medium text-blue-700 hover:bg-blue-50">
                                         Contact                                </a>
-                                                <a href="/contact" class="mt-2 block px-4 py-3 rounded-xl text-sm font-semibold bg-linear-to-r from-sky-600 to-emerald-500 text-white hover:from-sky-700 hover:to-emerald-600 transition-colors">
+                                                <a href="/contact" class="mt-2 block px-4 py-3 rounded-xl text-sm font-semibold bg-linear-to-r from-green-500 to-blue-600 text-white hover:from-green-600 hover:to-blue-700 transition-colors">
                                 Contact Team
                         </a>
                 </div>
@@ -257,27 +741,27 @@
         });
 </script>
 </header>
-<main class="w-full flex-1 text-slate-900">
+<main class="w-full flex-1 text-blue-900">
     <div class="w-full lg:w-4/5 xl:w-3/4 mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10 lg:py-12 space-y-8 sm:space-y-10">
         <section class="text-center max-w-3xl mx-auto space-y-4 sm:space-y-5">
-            <p class="inline-flex items-center gap-2 rounded-full bg-sky-100 px-4 py-1.5 text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-sky-700">
+            <p class="hero-kicker inline-flex items-center gap-2 rounded-full bg-sky-100 px-4 py-1.5 text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-sky-700">
                 <ion-icon name="mail-open-outline" class="icon-lg"></ion-icon>
                 Get In Touch
             </p>
-            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black leading-tight">
+            <h1 class="hero-title text-3xl sm:text-4xl lg:text-5xl font-black">
                 Contact Xplore Car Imports for Japanese Car Import Support
             </h1>
-            <p class="text-sm sm:text-base lg:text-lg text-slate-700 leading-relaxed">
+            <p class="text-sm sm:text-base lg:text-lg text-blue-700 leading-relaxed">
                 Have questions about importing a vehicle from Japan? Our team will guide you through sourcing,
                 verification, shipping, and delivery with practical support every step of the way.
             </p>
         </section>
 
         <section class="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
-            <div class="lg:col-span-2 rounded-3xl border border-slate-200 bg-white/90 p-6 sm:p-8 lg:p-10 shadow-sm">
+            <div class="lg:col-span-2 page-surface-strong rounded-3xl p-6 sm:p-8 lg:p-10 shadow-sm">
                 <div class="mb-7 sm:mb-8">
-                    <h2 class="text-2xl sm:text-3xl font-black mb-2 inline-flex items-center gap-2"><ion-icon name="paper-plane-outline" class="icon-lg"></ion-icon>Send Us a Message About Your Import</h2>
-                    <p class="text-sm text-slate-600">
+                    <h2 class="section-title text-2xl sm:text-3xl font-black mb-2 inline-flex items-center gap-2"><ion-icon name="paper-plane-outline" class="icon-lg"></ion-icon>Send Us a Message About Your Import</h2>
+                    <p class="text-sm text-blue-600">
                         Fill in your details and our team will respond as soon as possible during business hours.
                     </p>
                 </div>
@@ -289,22 +773,22 @@
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
                         <div>
                             <label for="name" class="block text-sm font-semibold mb-2">Full Name <span class="text-red-600">*</span></label>
-                            <input id="name" name="name" type="text" placeholder="John Doe" required class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition" />
+                            <input id="name" name="name" type="text" placeholder="John Doe" required class="w-full rounded-xl border border-blue-300 bg-white px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition" />
                         </div>
                         <div>
                             <label for="email" class="block text-sm font-semibold mb-2">Email Address <span class="text-red-600">*</span></label>
-                            <input id="email" name="email" type="email" placeholder="john@example.com" required class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition" />
+                            <input id="email" name="email" type="email" placeholder="john@example.com" required class="w-full rounded-xl border border-blue-300 bg-white px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition" />
                         </div>
                     </div>
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
                         <div>
                             <label for="phone" class="block text-sm font-semibold mb-2">Phone Number <span class="text-red-600">*</span></label>
-                            <input id="phone" name="phone" type="tel" placeholder="+254 757 356 989" required class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition" />
+                            <input id="phone" name="phone" type="tel" placeholder="+254 757 356 989" required class="w-full rounded-xl border border-blue-300 bg-white px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition" />
                         </div>
                         <div>
                             <label for="subject" class="block text-sm font-semibold mb-2">Subject <span class="text-red-600">*</span></label>
-                            <select id="subject" name="subject" required class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition">
+                            <select id="subject" name="subject" required class="w-full rounded-xl border border-blue-300 bg-white px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition">
                                 <option value="">Select a subject</option>
                                 <option value="Car Inquiry">Car Inquiry</option>
                                 <option value="Inspection Report">Inspection Report</option>
@@ -316,8 +800,8 @@
 
                     <div>
                         <label for="message" class="block text-sm font-semibold mb-2">Message <span class="text-red-600">*</span></label>
-                        <textarea id="message" name="message" rows="5" placeholder="Tell us what vehicle you are looking for and your budget range..." required class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm resize-none focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition"></textarea>
-                        <p class="mt-2 text-xs text-slate-500">Tip: Include preferred make, model, and timeline for faster support.</p>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us what vehicle you are looking for and your budget range..." required class="w-full rounded-xl border border-blue-300 bg-white px-4 py-3 text-sm resize-none focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition"></textarea>
+                        <p class="mt-2 text-xs text-blue-500">Tip: Include preferred make, model, and timeline for faster support.</p>
                     </div>
 
                     <button type="submit" id="submitBtn" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-linear-to-r from-sky-600 to-emerald-500 px-6 py-3.5 text-white font-bold hover:from-sky-700 hover:to-emerald-600 transition">
@@ -383,55 +867,55 @@
             </div>
 
             <aside class="lg:col-span-1 space-y-4 sm:space-y-5">
-                <article class="rounded-2xl border border-sky-200 bg-white/90 p-5 sm:p-6 shadow-sm">
-                    <h3 class="text-sm font-bold uppercase tracking-wide text-sky-700 mb-2 inline-flex items-center gap-2"><ion-icon name="call-outline" class="icon-lg"></ion-icon>Call or Text</h3>
-                    <p class="text-lg font-black text-slate-900">+254 757 356 989</p>
-                    <p class="text-sm text-slate-600 mt-1">Available 24/7 for urgent inquiries</p>
+                <article class="page-surface rounded-2xl p-5 sm:p-6">
+                    <h3 class="section-kicker text-sm font-bold uppercase tracking-wide text-sky-700 mb-2 inline-flex items-center gap-2"><ion-icon name="call-outline" class="icon-lg"></ion-icon>Call or Text</h3>
+                    <p class="text-lg font-black text-blue-900">+254 757 356 989</p>
+                    <p class="text-sm text-blue-600 mt-1">Available 24/7 for urgent inquiries</p>
                 </article>
 
-                <article class="rounded-2xl border border-sky-200 bg-white/90 p-5 sm:p-6 shadow-sm">
-                    <h3 class="text-sm font-bold uppercase tracking-wide text-sky-700 mb-2 inline-flex items-center gap-2"><ion-icon name="logo-whatsapp" class="icon-lg"></ion-icon>WhatsApp</h3>
+                <article class="page-surface rounded-2xl p-5 sm:p-6">
+                    <h3 class="section-kicker text-sm font-bold uppercase tracking-wide text-sky-700 mb-2 inline-flex items-center gap-2"><ion-icon name="logo-whatsapp" class="icon-lg"></ion-icon>WhatsApp</h3>
                     <a href="https://wa.me/254757356989" target="_blank" class="text-base font-black text-sky-700 hover:text-sky-800 transition">
                         Chat with our team
                     </a>
-                    <p class="text-sm text-slate-600 mt-1">Quick replies for pricing and process questions</p>
+                    <p class="text-sm text-blue-600 mt-1">Quick replies for pricing and process questions</p>
                 </article>
 
-                <article class="rounded-2xl border border-sky-200 bg-white/90 p-5 sm:p-6 shadow-sm">
-                    <h3 class="text-sm font-bold uppercase tracking-wide text-sky-700 mb-2 inline-flex items-center gap-2"><ion-icon name="mail-outline" class="icon-lg"></ion-icon>Email</h3>
+                <article class="page-surface rounded-2xl p-5 sm:p-6">
+                    <h3 class="section-kicker text-sm font-bold uppercase tracking-wide text-sky-700 mb-2 inline-flex items-center gap-2"><ion-icon name="mail-outline" class="icon-lg"></ion-icon>Email</h3>
                     <a href="mailto:info@xplorecar.com" class="text-base font-black text-sky-700 hover:text-sky-800 transition">
                         info@xplorecar.com
                     </a>
-                    <p class="text-sm text-slate-600 mt-1">Typical response within a few business hours</p>
+                    <p class="text-sm text-blue-600 mt-1">Typical response within a few business hours</p>
                 </article>
 
-                <article class="rounded-2xl border border-sky-200 bg-white/90 p-5 sm:p-6 shadow-sm">
-                    <h3 class="text-sm font-bold uppercase tracking-wide text-sky-700 mb-2 inline-flex items-center gap-2"><ion-icon name="location-outline" class="icon-lg"></ion-icon>Office Location</h3>
-                    <p class="text-sm text-slate-700">New Rain, Kenyatta Road, Nairobi</p>
-                    <p class="text-sm text-slate-600 mt-1">Visits are available by appointment</p>
+                <article class="page-surface rounded-2xl p-5 sm:p-6">
+                    <h3 class="section-kicker text-sm font-bold uppercase tracking-wide text-sky-700 mb-2 inline-flex items-center gap-2"><ion-icon name="location-outline" class="icon-lg"></ion-icon>Office Location</h3>
+                    <p class="text-sm text-blue-700">New Rain, Kenyatta Road, Nairobi</p>
+                    <p class="text-sm text-blue-600 mt-1">Visits are available by appointment</p>
                 </article>
 
-                <article class="rounded-2xl border border-emerald-200 bg-linear-to-br from-sky-50 to-emerald-50 p-5 sm:p-6 shadow-sm">
-                    <h3 class="text-sm font-bold uppercase tracking-wide text-sky-700 mb-2 inline-flex items-center gap-2"><ion-icon name="time-outline" class="icon-lg"></ion-icon>Business Hours</h3>
-                    <p class="text-sm text-slate-700"><span class="font-semibold">Mon - Fri:</span> 8:00 AM - 6:00 PM</p>
-                    <p class="text-sm text-slate-700"><span class="font-semibold">Sat - Sun:</span> 10:00 AM - 4:00 PM</p>
+                <article class="page-surface-strong rounded-2xl p-5 sm:p-6">
+                    <h3 class="section-kicker text-sm font-bold uppercase tracking-wide text-sky-700 mb-2 inline-flex items-center gap-2"><ion-icon name="time-outline" class="icon-lg"></ion-icon>Business Hours</h3>
+                    <p class="text-sm text-blue-700"><span class="font-semibold">Mon - Fri:</span> 8:00 AM - 6:00 PM</p>
+                    <p class="text-sm text-blue-700"><span class="font-semibold">Sat - Sun:</span> 10:00 AM - 4:00 PM</p>
                 </article>
             </aside>
         </section>
 
-        <section class="rounded-3xl border border-sky-300 bg-linear-to-r from-sky-600 via-emerald-500 to-cyan-400 text-white p-6 sm:p-8 lg:p-10 text-center shadow-xl">
-            <p class="text-xs uppercase tracking-[0.2em] font-bold text-emerald-100">Need A Faster Start?</p>
-            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black mt-2 mb-3">Get Your Car Import Plan Today</h2>
-            <p class="text-sm sm:text-base text-emerald-50 max-w-2xl mx-auto mb-6">
+        <section class="page-surface-strong rounded-3xl p-6 sm:p-8 lg:p-10 text-center shadow-xl">
+            <p class="section-kicker text-xs uppercase tracking-[0.2em] font-bold text-emerald-100">Need A Faster Start?</p>
+            <h2 class="section-title text-2xl sm:text-3xl lg:text-4xl font-black mt-2 mb-3 text-blue-900">Get Your Car Import Plan Today</h2>
+            <p class="text-sm sm:text-base text-blue-700 max-w-2xl mx-auto mb-6">
                 Share your budget and preferred vehicle type. We will guide you on the best options,
                 estimated landed costs, and the next practical step.
             </p>
             <div class="flex flex-wrap justify-center gap-3">
-                <a href="https://wa.me/254757356989" target="_blank" class="inline-flex items-center gap-2 rounded-xl bg-white px-5 py-3 text-sky-700 font-black hover:bg-sky-50 transition">
+                <a href="https://wa.me/254757356989" target="_blank" class="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-5 py-3 text-white font-black hover:bg-emerald-700 transition">
                     <ion-icon name="logo-whatsapp" class="icon-lg"></ion-icon>
                     Chat on WhatsApp
                 </a>
-                <a href="/" class="inline-flex items-center gap-2 rounded-xl border border-white/60 px-5 py-3 text-white font-black hover:bg-white/15 transition">
+                <a href="/" class="inline-flex items-center gap-2 rounded-xl border border-blue-300 px-5 py-3 text-blue-900 font-black hover:bg-blue-50 transition">
                     <ion-icon name="home-outline" class="icon-lg"></ion-icon>
                     Back to Home
                 </a>
@@ -439,12 +923,12 @@
         </section>
     </div>
 </main>
-<!-- Premium Footer Section -->
-<footer class="relative w-full bg-linear-to-br from-sky-50 via-white to-emerald-50 overflow-hidden transition-colors duration-300 mt-10 sm:mt-14">
+﻿<!-- Premium Footer Section -->
+<footer class="relative w-full overflow-hidden transition-colors duration-300 mt-10 sm:mt-14">
     <!-- Decorative Background Elements -->
     <div class="absolute inset-0 overflow-hidden pointer-events-none">
-        <div class="absolute top-0 right-0 w-96 h-96 bg-sky-400/10 rounded-full blur-3xl opacity-30"></div>
-        <div class="absolute bottom-0 left-0 w-80 h-80 bg-emerald-400/10 rounded-full blur-3xl opacity-20"></div>
+        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl opacity-30"></div>
+        <div class="absolute bottom-0 left-0 w-80 h-80 bg-green-400/10 rounded-full blur-3xl opacity-20"></div>
     </div>
 
     <div class="relative z-10">
@@ -456,12 +940,12 @@
                 <div class="space-y-6">
                     <div class="space-y-3">
                         <div class="flex items-center gap-3">
-                            <div class="w-12 h-12 rounded-full bg-linear-to-br from-emerald-500 to-sky-500 flex items-center justify-center shadow-lg shadow-sky-500/20">
+                            <div class="w-12 h-12 rounded-full bg-linear-to-br from-green-500 to-blue-600 flex items-center justify-center shadow-lg shadow-blue-500/20">
                                 <ion-icon name="car-sport-outline" class="text-black icon-xl"></ion-icon>
                             </div>
                             <div>
-                                <p class="text-xl font-bold text-slate-900">Xplore Car</p>
-                                <p class="text-xs text-sky-700 font-semibold tracking-widest">IMPORTS</p>
+                                <p class="text-xl font-bold text-black">Xplore Car</p>
+                                <p class="text-xs text-blue-600 font-semibold tracking-widest">IMPORTS</p>
                             </div>
                         </div>
                         <p class="text-sm text-black/70 leading-relaxed">
@@ -471,20 +955,20 @@
 
                     <!-- Social Links -->
                     <div class="flex gap-3 pt-2">
-                        <a href="https://www.youtube.com/@Explore254Discover" target="_blank" class="group w-10 h-10 rounded-full bg-white/80 hover:bg-sky-500/10 flex items-center justify-center transition-all duration-300 border border-sky-900/10 hover:border-sky-500" aria-label="YouTube">
+                        <a href="https://www.youtube.com/@Explore254Discover" target="_blank" class="group w-10 h-10 rounded-full bg-white/85 hover:bg-red-600/10 flex items-center justify-center transition-all duration-300 border border-red-500/20 hover:border-blue-600" aria-label="YouTube">
                             <ion-icon name="logo-youtube" class="text-red-600 group-hover:text-red-700 icon-lg"></ion-icon>
                         </a>
-                        <a href="https://www.facebook.com/XploreImports" target="_blank" class="group w-10 h-10 rounded-full bg-white/80 hover:bg-blue-500/10 flex items-center justify-center transition-all duration-300 border border-sky-900/10 hover:border-blue-500" aria-label="Facebook">
-                            <ion-icon name="logo-facebook" class="text-blue-600 group-hover:text-blue-700 icon-lg"></ion-icon>
+                        <a href="https://www.facebook.com/XploreImports" target="_blank" class="group w-10 h-10 rounded-full bg-white/85 hover:bg-blue-600/10 flex items-center justify-center transition-all duration-300 border border-blue-200/30 hover:border-blue-600" aria-label="Facebook">
+                            <ion-icon name="logo-facebook" class="text-blue-500 group-hover:text-blue-700 icon-lg"></ion-icon>
                         </a>
-                        <a href="https://wa.me/c/254757356989" target="_blank" class="group w-10 h-10 rounded-full bg-white/80 hover:bg-emerald-500/10 flex items-center justify-center transition-all duration-300 border border-sky-900/10 hover:border-emerald-500" aria-label="WhatsApp">
-                            <ion-icon name="logo-whatsapp" class="text-emerald-600 group-hover:text-emerald-700 icon-lg"></ion-icon>
+                        <a href="https://wa.me/c/254757356989" target="_blank" class="group w-10 h-10 rounded-full bg-white/85 hover:bg-green-500/10 flex items-center justify-center transition-all duration-300 border border-green-500/20 hover:border-green-500" aria-label="WhatsApp">
+                            <ion-icon name="logo-whatsapp" class="text-green-600 group-hover:text-green-700 icon-lg"></ion-icon>
                         </a>
-                        <a href="https://www.tiktok.com/@explore_254k3" target="_blank" class="group w-10 h-10 rounded-full bg-white/80 hover:bg-slate-200 flex items-center justify-center transition-all duration-300 border border-sky-900/10 hover:border-slate-400" aria-label="TikTok">
-                            <ion-icon name="logo-tiktok" class="text-slate-800 icon-lg"></ion-icon>
+                        <a href="https://www.tiktok.com/@explore_254k3" target="_blank" class="group w-10 h-10 rounded-full bg-white/85 hover:bg-blue-200 flex items-center justify-center transition-all duration-300 border border-green-500/20 hover:border-black" aria-label="TikTok">
+                            <ion-icon name="logo-tiktok" class="text-black icon-lg"></ion-icon>
                         </a>
-                        <a href="https://www.instagram.com/xplorecar_imports/" target="_blank" class="group w-10 h-10 rounded-full bg-white/80 hover:bg-sky-500/10 flex items-center justify-center transition-all duration-300 border border-sky-900/10 hover:border-sky-500" aria-label="Instagram">
-                            <ion-icon name="logo-instagram" class="text-sky-600 group-hover:text-sky-700 icon-lg"></ion-icon>
+                        <a href="https://www.instagram.com/xplorecar_imports/" target="_blank" class="group w-10 h-10 rounded-full bg-white/85 hover:bg-blue-600/10 flex items-center justify-center transition-all duration-300 border border-green-500/20 hover:border-orange-600" aria-label="Instagram">
+                            <ion-icon name="logo-instagram" class="text-orange-600 group-hover:text-orange-700 icon-lg"></ion-icon>
                         </a>
                     </div>
                 </div>
@@ -492,24 +976,24 @@
                 <!-- Quick Links -->
                 <div class="space-y-5">
                     <div class="flex items-center gap-3">
-                        <div class="w-8 h-1 bg-linear-to-r from-sky-500 to-emerald-500 rounded-full"></div>
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 uppercase tracking-wide">Quick Links</h3>
+                        <div class="w-8 h-1 bg-linear-to-r from-green-500 to-blue-600 rounded-full"></div>
+                        <h3 class="text-base sm:text-lg font-bold text-black uppercase tracking-wide">Quick Links</h3>
                     </div>
                     <ul class="space-y-3">
                         <li>
-                            <a href="/" class="group flex items-center gap-2 text-slate-600 hover:text-sky-700 transition-colors duration-300">
+                            <a href="/" class="group flex items-center gap-2 text-black hover:text-blue-600 transition-colors duration-300">
                                 <ion-icon name="chevron-forward-outline" class="opacity-0 group-hover:opacity-100 transition-opacity -ml-2"></ion-icon>
                                 <span class="group-hover:translate-x-1 transition-transform">Home</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/about" class="group flex items-center gap-2 text-slate-600 hover:text-sky-700 transition-colors duration-300">
+                            <a href="/about" class="group flex items-center gap-2 text-black hover:text-blue-600 transition-colors duration-300">
                                 <ion-icon name="chevron-forward-outline" class="opacity-0 group-hover:opacity-100 transition-opacity -ml-2"></ion-icon>
                                 <span class="group-hover:translate-x-1 transition-transform">About Us</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/contact" class="group flex items-center gap-2 text-slate-600 hover:text-sky-700 transition-colors duration-300">
+                            <a href="/contact" class="group flex items-center gap-2 text-black hover:text-blue-600 transition-colors duration-300">
                                 <ion-icon name="chevron-forward-outline" class="opacity-0 group-hover:opacity-100 transition-opacity -ml-2"></ion-icon>
                                 <span class="group-hover:translate-x-1 transition-transform">Contact Us</span>
                             </a>
@@ -520,30 +1004,30 @@
                 <!-- Services -->
                 <div class="space-y-5">
                     <div class="flex items-center gap-3">
-                        <div class="w-8 h-1 bg-linear-to-r from-sky-500 to-emerald-500 rounded-full"></div>
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 uppercase tracking-wide">Services</h3>
+                        <div class="w-8 h-1 bg-linear-to-r from-green-500 to-blue-600 rounded-full"></div>
+                        <h3 class="text-base sm:text-lg font-bold text-black uppercase tracking-wide">Services</h3>
                     </div>
                     <ul class="space-y-3">
                         <li>
-                            <a href="/car-importation" class="group flex items-center gap-2 text-slate-600 hover:text-sky-700 transition-colors duration-300">
+                            <a href="/car-importation" class="group flex items-center gap-2 text-black hover:text-blue-600 transition-colors duration-300">
                                 <ion-icon name="chevron-forward-outline" class="opacity-0 group-hover:opacity-100 transition-opacity -ml-2"></ion-icon>
                                 <span class="group-hover:translate-x-1 transition-transform">Car Importation</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/inspection-guidance" class="group flex items-center gap-2 text-slate-600 hover:text-sky-700 transition-colors duration-300">
+                            <a href="/inspection-guidance" class="group flex items-center gap-2 text-black hover:text-blue-600 transition-colors duration-300">
                                 <ion-icon name="chevron-forward-outline" class="opacity-0 group-hover:opacity-100 transition-opacity -ml-2"></ion-icon>
                                 <span class="group-hover:translate-x-1 transition-transform">Inspection Guidance</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/shipping-clearing" class="group flex items-center gap-2 text-slate-600 hover:text-sky-700 transition-colors duration-300">
+                            <a href="/shipping-clearing" class="group flex items-center gap-2 text-black hover:text-blue-600 transition-colors duration-300">
                                 <ion-icon name="chevron-forward-outline" class="opacity-0 group-hover:opacity-100 transition-opacity -ml-2"></ion-icon>
                                 <span class="group-hover:translate-x-1 transition-transform">Shipping and Clearing</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/vehicle-sourcing-support" class="group flex items-center gap-2 text-slate-600 hover:text-sky-700 transition-colors duration-300">
+                            <a href="/vehicle-sourcing-support" class="group flex items-center gap-2 text-black hover:text-blue-600 transition-colors duration-300">
                                 <ion-icon name="chevron-forward-outline" class="opacity-0 group-hover:opacity-100 transition-opacity -ml-2"></ion-icon>
                                 <span class="group-hover:translate-x-1 transition-transform">Vehicle Sourcing Support</span>
                             </a>
@@ -554,22 +1038,22 @@
                 <!-- Contact Info -->
                 <div class="space-y-5">
                     <div class="flex items-center gap-3">
-                        <div class="w-8 h-1 bg-linear-to-r from-sky-500 to-emerald-500 rounded-full"></div>
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 uppercase tracking-wide">Connect</h3>
+                        <div class="w-8 h-1 bg-linear-to-r from-green-500 to-blue-600 rounded-full"></div>
+                        <h3 class="text-base sm:text-lg font-bold text-black uppercase tracking-wide">Connect</h3>
                     </div>
                     <div class="space-y-4">
-                        <a href="tel:+254757356989" class="group flex items-start gap-3 p-3 rounded-lg bg-white/80 hover:bg-sky-500/10 transition-all duration-300 border border-sky-900/10 hover:border-sky-400">
-                            <ion-icon name="call-outline" class="text-sky-600 shrink-0 mt-0.5 icon-lg group-hover:scale-110 transition-transform"></ion-icon>
+                        <a href="tel:+254757356989" class="group flex items-start gap-3 p-3 rounded-lg bg-white/85 hover:bg-blue-600/10 transition-all duration-300 border border-green-500/20 hover:border-blue-600">
+                            <ion-icon name="call-outline" class="text-blue-600 shrink-0 mt-0.5 icon-lg group-hover:scale-110 transition-transform"></ion-icon>
                             <div class="text-sm">
-                                <p class="text-slate-500 text-xs uppercase tracking-wider mb-0.5">Phone</p>
-                                <p class="text-slate-900 font-semibold">+254 757 356 989</p>
+                                <p class="text-blue-500 text-xs uppercase tracking-wider mb-0.5">Phone</p>
+                                <p class="text-black font-semibold">+254 757 356 989</p>
                             </div>
                         </a>
-                        <a href="mailto:info@xplorecar.com" class="group flex items-start gap-3 p-3 rounded-lg bg-white/80 hover:bg-emerald-500/10 transition-all duration-300 border border-sky-900/10 hover:border-emerald-400">
-                            <ion-icon name="mail-outline" class="text-emerald-600 shrink-0 mt-0.5 icon-lg group-hover:scale-110 transition-transform"></ion-icon>
+                        <a href="mailto:info@xplorecar.com" class="group flex items-start gap-3 p-3 rounded-lg bg-white/85 hover:bg-green-500/10 transition-all duration-300 border border-green-500/20 hover:border-green-500">
+                            <ion-icon name="mail-outline" class="text-green-500 shrink-0 mt-0.5 icon-lg group-hover:scale-110 transition-transform"></ion-icon>
                             <div class="text-sm">
-                                <p class="text-slate-500 text-xs uppercase tracking-wider mb-0.5">Email</p>
-                                <p class="text-slate-900 font-semibold">info@xplorecar.com</p>
+                                <p class="text-blue-500 text-xs uppercase tracking-wider mb-0.5">Email</p>
+                                <p class="text-black font-semibold">info@xplorecar.com</p>
                             </div>
                         </a>
                     </div>
@@ -577,29 +1061,29 @@
             </div>
 
             <!-- Divider -->
-            <div class="h-px bg-linear-to-r from-transparent via-sky-900/15 to-transparent my-10 sm:my-12"></div>
+            <div class="h-px bg-linear-to-r from-transparent via-blue-600/20 to-transparent my-10 sm:my-12"></div>
 
             <!-- Bottom Section -->
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
                 <!-- Copyright -->
                 <div class="flex items-center gap-2">
-                        <div class="w-6 h-6 rounded-full bg-sky-500/15 flex items-center justify-center">
-                            <div class="w-3 h-3 rounded-full bg-emerald-500"></div>
+                    <div class="w-6 h-6 rounded-full bg-blue-600/15 flex items-center justify-center">
+                        <div class="w-3 h-3 rounded-full bg-green-500"></div>
                     </div>
-                    <p class="text-xs sm:text-sm text-slate-600">
+                    <p class="text-xs sm:text-sm text-blue-600">
                         &copy; 2026 Xplore Car Imports. <br class="hidden sm:block" />All rights reserved.
                     </p>
                 </div>
 
                 <!-- Legal Links -->
                 <div class="flex gap-4 sm:gap-6 justify-center flex-wrap">
-                    <a href="#" class="group text-xs sm:text-sm text-slate-600 hover:text-sky-700 transition-colors duration-300 relative">
+                    <a href="#" class="group text-xs sm:text-sm text-blue-600 hover:text-blue-600 transition-colors duration-300 relative">
                         <span>Privacy Policy</span>
-                        <span class="h-0.5 bg-sky-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left absolute -bottom-1 w-full"></span>
+                        <span class="h-0.5 bg-blue-600 scale-x-0 group-hover:scale-x-100 transition-transform origin-left absolute -bottom-1 w-full"></span>
                     </a>
-                    <a href="#" class="group text-xs sm:text-sm text-slate-600 hover:text-sky-700 transition-colors duration-300 relative">
+                    <a href="#" class="group text-xs sm:text-sm text-blue-600 hover:text-blue-600 transition-colors duration-300 relative">
                         <span>Terms of Service</span>
-                        <span class="h-0.5 bg-sky-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left absolute -bottom-1 w-full"></span>
+                        <span class="h-0.5 bg-blue-600 scale-x-0 group-hover:scale-x-100 transition-transform origin-left absolute -bottom-1 w-full"></span>
                     </a>
                 </div>
 
@@ -608,15 +1092,15 @@
                     <div class="w-8 h-8 rounded-lg bg-emerald-500/10 flex items-center justify-center border border-emerald-400/40">
                         <ion-icon name="shield-checkmark-outline" class="text-emerald-600 icon-lg"></ion-icon>
                     </div>
-                    <p class="text-xs sm:text-sm text-slate-600">
-                        <span class="text-sky-700 font-semibold">KEBS</span> Compliance Ready
+                    <p class="text-xs sm:text-sm text-blue-600">
+                        <span class="text-blue-600 font-semibold">KEBS</span> Compliance Ready
                     </p>
                 </div>
             </div>
         </div>
 
         <!-- Bottom Accent Line -->
-        <div class="h-1 bg-linear-to-r from-transparent via-sky-500/60 to-transparent"></div>
+        <div class="h-1 bg-linear-to-r from-transparent via-blue-600/60 to-transparent"></div>
     </div>
 </footer>
 

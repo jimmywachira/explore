@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $currentPath = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/';
 
 $navLinks = [
@@ -14,15 +14,15 @@ $isActive = static function (string $href) use ($currentPath): bool {
 ?>
 
 <!-- Main Navigation -->
-<nav class="sticky top-0 z-50 w-full backdrop-blur-sm shadow-sm p-2">
+<nav class="sticky top-0 z-50 w-full backdrop-blur-xl shadow-[0_10px_30px_rgba(2,6,23,0.06)] p-2">
         <!-- Top Contact Bar -->
-        <div class="w-full lg:w-4/5 xl:w-3/4 text-sky-700 mx-auto mb-2 px-3 sm:px-6 lg:px-8">
-                <div class="flex flex-col sm:flex-row items-center justify-center sm:justify-end gap-2 sm:gap-6 py-2 text-xs sm:text-sm">
-                        <a href="tel:+254757356989" class="flex items-center gap-2 hover:text-sky-800 transition-colors group">
+        <div class="w-full lg:w-4/5 xl:w-3/4 text-blue-700 mx-auto mb-2 px-3 sm:px-6 lg:px-8">
+                <div class="flex flex-col sm:flex-row items-center justify-center sm:justify-end gap-2 sm:gap-6 py-2 sm:text-sm">
+                        <a href="tel:+254757356989" class="flex items-center gap-2 hover:text-blue-700 transition-colors group">
                                 <ion-icon name="call-outline" class="icon-lg group-hover:scale-110 transition-transform"></ion-icon>
                                 <span class="font-medium">+254 757 356 989</span>
                         </a>
-                        <a href="mailto:info@xplorecar.com" class="flex items-center gap-2 hover:text-sky-800 transition-colors group">
+                        <a href="mailto:info@xplorecar.com" class="flex items-center gap-2 hover:text-blue-700 transition-colors group">
                                 <ion-icon name="mail-outline" class="icon-lg group-hover:scale-110 transition-transform"></ion-icon>
                                 <span class="font-medium">info@xplorecar.com</span>
                         </a>
@@ -33,21 +33,21 @@ $isActive = static function (string $href) use ($currentPath): bool {
                 <div class="flex items-center justify-between h-16 lg:h-[72px] gap-4">
                         <!-- Logo -->
                         <a href="/" class="flex items-center gap-2 shrink-0">
-                                <div class="h-10 w-10 rounded-full bg-linear-to-br from-emerald-500 to-sky-500 flex items-center justify-center shadow-md shadow-sky-500/20">
-                                        <ion-icon name="car-sport-outline" class="text-black icon-xl"></ion-icon>
+                                <div class="h-10 w-10 rounded-full bg-green-600 flex items-center justify-center shadow-md shadow-blue-500/20">
+                                        <ion-icon name="car-sport-outline" class="text-black p-2 icon-2xl"></ion-icon>
                                 </div>
                                 <div class="leading-tight">
-                                        <p class="text-base sm:text-lg lg:text-xl font-extrabold text-slate-900">Xplore Car Imports</p>
+                                        <p class="text-base sm:text-lg lg:text-xl font-extrabold text-blue-800">Xplore Car Imports</p>
                                 </div>
                         </a>
 
                         <!-- Desktop Links -->
-                        <div class="hidden md:flex items-center gap-1 rounded-full border border-sky-900/10 bg-white/75 px-4 py-2 shadow-sm backdrop-blur">
+                        <div class="hidden md:flex items-center gap-1 rounded-full border border-blue-200/70 px-4 py-2 shadow-sm backdrop-blur">
                                 <?php foreach ($navLinks as $link): ?>
                                         <?php $active = $isActive($link['href']); ?>
                                         <a
                                                 href="<?= htmlspecialchars($link['href'], ENT_QUOTES, 'UTF-8') ?>"
-                                                class="px-4 py-2 rounded-full text-sm font-medium transition-all <?= $active ? 'bg-sky-500 text-white shadow-sm' : 'text-slate-700 hover:bg-slate-100' ?>">
+                                                class="px-4 py-2 rounded-full text-sm font-medium transition-all <?= $active ? 'bg-blue-600 text-white shadow-sm' : 'text-blue-700 hover:bg-blue-50' ?>">
                                                 <?= htmlspecialchars($link['label'], ENT_QUOTES, 'UTF-8') ?>
                                         </a>
                                 <?php endforeach; ?>
@@ -55,7 +55,7 @@ $isActive = static function (string $href) use ($currentPath): bool {
 
                         <!-- Desktop CTA -->
                         <div class="hidden md:flex items-center gap-2 shrink-0">
-                                <a href="/contact.php" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-linear-to-r from-sky-600 to-emerald-500 text-white text-sm font-semibold hover:from-sky-700 hover:to-emerald-600 transition-colors shadow-sm">
+                                <a href="/contact.php" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-linear-to-r from-green-500 to-blue-600 text-white text-sm font-semibold hover:from-green-600 hover:to-blue-700 transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5">
                                         <ion-icon name="chatbubble-ellipses-outline" class="icon-lg"></ion-icon>
                                         <span>Get Started</span>
                                 </a>
@@ -64,7 +64,7 @@ $isActive = static function (string $href) use ($currentPath): bool {
                         <!-- Mobile Menu Button -->
                         <button
                                 id="mobile-menu-btn"
-                                class="md:hidden h-10 w-10 rounded-xl border border-sky-900/10 bg-white/80 text-slate-900 hover:bg-slate-100 transition-colors flex items-center justify-center"
+                                class="md:hidden h-10 w-10 rounded-xl border border-blue-200/70 bg-white/90 text-blue-900 hover:bg-blue-50 transition-colors flex items-center justify-center"
                                 aria-label="Toggle menu"
                                 aria-expanded="false">
                                 <ion-icon name="menu-outline" class="icon-xl"></ion-icon>
@@ -72,16 +72,16 @@ $isActive = static function (string $href) use ($currentPath): bool {
                 </div>
 
                 <!-- Mobile Menu -->
-                <div id="mobile-menu" class="hidden md:hidden border-t border-sky-900/10 py-3 space-y-1">
+                <div id="mobile-menu" class="hidden md:hidden border-t border-blue-200/70 py-3 space-y-1">
                         <?php foreach ($navLinks as $link): ?>
                                 <?php $active = $isActive($link['href']); ?>
                                 <a
                                         href="<?= htmlspecialchars($link['href'], ENT_QUOTES, 'UTF-8') ?>"
-                                        class="block px-4 py-3 rounded-xl text-sm font-medium <?= $active ? 'bg-sky-500 text-white' : 'text-slate-700 hover:bg-slate-100' ?>">
+                                        class="block px-4 py-3 rounded-xl text-sm font-medium <?= $active ? 'bg-blue-600 text-white' : 'text-blue-700 hover:bg-blue-50' ?>">
                                         <?= htmlspecialchars($link['label'], ENT_QUOTES, 'UTF-8') ?>
                                 </a>
                         <?php endforeach; ?>
-                        <a href="/contact.php" class="mt-2 block px-4 py-3 rounded-xl text-sm font-semibold bg-linear-to-r from-sky-600 to-emerald-500 text-white hover:from-sky-700 hover:to-emerald-600 transition-colors">
+                        <a href="/contact.php" class="mt-2 block px-4 py-3 rounded-xl text-sm font-semibold bg-linear-to-r from-green-500 to-blue-600 text-white hover:from-green-600 hover:to-blue-700 transition-colors">
                                 Contact Team
                         </a>
                 </div>
