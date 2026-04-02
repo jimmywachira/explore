@@ -76,17 +76,17 @@
                     </div>
                     <div class="p-5 sm:p-6">
                         <p class="text-base font-bold mb-1">First-Time Import Success Story</p>
-                        <p class="text-sm text-slate-600">Private Vehicle Owner</p>
+                        <p class="text-sm text-slate-600">Happy Client Story</p>
                     </div>
                 </article>
 
                 <article class="group overflow-hidden rounded-3xl border border-slate-200 bg-slate-50/70 transition-all duration-300 hover:border-emerald-400/50 hover:shadow-xl">
                     <div class="aspect-video w-full overflow-hidden">
-                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/EUrUhoPmrIk?si=kUbiI5j1UfnDa1iV" title="Client Testimonial 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/zcY2eNNO6SU?start=17" title="Client Testimonial 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
                     </div>
                     <div class="p-5 sm:p-6">
                         <p class="text-base font-bold mb-1">First-Time Import Success Story</p>
-                        <p class="text-sm text-slate-600">Private Vehicle Owner</p>
+                        <p class="text-sm text-slate-600">Happy Client Story</p>
                     </div>
                 </article>
 
@@ -96,7 +96,7 @@
                     </div>
                     <div class="p-5 sm:p-6">
                         <p class="text-base font-bold mb-1">First-Time Import Success Story</p>
-                        <p class="text-sm text-slate-600">Private Vehicle Owner</p>
+                        <p class="text-sm text-slate-600">Happy Client Story</p>
                     </div>
                 </article>
 
@@ -106,7 +106,7 @@
                     </div>
                     <div class="p-5 sm:p-6">
                         <p class="text-base font-bold mb-1">First-Time Import Success Story</p>
-                        <p class="text-sm text-slate-600">Private Vehicle Owner</p>
+                        <p class="text-sm text-slate-600">Happy Client Story</p>
                     </div>
                 </article>
 
@@ -116,13 +116,13 @@
                     </div>
                     <div class="p-5 sm:p-6">
                         <p class="text-base font-bold mb-1">Smooth Import and Delivery Journey</p>
-                        <p class="text-sm text-slate-600">Private Vehicle Owner</p>
+                        <p class="text-sm text-slate-600">Happy Client Story</p>
                     </div>
                 </article>
 
                 <article class="group overflow-hidden rounded-3xl border border-slate-200 bg-slate-50/70 transition-all duration-300 hover:border-emerald-400/50 hover:shadow-xl">
                     <div class="aspect-video w-full overflow-hidden">
-                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/ztZaKMBXPTI" title="Client Testimonial 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/ztZaKMBXPTI" title="Business Buyer Experience Testimonial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
                     </div>
                     <div class="p-5 sm:p-6">
                         <p class="text-base font-bold mb-1">Business Buyer Experience</p>
@@ -136,7 +136,7 @@
                     </div>
                     <div class="p-5 sm:p-6">
                         <p class="text-base font-bold mb-1">Transparent Service and Support</p>
-                        <p class="text-sm text-slate-600">Private Vehicle Owner</p>
+                        <p class="text-sm text-slate-600">Happy Client Story</p>
                     </div>
                 </article>
             </div>
@@ -172,7 +172,7 @@
                             <div class="h-11 w-11 rounded-full bg-linear-to-br from-emerald-400 to-cyan-400 text-black text-sm font-black flex items-center justify-center">AM</div>
                             <div>
                                 <h3 class="font-bold">Amelia ***</h3>
-                                <p class="text-xs text-slate-500">Private Vehicle Owner</p>
+                                <p class="text-xs text-slate-500">Happy Client Story</p>
                             </div>
                         </div>
                         <div class="flex gap-1 text-emerald-500" aria-label="5 star rating">
