@@ -63,6 +63,48 @@
             </div>
         </section>
 
+        <section class="page-surface-strong rounded-3xl p-4 sm:p-6 lg:p-8 shadow-sm">
+            <?php
+            $instagramPosts = [
+                'https://www.instagram.com/p/DWi-r6sloTK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+                'https://www.instagram.com/p/DWhaTF7CXO-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+                'https://www.instagram.com/p/DWWagZxDGp0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+                'https://www.instagram.com/p/DWRGmEXkuSO/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+                'https://www.instagram.com/p/DWgCxKNDNud/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+                'https://www.instagram.com/p/DWB0JDzEwcP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+                'https://www.instagram.com/p/DV-fRYUCtbj/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+                'https://www.instagram.com/p/DVxjq5pjnyv/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+                'https://www.instagram.com/p/DVibsowDItL/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+                'https://www.instagram.com/p/DVTQIuiEU5u/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+            ];
+            ?>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5 sm:gap-6">
+                <?php foreach ($instagramPosts as $postUrl): ?>
+                    <article class="overflow-hidden rounded-3xl page-surface transition-all duration-300 hover:shadow-xl">
+                        <div class="w-full overflow-hidden bg-white p-2 sm:p-3">
+                            <blockquote
+                                class="instagram-media w-full"
+                                data-instgrm-permalink="<?= htmlspecialchars($postUrl, ENT_QUOTES, 'UTF-8') ?>"
+                                data-instgrm-version="14"
+                                data-instgrm-captioned="false"
+                                style="background:#fff; border:0; margin:0 auto; min-width:280px; width:100%;">
+                            </blockquote>
+                        </div>
+                    </article>
+                <?php endforeach; ?>
+            </div>
+        </section>
+
+        <script async src="https://www.instagram.com/embed.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                if (window.instgrm && window.instgrm.Embeds) {
+                    window.instgrm.Embeds.process();
+                }
+            });
+        </script>
+
         <section class="page-surface-strong rounded-3xl p-5 sm:p-7 lg:p-8">
             <div class="max-w-3xl mb-6">
                 <p class="section-kicker text-xs font-bold text-blue-600">Our Core Services</p>
