@@ -69,6 +69,37 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+
+                <article class="group overflow-hidden rounded-3xl border border-slate-200 bg-slate-50/70 transition-all duration-300 hover:border-emerald-400/50 hover:shadow-xl">
+                    <div class="aspect-video w-full overflow-hidden">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/watch?v=EUrUhoPmrIk" title="Client Testimonial 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                    </div>
+                    <div class="p-5 sm:p-6">
+                        <p class="text-base font-bold mb-1">First-Time Import Success Story</p>
+                        <p class="text-sm text-slate-600">Private Vehicle Owner</p>
+                    </div>
+                </article>
+
+                <article class="group overflow-hidden rounded-3xl border border-slate-200 bg-slate-50/70 transition-all duration-300 hover:border-emerald-400/50 hover:shadow-xl">
+                    <div class="aspect-video w-full overflow-hidden">
+                        <iframe class="w-full h-full" src="https://youtu.be/EUrUhoPmrIk?si=kUbiI5j1UfnDa1iV" title="Client Testimonial 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                    </div>
+                    <div class="p-5 sm:p-6">
+                        <p class="text-base font-bold mb-1">First-Time Import Success Story</p>
+                        <p class="text-sm text-slate-600">Private Vehicle Owner</p>
+                    </div>
+                </article>
+
+                <article class="group overflow-hidden rounded-3xl border border-slate-200 bg-slate-50/70 transition-all duration-300 hover:border-emerald-400/50 hover:shadow-xl">
+                    <div class="aspect-video w-full overflow-hidden">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/watch?v=CynS-oHEpaE" title="Client Testimonial 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                    </div>
+                    <div class="p-5 sm:p-6">
+                        <p class="text-base font-bold mb-1">First-Time Import Success Story</p>
+                        <p class="text-sm text-slate-600">Private Vehicle Owner</p>
+                    </div>
+                </article>
+
                 <article class="group overflow-hidden rounded-3xl border border-slate-200 bg-slate-50/70 transition-all duration-300 hover:border-emerald-400/50 hover:shadow-xl">
                     <div class="aspect-video w-full overflow-hidden">
                         <iframe class="w-full h-full" src="https://www.youtube.com/embed/ubvbEjIL2Mk" title="Client Testimonial 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
