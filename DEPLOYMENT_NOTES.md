@@ -64,6 +64,15 @@ Then verify:
 - Submit the sitemap in Google Search Console after deployment and confirm indexing for the main pages.
 - Keep the canonical URLs aligned with the production domain in the shared head partial.
 
+## Vercel Static Export Workflow
+
+- Run `php static-export.php` before deploying to Vercel.
+- This generates static pages (`index.html`, `about.html`, `contact.html`, etc.), `sitemap.xml`, and `robots.txt`.
+- For production sitemap/robots domain values, run with a site URL:
+  - PowerShell: `$env:STATIC_SITE_URL = "https://your-real-domain.com"; php static-export.php`
+  - Cmd: `set STATIC_SITE_URL=https://your-real-domain.com && php static-export.php`
+- `vercel.json` handles clean URLs and redirects old `.php` links to extensionless routes.
+
 ## Pages Covered
 
 - Home

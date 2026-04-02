@@ -1,0 +1,46 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/index.php",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/about.php",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/contact.php",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/testimonials.php",
+      "destination": "/testimonials",
+      "permanent": true
+    },
+    {
+      "source": "/car-importation.php",
+      "destination": "/car-importation",
+      "permanent": true
+    },
+    {
+      "source": "/inspection-guidance.php",
+      "destination": "/inspection-guidance",
+      "permanent": true
+    },
+    {
+      "source": "/shipping-clearing.php",
+      "destination": "/shipping-clearing",
+      "permanent": true
+    },
+    {
+      "source": "/vehicle-sourcing-support.php",
+      "destination": "/vehicle-sourcing-support",
+      "permanent": true
+    }
+  ]
+}
