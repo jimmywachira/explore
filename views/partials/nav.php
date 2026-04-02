@@ -3,8 +3,8 @@ $currentPath = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/';
 
 $navLinks = [
         ['label' => 'Home', 'href' => '/'],
-        ['label' => 'About', 'href' => '/about.php'],
         ['label' => 'Testimonials', 'href' => '/testimonials.php'],
+        ['label' => 'About', 'href' => '/about.php'],
         ['label' => 'Contact', 'href' => '/contact.php'],
 ];
 
