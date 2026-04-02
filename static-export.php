@@ -34,15 +34,17 @@ $linkReplacements = [
 ];
 
 foreach ($pages as $page) {
-    $_SERVER['REQUEST_URI'] = $page['uri'];
-    $_SERVER['HTTP_HOST'] = $httpHost;
-    $_SERVER['HTTPS'] = $httpsFlag;
+    $controllerPath = $baseDir . DIRECTORY_SEPARATOR . $page['controller'];
+    $runnerCode = '$uri = ' . var_export($page['uri'], true) . ';'
+        . '$_SERVER[\'REQUEST_URI\'] = $uri;'
+        . '$_SERVER[\'HTTP_HOST\'] = ' . var_export($httpHost, true) . ';'
+        . '$_SERVER[\'HTTPS\'] = ' . var_export($httpsFlag, true) . ';'
+        . 'require ' . var_export($controllerPath, true) . ';';
 
-    ob_start();
-    require $baseDir . DIRECTORY_SEPARATOR . $page['controller'];
-    $html = ob_get_clean();
+    $command = escapeshellarg(PHP_BINARY) . ' -r ' . escapeshellarg($runnerCode);
+    $html = shell_exec($command);
 
-    if (!is_string($html) || $html === '') {
+    if (!is_string($html) || $html === '' || stripos($html, 'Fatal error') !== false) {
         throw new RuntimeException('Failed to render page: ' . $page['controller']);
     }
 
