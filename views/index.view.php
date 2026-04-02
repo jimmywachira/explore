@@ -3,7 +3,7 @@
 
 <main class="w-full flex-1 text-slate-900">
     <div class="w-full lg:w-4/5 xl:w-3/4 mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10 lg:py-12 space-y-8 sm:space-y-10">
-        <section class="relative overflow-hidden rounded-3xl border border-emerald-200 bg-linear-to-r from-emerald-500 via-green-400 to-lime-300 text-slate-900 shadow-2xl">
+        <section class="relative overflow-hidden rounded-3xl border border-sky-200 bg-linear-to-r from-emerald-500 via-sky-500 to-cyan-300 text-slate-900 shadow-2xl">
             <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_top_right,white,transparent_55%)]"></div>
             <div class="relative p-6 sm:p-8 lg:p-12">
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 items-end">
@@ -20,19 +20,19 @@
                             pre-shipment inspection, transparent pricing, and complete delivery support from Japan to your doorstep.
                         </p>
                         <div class="flex flex-wrap gap-3 pt-2">
-                            <a href="/contact.php" class="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-5 py-3 text-sm sm:text-base font-bold text-white hover:bg-slate-800 transition">
+                            <a href="/contact.php" class="inline-flex items-center gap-2 rounded-xl bg-sky-900 px-5 py-3 text-sm sm:text-base font-bold text-white hover:bg-sky-800 transition">
                                 <ion-icon name="chatbubble-ellipses-outline" class="icon-lg"></ion-icon>
                                 Request Import Consultation
                             </a>
-                            <a href="/about.php" class="inline-flex items-center gap-2 rounded-xl border border-slate-900/30 bg-white/40 px-5 py-3 text-sm sm:text-base font-bold text-slate-900 hover:bg-white/70 transition">
+                            <a href="/about.php" class="inline-flex items-center gap-2 rounded-xl border border-sky-900/20 bg-white/50 px-5 py-3 text-sm sm:text-base font-bold text-slate-900 hover:bg-white/80 transition">
                                 <ion-icon name="information-circle-outline" class="icon-lg"></ion-icon>
                                 Learn How We Work
                             </a>
                         </div>
                     </div>
 
-                    <div class="rounded-2xl border border-white/40 bg-white/35 backdrop-blur-sm p-5 shadow-lg">
-                        <p class="text-xs uppercase tracking-[0.18em] font-bold text-slate-700 inline-flex items-center gap-2"><ion-icon name="sparkles-outline" class="icon-lg"></ion-icon>What You Get</p>
+                    <div class="rounded-2xl border border-white/50 bg-white/45 backdrop-blur-sm p-5 shadow-lg">
+                        <p class="text-xs uppercase tracking-[0.18em] font-bold text-sky-800 inline-flex items-center gap-2"><ion-icon name="sparkles-outline" class="icon-lg"></ion-icon>What You Get</p>
                         <ul class="mt-3 space-y-2 text-sm sm:text-base font-semibold text-slate-800">
                             <li>Verified Japanese stock</li>
                             <li>Transparent CIF guidance</li>
@@ -109,8 +109,8 @@
                 </ol>
             </div>
 
-            <div class="rounded-3xl border border-emerald-200 bg-linear-to-br from-emerald-50 to-lime-50 p-5 sm:p-7 shadow-sm">
-                <p class="text-xs uppercase tracking-[0.2em] text-emerald-700 font-bold">Why Buyers Choose Xplore</p>
+            <div class="rounded-3xl border border-sky-200 bg-linear-to-br from-sky-50 to-emerald-50 p-5 sm:p-7 shadow-sm">
+                <p class="text-xs uppercase tracking-[0.2em] text-sky-700 font-bold">Why Buyers Choose Xplore</p>
                 <h2 class="text-2xl sm:text-3xl font-black mt-2 mb-4 text-slate-900 inline-flex items-center gap-2"><ion-icon name="medal-outline" class="icon-lg"></ion-icon>Trusted Japanese Car Import Partner in Kenya</h2>
                 <ul class="space-y-3 text-sm sm:text-base text-slate-800">
                     <li>Transparent communication at each stage</li>
@@ -129,8 +129,8 @@
                 including realistic timelines, expected costs, and vehicle options that match your goals.
             </p>
             <div class="flex flex-wrap justify-center gap-3">
-                <a href="/contact.php" class="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-5 py-3 text-white font-bold hover:bg-emerald-700 transition"><ion-icon name="call-outline" class="icon-lg"></ion-icon>Talk to Our Team</a>
-                <a href="/about.php" class="inline-flex items-center gap-2 rounded-xl border border-slate-300 px-5 py-3 text-slate-900 font-bold hover:bg-slate-100 transition"><ion-icon name="people-circle-outline" class="icon-lg"></ion-icon>About Xplore</a>
+                <a href="/contact.php" class="inline-flex items-center gap-2 rounded-xl bg-linear-to-r from-sky-600 to-emerald-500 px-5 py-3 text-white font-bold hover:from-sky-700 hover:to-emerald-600 transition"><ion-icon name="call-outline" class="icon-lg"></ion-icon>Talk to Our Team</a>
+                <a href="/about.php" class="inline-flex items-center gap-2 rounded-xl border border-sky-200 bg-white px-5 py-3 text-slate-900 font-bold hover:bg-sky-50 transition"><ion-icon name="people-circle-outline" class="icon-lg"></ion-icon>About Xplore</a>
             </div>
         </section>
     </div>

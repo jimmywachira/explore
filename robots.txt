@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /views/
 Disallow: /views/partials/
-Sitemap: https://your-domain.com/sitemap.xml
+Sitemap: https://explore-opal.vercel.app/sitemap.xml

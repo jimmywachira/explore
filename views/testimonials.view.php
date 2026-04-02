@@ -8,12 +8,12 @@
                 src="https://www.mazdausa.com/siteassets/vehicles/2026/cx-5/04_btv/004_exterior/ext.-360s/2.5-s/360-rhodium-white/e360-my26-cx5-s-rhodiumwhite-v2-024.jpg"
                 alt="Xplore customer testimonials"
                 class="absolute inset-0 h-full w-full object-cover" />
-            <div class="absolute inset-0 bg-linear-to-br from-slate-950/85 via-emerald-950/55 to-slate-950/80"></div>
+            <div class="absolute inset-0 bg-linear-to-br from-slate-950/85 via-sky-950/55 to-slate-950/80"></div>
             <div class="absolute inset-0 bg-linear-to-r from-slate-950/75 via-slate-950/35 to-transparent"></div>
 
             <div class="relative z-10 p-6 sm:p-10 lg:p-14 w-full">
                 <div class="max-w-4xl space-y-5 sm:space-y-6 text-white">
-                    <p class="inline-flex items-center rounded-full border border-emerald-300/60 bg-emerald-400/15 px-4 py-1.5 text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-emerald-200">
+                    <p class="inline-flex items-center rounded-full border border-sky-300/60 bg-sky-400/15 px-4 py-1.5 text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-sky-200">
                         <ion-icon name="chatbubbles" class="icon-lg mr-2"></ion-icon>
                         Verified Client Experiences
                     </p>
@@ -25,7 +25,7 @@
                         from vehicle selection to customs clearance and delivery.
                     </p>
                     <div class="flex flex-wrap gap-3 pt-1">
-                        <a href="/contact.php" class="inline-flex items-center rounded-xl bg-emerald-500 px-5 py-3 text-sm sm:text-base font-bold text-white hover:bg-emerald-600 transition">
+                        <a href="/contact.php" class="inline-flex items-center rounded-xl bg-linear-to-r from-sky-600 to-emerald-500 px-5 py-3 text-sm sm:text-base font-bold text-white hover:from-sky-700 hover:to-emerald-600 transition">
                             <ion-icon name="paper-plane" class="icon-lg mr-2"></ion-icon>
                             Start Your Import Journey
                         </a>
@@ -63,8 +63,8 @@
 
         <section class="rounded-3xl border border-slate-200 bg-white/90 p-6 sm:p-8 lg:p-10 shadow-sm">
             <div class="text-center mb-8 sm:mb-10">
-                <p class="uppercase tracking-[0.2em] text-xs font-bold text-emerald-600 mb-3">Video Stories</p>
-                <h2 class="inline-flex items-center justify-center text-2xl sm:text-4xl lg:text-5xl font-black mb-3"><ion-icon name="videocam" class="icon-xl mr-3 text-emerald-600"></ion-icon>Hear Real Car Import Stories From Our Clients</h2>
+                <p class="uppercase tracking-[0.2em] text-xs font-bold text-sky-600 mb-3">Video Stories</p>
+                <h2 class="inline-flex items-center justify-center text-2xl sm:text-4xl lg:text-5xl font-black mb-3"><ion-icon name="videocam" class="icon-xl mr-3 text-sky-600"></ion-icon>Hear Real Car Import Stories From Our Clients</h2>
                 <p class="text-sm sm:text-base text-slate-700 max-w-2xl mx-auto">Real voices. Real delivery experiences. Real outcomes for Kenyan car buyers importing from Japan.</p>
             </div>
 
@@ -144,8 +144,8 @@
 
         <section class="rounded-3xl border border-slate-200 bg-white/90 p-6 sm:p-8 lg:p-10 shadow-sm">
             <div class="text-center mb-8 sm:mb-10">
-                <p class="uppercase tracking-[0.2em] text-xs font-bold text-cyan-600 mb-3">Client Reviews</p>
-                <h2 class="inline-flex items-center justify-center text-2xl sm:text-4xl font-black mb-3"><ion-icon name="ribbon" class="icon-xl mr-3 text-cyan-600"></ion-icon>What Buyers Appreciate Most</h2>
+                <p class="uppercase tracking-[0.2em] text-xs font-bold text-emerald-600 mb-3">Client Reviews</p>
+                <h2 class="inline-flex items-center justify-center text-2xl sm:text-4xl font-black mb-3"><ion-icon name="ribbon" class="icon-xl mr-3 text-emerald-600"></ion-icon>What Buyers Appreciate Most</h2>
                 <p class="text-sm sm:text-base text-slate-700 max-w-2xl mx-auto">From communication quality to final handover, these are the moments clients remember.</p>
             </div>
 
@@ -257,7 +257,7 @@
                     Work with a team that keeps pricing clear, timelines realistic, and communication consistent from day one.
                 </p>
                 <div class="flex flex-wrap justify-center gap-3">
-                    <a href="/contact.php" class="inline-flex items-center rounded-xl bg-white px-5 py-3 text-emerald-700 font-black hover:bg-emerald-50 transition">
+                    <a href="/contact.php" class="inline-flex items-center rounded-xl bg-white px-5 py-3 text-sky-700 font-black hover:bg-sky-50 transition">
                         <ion-icon name="chatbubble-ellipses" class="icon-lg mr-2"></ion-icon>
                         Talk to Our Team
                     </a>
