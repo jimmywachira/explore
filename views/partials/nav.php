@@ -54,10 +54,10 @@ $isActive = static function (string $href) use ($currentPath): bool {
                         </div>
 
                         <!-- Desktop CTA -->
-                        <div class="hidden md:flex items-center gap-2 shrink-0">
-                                <a href="https://wa.me/c/254757356989" target="_blank" class="inline-flex items-center gap-2 p-2 rounded-xl bg-linear-to-r from-green-500 to-blue-600 text-white font-semibold hover:from-green-600 hover:to-blue-700 transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5">
+                        <div class="hidden md:flex items-center shrink-0">
+                                <a href="https://wa.me/c/254757356989" target="_blank" class="inline-flex items-center p-2 rounded-full bg-linear-to-r from-green-500 to-blue-600 text-white font-semibold hover:from-green-600 hover:to-blue-700 transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5">
                                         <ion-icon name="logo-whatsapp" class="icon-lg"></ion-icon>
-                                        <span>Whatsapp Us</span>
+                                        <span></span>
                                 </a>
                         </div>
 
@@ -81,9 +81,6 @@ $isActive = static function (string $href) use ($currentPath): bool {
                                         <?= htmlspecialchars($link['label'], ENT_QUOTES, 'UTF-8') ?>
                                 </a>
                         <?php endforeach; ?>
-                        <a href="/contact.php" class="mt-2 block px-4 py-3 rounded-xl text-sm font-semibold bg-linear-to-r from-green-500 to-blue-600 text-white hover:from-green-600 hover:to-blue-700 transition-colors">
-                                Contact Team
-                        </a>
                 </div>
         </div>
 </nav>
