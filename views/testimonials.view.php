@@ -72,7 +72,7 @@
 
                 <article class="group overflow-hidden rounded-3xl border border-slate-200 bg-slate-50/70 transition-all duration-300 hover:border-emerald-400/50 hover:shadow-xl">
                     <div class="aspect-video w-full overflow-hidden">
-                        <iframe class="w-full h-full" src="https://www.youtube.com/watch?v=EUrUhoPmrIk" title="Client Testimonial 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/EUrUhoPmrIk" title="Client Testimonial 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
                     </div>
                     <div class="p-5 sm:p-6">
                         <p class="text-base font-bold mb-1">First-Time Import Success Story</p>
@@ -82,7 +82,7 @@
 
                 <article class="group overflow-hidden rounded-3xl border border-slate-200 bg-slate-50/70 transition-all duration-300 hover:border-emerald-400/50 hover:shadow-xl">
                     <div class="aspect-video w-full overflow-hidden">
-                        <iframe class="w-full h-full" src="https://youtu.be/EUrUhoPmrIk?si=kUbiI5j1UfnDa1iV" title="Client Testimonial 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/EUrUhoPmrIk?si=kUbiI5j1UfnDa1iV" title="Client Testimonial 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
                     </div>
                     <div class="p-5 sm:p-6">
                         <p class="text-base font-bold mb-1">First-Time Import Success Story</p>
@@ -92,7 +92,7 @@
 
                 <article class="group overflow-hidden rounded-3xl border border-slate-200 bg-slate-50/70 transition-all duration-300 hover:border-emerald-400/50 hover:shadow-xl">
                     <div class="aspect-video w-full overflow-hidden">
-                        <iframe class="w-full h-full" src="https://www.youtube.com/watch?v=CynS-oHEpaE" title="Client Testimonial 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/CynS-oHEpaE" title="Client Testimonial 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
                     </div>
                     <div class="p-5 sm:p-6">
                         <p class="text-base font-bold mb-1">First-Time Import Success Story</p>
