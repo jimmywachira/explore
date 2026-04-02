@@ -110,7 +110,7 @@
         <section class="page-surface-strong rounded-3xl p-5 sm:p-7 lg:p-8">
             <div class="max-w-3xl mb-6">
                 <p class="section-kicker text-xs font-bold text-blue-600">Our Core Services</p>
-                <h2 class="section-title text-2xl sm:text-3xl font-black mt-2 mb-2 inline-flex items-center gap-2"><ion-icon name="layers-outline" class="icon-lg"></ion-icon>End-to-End Japanese Car Import Support</h2>
+                <h2 class="section-title text-2xl sm:text-3xl lg:text-4xl font-black mt-2 mb-3 headline-accent"><ion-icon name="layers-outline" class="icon-lg"></ion-icon>End-to-End Japanese Car Import Support</h2>
                 <p class="sm:text-base text-black">Everything is structured to reduce risk, save time, and keep you informed from selection to delivery.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">

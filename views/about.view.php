@@ -8,8 +8,8 @@
                 src="https://www.mazdausa.com/siteassets/vehicles/2026/cx-5/04_btv/004_exterior/ext.-360s/2.5-s/360-rhodium-white/e360-my26-cx5-s-rhodiumwhite-v2-024.jpg"
                 alt="Xplore premium Japanese imports"
                 class="absolute inset-0 h-full w-full object-cover" />
-            <div class="absolute inset-0 bg-linear-to-br from-blue-900/80 via-blue-950/60 to-blue-900/80"></div>
-            <div class="absolute inset-0 bg-linear-to-r from-blue-900/75 via-blue-900/35 to-transparent"></div>
+            <div class="absolute inset-0 bg-linear-to-br from-blue-900/40 via-blue-950/60 to-blue-900/70"></div>
+            <div class="absolute inset-0 bg-linear-to-r from-blue-900/65 via-blue-900/35 to-transparent"></div>
 
             <div class="relative z-10 p-6 sm:p-10 lg:p-14 w-full">
                 <div class="max-w-4xl space-y-5 sm:space-y-6">
@@ -29,7 +29,7 @@
                             <ion-icon name="call-outline" class="icon-lg"></ion-icon>
                             Talk to Our Team
                         </a>
-                        <a href="/" class="inline-flex items-center gap-2 rounded-xl border border-white/45 bg-white/10 text-black px-5 py-3 text-sm sm:text-base font-bold hover:bg-white/20 transition">
+                        <a href="/" class="inline-flex items-center gap-2 rounded-xl border border-white/45 bg-green-500/20 text-black px-5 py-3 text-sm sm:text-base font-bold hover:bg-white/20 transition">
                             <ion-icon name="home-outline" class="icon-lg"></ion-icon>
                             Explore Home
                         </a>
@@ -40,7 +40,7 @@
 
         <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
             <article class="page-surface rounded-2xl p-4 sm:p-5 shadow-sm">
-                <p class="text-2xl sm:text-3xl font-black text-blue-600">2021</p>
+                <p class="text-2xl sm:text-3xl font-black text-blue-600">2024</p>
                 <p class="text-sm text-blue-700">Founded with a mission to simplify imports</p>
             </article>
             <article class="page-surface rounded-2xl p-4 sm:p-5 shadow-sm">

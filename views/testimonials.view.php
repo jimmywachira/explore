@@ -17,7 +17,7 @@
                         <ion-icon name="chatbubbles" class="icon-lg mr-2"></ion-icon>
                         Verified Client Experiences
                     </p>
-                    <h1 class="hero-title text-3xl sm:text-4xl lg:text-6xl font-black text-white">
+                    <h1 class="section-title text-2xl sm:text-3xl lg:text-4xl font-black mt-2 mb-3 headline-accent">
                         Japanese Car Import Testimonials from Kenyan Buyers
                     </h1>
                     <p class="text-sm sm:text-base lg:text-lg text-blue-100/95 max-w-3xl leading-relaxed">
@@ -25,11 +25,11 @@
                         from vehicle selection to customs clearance and delivery.
                     </p>
                     <div class="flex flex-wrap gap-3 pt-1">
-                        <a href="/contact.php" class="inline-flex items-center rounded-xl bg-linear-to-r from-green-500 to-blue-600 px-5 py-3 text-sm sm:text-base font-bold text-white hover:from-green-600 hover:to-blue-700 transition">
+                        <a href="/contact.php" class="inline-flex items-center rounded-xl bg-green-600 px-5 py-3 text-sm sm:text-base font-bold text-white hover:from-green-600 hover:to-blue-700 transition">
                             <ion-icon name="paper-plane" class="icon-lg mr-2"></ion-icon>
                             Start Your Import Journey
                         </a>
-                        <a href="/about.php" class="inline-flex items-center rounded-xl border border-white/45 bg-white/10 px-5 py-3 text-sm sm:text-base font-bold text-white hover:bg-white/20 transition">
+                        <a href="/about.php" class="inline-flex items-center rounded-xl border border-white/45 bg-green-600 px-5 py-3 text-sm sm:text-base font-bold text-white hover:bg-white/20 transition">
                             <ion-icon name="people" class="icon-lg mr-2"></ion-icon>
                             Learn About Us
                         </a>
@@ -41,7 +41,7 @@
         <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
             <article class="page-surface rounded-2xl p-4 sm:p-5 shadow-sm text-center">
                 <ion-icon name="happy" class="icon-xl text-emerald-600 mb-1"></ion-icon>
-                <p class="text-2xl sm:text-3xl font-black text-emerald-600">10+</p>
+                <p class="text-2xl sm:text-3xl font-black text-emerald-600">20+</p>
                 <p class="text-sm text-blue-700">Happy Customers</p>
             </article>
             <article class="page-surface rounded-2xl p-4 sm:p-5 shadow-sm text-center">
@@ -51,7 +51,7 @@
             </article>
             <article class="page-surface rounded-2xl p-4 sm:p-5 shadow-sm text-center">
                 <ion-icon name="car-sport" class="icon-xl text-emerald-600 mb-1"></ion-icon>
-                <p class="text-2xl sm:text-3xl font-black text-emerald-600">10+</p>
+                <p class="text-2xl sm:text-3xl font-black text-emerald-600">20+</p>
                 <p class="text-sm text-blue-700">Vehicles Imported</p>
             </article>
             <article class="page-surface rounded-2xl p-4 sm:p-5 shadow-sm text-center">
@@ -262,7 +262,7 @@
             <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_top,white,transparent_60%)]"></div>
             <div class="relative p-6 sm:p-8 lg:p-10 text-center">
                 <p class="section-kicker text-xs uppercase tracking-[0.2em] font-bold text-emerald-100">Start Your Journey</p>
-                <h2 class="section-title text-2xl sm:text-3xl lg:text-4xl font-black mt-2 mb-3 headline-accent">Ready to Import Your Next Japanese Car?</h2>
+                <h2 class="section-title text-2xl sm:text-3xl lg:text-4xl font-black mt-2 mb-3 headline-accent">Ready to Import Your Next Car?</h2>
                 <p class="text-sm sm:text-base text-blue-700 max-w-2xl mx-auto mb-6">
                     Work with a team that keeps pricing clear, timelines realistic, and communication consistent from day one.
                 </p>
@@ -271,7 +271,7 @@
                         <ion-icon name="chatbubble-ellipses" class="icon-lg mr-2"></ion-icon>
                         Talk to Our Team
                     </a>
-                    <a href="/about.php" class="inline-flex items-center rounded-xl border border-blue-300 px-5 py-3 font-black text-blue-900 hover:bg-blue-50 transition">
+                    <a href="/about.php" class="inline-flex items-center rounded-xl border border-blue-300 px-5 py-3 font-black text-white bg-blue-600 hover:bg-blue-50 transition">
                         <ion-icon name="arrow-forward-circle" class="icon-lg mr-2"></ion-icon>
                         Learn About Us
                     </a>

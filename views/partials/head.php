@@ -157,7 +157,7 @@ $websiteSchema = [
         h6,
         .ui-title,
         .ui-heading {
-            color: #0ddc2c;
+            color: #06b420eb;
             font-family: 'Tilt Neon', cursive;
             font-weight: 600;
             letter-spacing: -0.02em;
