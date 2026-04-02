@@ -10,6 +10,8 @@ $pageTitle = $metaTitle ?? (($heading ?? '') === 'Home' ? $defaultTitle : (($hea
 $pageDescription = $metaDescription ?? 'Xplore Car Imports helps Kenyan buyers source, inspect, ship, clear, and collect quality Japanese vehicles with transparent guidance.';
 $canonicalUrl = $metaCanonical ?? ($siteUrl . $currentPath);
 $pageType = $metaType ?? (($currentPath === '/') ? 'website' : 'article');
+$isHomePage = $currentPath === '/';
+$pageContextClass = $isHomePage ? 'page-home' : 'page-inner';
 $metaImage = $metaImage ?? '';
 $robots = $metaRobots ?? 'index,follow';
 $extraSchemas = $metaSchema ?? [];
@@ -111,6 +113,37 @@ $websiteSchema = [
             text-rendering: optimizeLegibility;
         }
 
+        html,
+        body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        img,
+        video,
+        canvas,
+        svg {
+            max-width: 100%;
+            height: auto;
+        }
+
+        iframe {
+            max-width: 100%;
+            display: block;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        li,
+        a {
+            overflow-wrap: anywhere;
+        }
+
         body::selection {
             background: rgba(34, 197, 94, 0.2);
             color: #000000;
@@ -128,6 +161,39 @@ $websiteSchema = [
             font-family: 'Tilt Neon', cursive;
             font-weight: 600;
             letter-spacing: -0.02em;
+        }
+
+        /* Advanced fluid heading scale for strong responsiveness */
+        h1 {
+            font-size: clamp(1.85rem, 1.15rem + 3.2vw, 4rem);
+            line-height: 1.05;
+            letter-spacing: -0.04em;
+        }
+
+        h2 {
+            font-size: clamp(1.5rem, 1.1rem + 2.1vw, 3rem);
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+        }
+
+        h3 {
+            font-size: clamp(1.25rem, 1rem + 1.4vw, 2.25rem);
+            line-height: 1.14;
+        }
+
+        h4 {
+            font-size: clamp(1.1rem, 0.95rem + 0.9vw, 1.75rem);
+            line-height: 1.2;
+        }
+
+        h5 {
+            font-size: clamp(1rem, 0.92rem + 0.55vw, 1.35rem);
+            line-height: 1.25;
+        }
+
+        h6 {
+            font-size: clamp(0.92rem, 0.88rem + 0.3vw, 1.1rem);
+            line-height: 1.3;
         }
 
         p,
@@ -164,6 +230,26 @@ $websiteSchema = [
             color: #000000 !important;
         }
 
+        /* Precision CTA type rhythm: fluid label sizing for text-sm/sm:text-base buttons */
+        a.inline-flex[class*="text-sm"],
+        button.inline-flex[class*="text-sm"],
+        a.inline-flex[class*="sm:text-base"],
+        button.inline-flex[class*="sm:text-base"] {
+            font-size: clamp(0.84rem, 0.8rem + 0.28vw, 0.98rem);
+            line-height: 1.2;
+            letter-spacing: 0.01em;
+        }
+
+        body.page-home a.inline-flex[class*="sm:text-base"],
+        body.page-home button.inline-flex[class*="sm:text-base"] {
+            font-size: clamp(0.88rem, 0.8rem + 0.42vw, 1.05rem);
+        }
+
+        body.page-inner a.inline-flex[class*="sm:text-base"],
+        body.page-inner button.inline-flex[class*="sm:text-base"] {
+            font-size: clamp(0.85rem, 0.79rem + 0.32vw, 1rem);
+        }
+
         .ui-muted,
         .text-muted {
             color: var(--ui-muted) !important;
@@ -178,7 +264,7 @@ $websiteSchema = [
         .section-kicker {
             letter-spacing: 0.3em !important;
             text-transform: uppercase !important;
-            font-size: 0.75rem !important;
+            font-size: clamp(0.68rem, 0.62rem + 0.35vw, 0.86rem) !important;
             font-weight: 600 !important;
             color: #032cf8 !important;
             background: linear-gradient(to right, rgba(3, 246, 92, 0.2), rgba(8, 228, 89, 0.2)) !important;
@@ -196,15 +282,52 @@ $websiteSchema = [
         }
 
         .hero-title {
+            font-size: clamp(2rem, 1.2rem + 4.2vw, 5.1rem);
             text-wrap: balance;
             line-height: 1.02;
             letter-spacing: -0.04em;
         }
 
         .section-title {
+            font-size: clamp(1.5rem, 1rem + 2.6vw, 3.45rem);
             text-wrap: balance;
             line-height: 1.08;
             letter-spacing: -0.03em;
+        }
+
+        /* Context-aware micro-tuning by page type */
+        body.page-home .hero-title {
+            font-size: clamp(2.15rem, 1.2rem + 4.8vw, 5.6rem);
+            line-height: 1.01;
+            letter-spacing: -0.045em;
+        }
+
+        body.page-inner .hero-title {
+            font-size: clamp(1.85rem, 1.1rem + 3.6vw, 4.25rem);
+            line-height: 1.05;
+            letter-spacing: -0.035em;
+        }
+
+        body.page-home .section-title {
+            font-size: clamp(1.6rem, 1.03rem + 2.95vw, 3.7rem);
+        }
+
+        body.page-inner .section-title {
+            font-size: clamp(1.45rem, 0.98rem + 2.45vw, 3.2rem);
+        }
+
+        /* Card heading rhythm across service, stats, and testimonial cards */
+        .page-surface h3,
+        .page-surface-strong h3,
+        article h3 {
+            font-size: clamp(1.02rem, 0.93rem + 0.72vw, 1.42rem);
+            line-height: 1.2;
+            letter-spacing: -0.015em;
+        }
+
+        .page-surface .section-kicker,
+        .page-surface-strong .section-kicker {
+            font-size: clamp(0.66rem, 0.6rem + 0.32vw, 0.82rem) !important;
         }
 
         .page-surface {
@@ -519,7 +642,7 @@ $websiteSchema = [
     </style>
 </head>
 
-<body class="w-full min-h-screen flex flex-col antialiased transition-colors duration-300 text-blue-900 dark:text-blue-100">
+<body class="<?= htmlspecialchars($pageContextClass, ENT_QUOTES, 'UTF-8') ?> w-full min-h-screen flex flex-col antialiased transition-colors duration-300 text-blue-900 dark:text-blue-100">
     <!-- Facebook Blue CSS Variable Gradient Stops -->
     <style>
         :root {

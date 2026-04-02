@@ -30,19 +30,19 @@
 
                     <!-- Social Links -->
                     <div class="flex gap-3 pt-2">
-                        <a href="https://www.youtube.com/@Explore254Discover" target="_blank" class="group w-10 h-10 rounded-full bg-white/85 hover:bg-red-600/10 flex items-center justify-center transition-all duration-300 border border-red-500/20 hover:border-blue-600" aria-label="YouTube">
+                        <a href="https://www.youtube.com/@Explore254Discover" target="_blank" class="group p-2 w-10 h-10 rounded-full bg-white/85 hover:bg-red-600/10 flex items-center justify-center transition-all duration-300 border border-red-500/20 hover:border-blue-600" aria-label="YouTube">
                             <ion-icon name="logo-youtube" class="text-red-600 group-hover:text-red-700 icon-lg"></ion-icon>
                         </a>
-                        <a href="https://www.facebook.com/XploreImports" target="_blank" class="group w-10 h-10 rounded-full bg-white/85 hover:bg-blue-600/10 flex items-center justify-center transition-all duration-300 border border-blue-200/30 hover:border-blue-600" aria-label="Facebook">
+                        <a href="https://www.facebook.com/XploreImports" target="_blank" class="group p-2 w-10 h-10 rounded-full bg-white/85 hover:bg-blue-600/10 flex items-center justify-center transition-all duration-300 border border-blue-200/30 hover:border-blue-600" aria-label="Facebook">
                             <ion-icon name="logo-facebook" class="text-blue-500 group-hover:text-blue-700 icon-lg"></ion-icon>
                         </a>
-                        <a href="https://wa.me/c/254757356989" target="_blank" class="group w-10 h-10 rounded-full bg-white/85 hover:bg-green-500/10 flex items-center justify-center transition-all duration-300 border border-green-500/20 hover:border-green-500" aria-label="WhatsApp">
+                        <a href="https://wa.me/c/254757356989" target="_blank" class="group p-2 w-10 h-10 rounded-full bg-white/85 hover:bg-green-500/10 flex items-center justify-center transition-all duration-300 border border-green-500/20 hover:border-green-500" aria-label="WhatsApp">
                             <ion-icon name="logo-whatsapp" class="text-green-600 group-hover:text-green-700 icon-lg"></ion-icon>
                         </a>
-                        <a href="https://www.tiktok.com/@explore_254k3" target="_blank" class="group w-10 h-10 rounded-full bg-white/85 hover:bg-blue-200 flex items-center justify-center transition-all duration-300 border border-green-500/20 hover:border-black" aria-label="TikTok">
+                        <a href="https://www.tiktok.com/@explore_254k3" target="_blank" class="group p-2 w-10 h-10 rounded-full bg-white/85 hover:bg-blue-200 flex items-center justify-center transition-all duration-300 border border-green-500/20 hover:border-black" aria-label="TikTok">
                             <ion-icon name="logo-tiktok" class="text-black icon-lg"></ion-icon>
                         </a>
-                        <a href="https://www.instagram.com/xplorecar_imports/" target="_blank" class="group w-10 h-10 rounded-full bg-white/85 hover:bg-blue-600/10 flex items-center justify-center transition-all duration-300 border border-green-500/20 hover:border-orange-600" aria-label="Instagram">
+                        <a href="https://www.instagram.com/xplorecar_imports/" target="_blank" class="group p-2 w-10 h-10 rounded-full bg-white/85 hover:bg-blue-600/10 flex items-center justify-center transition-all duration-300 border border-green-500/20 hover:border-orange-600" aria-label="Instagram">
                             <ion-icon name="logo-instagram" class="text-orange-600 group-hover:text-orange-700 icon-lg"></ion-icon>
                         </a>
                     </div>

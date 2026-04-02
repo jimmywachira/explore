@@ -44,7 +44,7 @@
             </div>
         </section>
 
-        <section class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+        <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
             <div class="page-surface rounded-2xl p-4 sm:p-5">
                 <p class="text-2xl sm:text-3xl font-black text-blue-600 inline-flex items-center gap-2"><ion-icon name="time-outline" class="icon-lg"></ion-icon>4-6</p>
                 <p class="text-blue-700">Weeks typical shipping window</p>

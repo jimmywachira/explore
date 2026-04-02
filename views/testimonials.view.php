@@ -38,7 +38,7 @@
             </div>
         </section>
 
-        <section class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+        <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
             <article class="page-surface rounded-2xl p-4 sm:p-5 shadow-sm text-center">
                 <ion-icon name="happy" class="icon-xl text-emerald-600 mb-1"></ion-icon>
                 <p class="text-2xl sm:text-3xl font-black text-emerald-600">10+</p>

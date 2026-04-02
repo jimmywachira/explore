@@ -38,7 +38,7 @@
             </div>
         </section>
 
-        <section class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+        <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
             <article class="page-surface rounded-2xl p-4 sm:p-5 shadow-sm">
                 <p class="text-2xl sm:text-3xl font-black text-blue-600">2021</p>
                 <p class="text-sm text-blue-700">Founded with a mission to simplify imports</p>

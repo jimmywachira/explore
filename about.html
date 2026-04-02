@@ -66,6 +66,37 @@
             text-rendering: optimizeLegibility;
         }
 
+        html,
+        body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        img,
+        video,
+        canvas,
+        svg {
+            max-width: 100%;
+            height: auto;
+        }
+
+        iframe {
+            max-width: 100%;
+            display: block;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        li,
+        a {
+            overflow-wrap: anywhere;
+        }
+
         body::selection {
             background: rgba(34, 197, 94, 0.2);
             color: #000000;
@@ -83,6 +114,39 @@
             font-family: 'Tilt Neon', cursive;
             font-weight: 600;
             letter-spacing: -0.02em;
+        }
+
+        /* Advanced fluid heading scale for strong responsiveness */
+        h1 {
+            font-size: clamp(1.85rem, 1.15rem + 3.2vw, 4rem);
+            line-height: 1.05;
+            letter-spacing: -0.04em;
+        }
+
+        h2 {
+            font-size: clamp(1.5rem, 1.1rem + 2.1vw, 3rem);
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+        }
+
+        h3 {
+            font-size: clamp(1.25rem, 1rem + 1.4vw, 2.25rem);
+            line-height: 1.14;
+        }
+
+        h4 {
+            font-size: clamp(1.1rem, 0.95rem + 0.9vw, 1.75rem);
+            line-height: 1.2;
+        }
+
+        h5 {
+            font-size: clamp(1rem, 0.92rem + 0.55vw, 1.35rem);
+            line-height: 1.25;
+        }
+
+        h6 {
+            font-size: clamp(0.92rem, 0.88rem + 0.3vw, 1.1rem);
+            line-height: 1.3;
         }
 
         p,
@@ -119,6 +183,26 @@
             color: #000000 !important;
         }
 
+        /* Precision CTA type rhythm: fluid label sizing for text-sm/sm:text-base buttons */
+        a.inline-flex[class*="text-sm"],
+        button.inline-flex[class*="text-sm"],
+        a.inline-flex[class*="sm:text-base"],
+        button.inline-flex[class*="sm:text-base"] {
+            font-size: clamp(0.84rem, 0.8rem + 0.28vw, 0.98rem);
+            line-height: 1.2;
+            letter-spacing: 0.01em;
+        }
+
+        body.page-home a.inline-flex[class*="sm:text-base"],
+        body.page-home button.inline-flex[class*="sm:text-base"] {
+            font-size: clamp(0.88rem, 0.8rem + 0.42vw, 1.05rem);
+        }
+
+        body.page-inner a.inline-flex[class*="sm:text-base"],
+        body.page-inner button.inline-flex[class*="sm:text-base"] {
+            font-size: clamp(0.85rem, 0.79rem + 0.32vw, 1rem);
+        }
+
         .ui-muted,
         .text-muted {
             color: var(--ui-muted) !important;
@@ -133,7 +217,7 @@
         .section-kicker {
             letter-spacing: 0.3em !important;
             text-transform: uppercase !important;
-            font-size: 0.75rem !important;
+            font-size: clamp(0.68rem, 0.62rem + 0.35vw, 0.86rem) !important;
             font-weight: 600 !important;
             color: #032cf8 !important;
             background: linear-gradient(to right, rgba(3, 246, 92, 0.2), rgba(8, 228, 89, 0.2)) !important;
@@ -151,15 +235,52 @@
         }
 
         .hero-title {
+            font-size: clamp(2rem, 1.2rem + 4.2vw, 5.1rem);
             text-wrap: balance;
             line-height: 1.02;
             letter-spacing: -0.04em;
         }
 
         .section-title {
+            font-size: clamp(1.5rem, 1rem + 2.6vw, 3.45rem);
             text-wrap: balance;
             line-height: 1.08;
             letter-spacing: -0.03em;
+        }
+
+        /* Context-aware micro-tuning by page type */
+        body.page-home .hero-title {
+            font-size: clamp(2.15rem, 1.2rem + 4.8vw, 5.6rem);
+            line-height: 1.01;
+            letter-spacing: -0.045em;
+        }
+
+        body.page-inner .hero-title {
+            font-size: clamp(1.85rem, 1.1rem + 3.6vw, 4.25rem);
+            line-height: 1.05;
+            letter-spacing: -0.035em;
+        }
+
+        body.page-home .section-title {
+            font-size: clamp(1.6rem, 1.03rem + 2.95vw, 3.7rem);
+        }
+
+        body.page-inner .section-title {
+            font-size: clamp(1.45rem, 0.98rem + 2.45vw, 3.2rem);
+        }
+
+        /* Card heading rhythm across service, stats, and testimonial cards */
+        .page-surface h3,
+        .page-surface-strong h3,
+        article h3 {
+            font-size: clamp(1.02rem, 0.93rem + 0.72vw, 1.42rem);
+            line-height: 1.2;
+            letter-spacing: -0.015em;
+        }
+
+        .page-surface .section-kicker,
+        .page-surface-strong .section-kicker {
+            font-size: clamp(0.66rem, 0.6rem + 0.32vw, 0.82rem) !important;
         }
 
         .page-surface {
@@ -474,7 +595,7 @@
     </style>
 </head>
 
-<body class="w-full min-h-screen flex flex-col antialiased transition-colors duration-300 text-blue-900 dark:text-blue-100">
+<body class="page-inner w-full min-h-screen flex flex-col antialiased transition-colors duration-300 text-blue-900 dark:text-blue-100">
     <!-- Facebook Blue CSS Variable Gradient Stops -->
     <style>
         :root {
@@ -638,14 +759,14 @@
 <nav class="sticky top-0 z-50 w-full backdrop-blur-xl shadow-[0_10px_30px_rgba(2,6,23,0.06)] p-2">
         <!-- Top Contact Bar -->
         <div class="w-full lg:w-4/5 xl:w-3/4 text-blue-700 mx-auto mb-2 px-3 sm:px-6 lg:px-8">
-                <div class="flex flex-col sm:flex-row items-center justify-center sm:justify-end gap-2 sm:gap-6 py-2 sm:text-sm">
-                        <a href="tel:+254757356989" class="flex items-center gap-2 hover:text-blue-700 transition-colors group">
+                <div class="flex flex-col sm:flex-row items-center justify-center sm:justify-end gap-2 sm:gap-6 py-2 text-xs sm:text-sm">
+                        <a href="tel:+254757356989" class="flex items-center gap-2 hover:text-blue-700 transition-colors group max-w-full">
                                 <ion-icon name="call-outline" class="icon-lg group-hover:scale-110 transition-transform"></ion-icon>
                                 <span class="font-medium">+254 757 356 989</span>
                         </a>
-                        <a href="mailto:info@xplorecar.com" class="flex items-center gap-2 hover:text-blue-700 transition-colors group">
+                        <a href="mailto:info@xplorecar.com" class="flex items-center gap-2 hover:text-blue-700 transition-colors group max-w-full">
                                 <ion-icon name="mail-outline" class="icon-lg group-hover:scale-110 transition-transform"></ion-icon>
-                                <span class="font-medium">info@xplorecar.com</span>
+                                <span class="font-medium break-all sm:break-normal">info@xplorecar.com</span>
                         </a>
                 </div>
         </div>
@@ -792,7 +913,7 @@
             </div>
         </section>
 
-        <section class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+        <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
             <article class="page-surface rounded-2xl p-4 sm:p-5 shadow-sm">
                 <p class="text-2xl sm:text-3xl font-black text-blue-600">2021</p>
                 <p class="text-sm text-blue-700">Founded with a mission to simplify imports</p>
@@ -954,19 +1075,19 @@
 
                     <!-- Social Links -->
                     <div class="flex gap-3 pt-2">
-                        <a href="https://www.youtube.com/@Explore254Discover" target="_blank" class="group w-10 h-10 rounded-full bg-white/85 hover:bg-red-600/10 flex items-center justify-center transition-all duration-300 border border-red-500/20 hover:border-blue-600" aria-label="YouTube">
+                        <a href="https://www.youtube.com/@Explore254Discover" target="_blank" class="group p-2 w-10 h-10 rounded-full bg-white/85 hover:bg-red-600/10 flex items-center justify-center transition-all duration-300 border border-red-500/20 hover:border-blue-600" aria-label="YouTube">
                             <ion-icon name="logo-youtube" class="text-red-600 group-hover:text-red-700 icon-lg"></ion-icon>
                         </a>
-                        <a href="https://www.facebook.com/XploreImports" target="_blank" class="group w-10 h-10 rounded-full bg-white/85 hover:bg-blue-600/10 flex items-center justify-center transition-all duration-300 border border-blue-200/30 hover:border-blue-600" aria-label="Facebook">
+                        <a href="https://www.facebook.com/XploreImports" target="_blank" class="group p-2 w-10 h-10 rounded-full bg-white/85 hover:bg-blue-600/10 flex items-center justify-center transition-all duration-300 border border-blue-200/30 hover:border-blue-600" aria-label="Facebook">
                             <ion-icon name="logo-facebook" class="text-blue-500 group-hover:text-blue-700 icon-lg"></ion-icon>
                         </a>
-                        <a href="https://wa.me/c/254757356989" target="_blank" class="group w-10 h-10 rounded-full bg-white/85 hover:bg-green-500/10 flex items-center justify-center transition-all duration-300 border border-green-500/20 hover:border-green-500" aria-label="WhatsApp">
+                        <a href="https://wa.me/c/254757356989" target="_blank" class="group p-2 w-10 h-10 rounded-full bg-white/85 hover:bg-green-500/10 flex items-center justify-center transition-all duration-300 border border-green-500/20 hover:border-green-500" aria-label="WhatsApp">
                             <ion-icon name="logo-whatsapp" class="text-green-600 group-hover:text-green-700 icon-lg"></ion-icon>
                         </a>
-                        <a href="https://www.tiktok.com/@explore_254k3" target="_blank" class="group w-10 h-10 rounded-full bg-white/85 hover:bg-blue-200 flex items-center justify-center transition-all duration-300 border border-green-500/20 hover:border-black" aria-label="TikTok">
+                        <a href="https://www.tiktok.com/@explore_254k3" target="_blank" class="group p-2 w-10 h-10 rounded-full bg-white/85 hover:bg-blue-200 flex items-center justify-center transition-all duration-300 border border-green-500/20 hover:border-black" aria-label="TikTok">
                             <ion-icon name="logo-tiktok" class="text-black icon-lg"></ion-icon>
                         </a>
-                        <a href="https://www.instagram.com/xplorecar_imports/" target="_blank" class="group w-10 h-10 rounded-full bg-white/85 hover:bg-blue-600/10 flex items-center justify-center transition-all duration-300 border border-green-500/20 hover:border-orange-600" aria-label="Instagram">
+                        <a href="https://www.instagram.com/xplorecar_imports/" target="_blank" class="group p-2 w-10 h-10 rounded-full bg-white/85 hover:bg-blue-600/10 flex items-center justify-center transition-all duration-300 border border-green-500/20 hover:border-orange-600" aria-label="Instagram">
                             <ion-icon name="logo-instagram" class="text-orange-600 group-hover:text-orange-700 icon-lg"></ion-icon>
                         </a>
                     </div>
