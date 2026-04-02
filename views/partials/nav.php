@@ -55,9 +55,9 @@ $isActive = static function (string $href) use ($currentPath): bool {
 
                         <!-- Desktop CTA -->
                         <div class="hidden md:flex items-center gap-2 shrink-0">
-                                <a href="/contact.php" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-linear-to-r from-green-500 to-blue-600 text-white text-sm font-semibold hover:from-green-600 hover:to-blue-700 transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5">
-                                        <ion-icon name="chatbubble-ellipses-outline" class="icon-lg"></ion-icon>
-                                        <span>Get Started</span>
+                                <a href="https://wa.me/c/254757356989" target="_blank" class="inline-flex items-center gap-2 p-2 rounded-xl bg-linear-to-r from-green-500 to-blue-600 text-white font-semibold hover:from-green-600 hover:to-blue-700 transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5">
+                                        <ion-icon name="logo-whatsapp" class="icon-lg"></ion-icon>
+                                        <span>Whatsapp Us</span>
                                 </a>
                         </div>
 

@@ -61,7 +61,7 @@
         body {
             color: #000000;
             font-family: 'Tilt Neon', cursive;
-            font-weight: 500;
+            font-weight: 600;
             line-height: 1.65;
             text-rendering: optimizeLegibility;
         }
@@ -79,9 +79,9 @@
         h6,
         .ui-title,
         .ui-heading {
-            color: #0A66E0;
+            color: #0ddc2c;
             font-family: 'Tilt Neon', cursive;
-            font-weight: 700;
+            font-weight: 600;
             letter-spacing: -0.02em;
         }
 
@@ -94,12 +94,29 @@
         .ui-body,
         .page-shell {
             color: #000000;
-            font-weight: 500;
+            font-weight: 600;
+        }
+
+        /* Force semibold typography across all utility font-weight classes */
+        .font-thin,
+        .font-extralight,
+        .font-light,
+        .font-normal,
+        .font-medium,
+        .font-semibold,
+        .font-bold,
+        .font-extrabold,
+        .font-black {
+            font-weight: 600 !important;
         }
 
         p {
             color: #000000 !important;
             line-height: 1.7;
+        }
+
+        p[class*="text-"] {
+            color: #000000 !important;
         }
 
         .ui-muted,
@@ -117,9 +134,9 @@
             letter-spacing: 0.3em !important;
             text-transform: uppercase !important;
             font-size: 0.75rem !important;
-            font-weight: 700 !important;
-            color: #0fe25c !important;
-            background: linear-gradient(to right, rgba(74, 222, 128, 0.2), rgba(134, 239, 172, 0.2)) !important;
+            font-weight: 600 !important;
+            color: #032cf8 !important;
+            background: linear-gradient(to right, rgba(3, 246, 92, 0.2), rgba(8, 228, 89, 0.2)) !important;
             padding: 0.5rem 1rem !important;
             border-radius: 9999px !important;
             border: 1px solid rgba(74, 222, 128, 0.5) !important;
@@ -618,10 +635,10 @@
     </div><header>
     ﻿
 <!-- Main Navigation -->
-<nav class="sticky top-0 z-50 w-full border-b border-blue-100/70 bg-white/72 backdrop-blur-xl shadow-[0_10px_30px_rgba(2,6,23,0.06)] p-2">
+<nav class="sticky top-0 z-50 w-full backdrop-blur-xl shadow-[0_10px_30px_rgba(2,6,23,0.06)] p-2">
         <!-- Top Contact Bar -->
         <div class="w-full lg:w-4/5 xl:w-3/4 text-blue-700 mx-auto mb-2 px-3 sm:px-6 lg:px-8">
-                <div class="flex flex-col sm:flex-row items-center justify-center sm:justify-end gap-2 sm:gap-6 py-2 text-xs sm:text-sm">
+                <div class="flex flex-col sm:flex-row items-center justify-center sm:justify-end gap-2 sm:gap-6 py-2 sm:text-sm">
                         <a href="tel:+254757356989" class="flex items-center gap-2 hover:text-blue-700 transition-colors group">
                                 <ion-icon name="call-outline" class="icon-lg group-hover:scale-110 transition-transform"></ion-icon>
                                 <span class="font-medium">+254 757 356 989</span>
@@ -637,7 +654,7 @@
                 <div class="flex items-center justify-between h-16 lg:h-[72px] gap-4">
                         <!-- Logo -->
                         <a href="/" class="flex items-center gap-2 shrink-0">
-                                <div class="h-10 w-10 rounded-full bg-linear-to-br from-green-600 to-blue-400 flex items-center justify-center shadow-md shadow-blue-500/20">
+                                <div class="h-10 w-10 rounded-full bg-green-600 flex items-center justify-center shadow-md shadow-blue-500/20">
                                         <ion-icon name="car-sport-outline" class="text-black p-2 icon-2xl"></ion-icon>
                                 </div>
                                 <div class="leading-tight">
@@ -646,7 +663,7 @@
                         </a>
 
                         <!-- Desktop Links -->
-                        <div class="hidden md:flex items-center gap-1 rounded-full border border-blue-200/70 bg-white/90 px-4 py-2 shadow-sm backdrop-blur">
+                        <div class="hidden md:flex items-center gap-1 rounded-full border border-blue-200/70 px-4 py-2 shadow-sm backdrop-blur">
                                                                                                                 <a
                                                 href="/"
                                                 class="px-4 py-2 rounded-full text-sm font-medium transition-all bg-blue-600 text-white shadow-sm">
@@ -745,14 +762,14 @@
     <div class="w-full lg:w-4/5 xl:w-3/4 mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10 lg:py-12 space-y-8 sm:space-y-10">
         <section class="relative overflow-hidden rounded-3xl border border-blue-200 bg-linear-to-r from-green-500 via-blue-600 to-white text-blue-900 shadow-2xl page-surface-strong">
             <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_top_right,white,transparent_55%)]"></div>
-            <div class="relative p-6 sm:p-8 lg:p-12">
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 items-end">
-                    <div class="lg:col-span-2 space-y-4">
+            <div class="relative p-6 sm:p-8 lg:p-12  bg-green-500">
+                <div class="grid grid-cols-1  lg:grid-cols-3 gap-6 lg:gap-8 items-end">
+                    <div class="lg:col-span-2 space-y-4 rounded-2xl p-5 sm:p-7 shadow-lg">
                         <p class="inline-flex items-center gap-2 rounded-full bg-white/30 px-3 py-1 text-xs sm:font-bold uppercase tracking-[0.2em]">
                             <ion-icon name="globe-outline" class="icon-lg"></ion-icon>
                             Japan Direct Imports
                         </p>
-                        <h1 class="hero-title text-3xl sm:text-4xl lg:text-5xl font-black">
+                        <h1 class="hero-title text-3xl sm:text-4xl lg:text-5xl font-black text-blue-900 inline-flex items-center gap-3">
                             Japanese Car Imports in Kenya Made Clear, Fast, and Reliable
                         </h1>
                         <p class="sm:text-base lg:text-lg text-blue-800/90 max-w-3xl">

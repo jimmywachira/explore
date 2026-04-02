@@ -46,26 +46,26 @@
 
         <section class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
             <div class="page-surface rounded-2xl p-4 sm:p-5">
-                <p class="text-2xl sm:text-3xl font-black text-emerald-600 inline-flex items-center gap-2"><ion-icon name="time-outline" class="icon-lg"></ion-icon>4-6</p>
+                <p class="text-2xl sm:text-3xl font-black text-blue-600 inline-flex items-center gap-2"><ion-icon name="time-outline" class="icon-lg"></ion-icon>4-6</p>
                 <p class="text-blue-700">Weeks typical shipping window</p>
             </div>
             <div class="page-surface rounded-2xl p-4 sm:p-5">
-                <p class="text-2xl sm:text-3xl font-black text-emerald-600 inline-flex items-center gap-2"><ion-icon name="shield-checkmark-outline" class="icon-lg"></ion-icon>100%</p>
+                <p class="text-2xl sm:text-3xl font-black text-blue-600 inline-flex items-center gap-2"><ion-icon name="shield-checkmark-outline" class="icon-lg"></ion-icon>100%</p>
                 <p class="text-blue-700">Price transparency commitment</p>
             </div>
             <div class="page-surface rounded-2xl p-4 sm:p-5">
-                <p class="text-2xl sm:text-3xl font-black text-emerald-600 inline-flex items-center gap-2"><ion-icon name="ribbon-outline" class="icon-lg"></ion-icon>KEBS</p>
+                <p class="text-2xl sm:text-3xl font-black text-blue-600 inline-flex items-center gap-2"><ion-icon name="ribbon-outline" class="icon-lg"></ion-icon>KEBS</p>
                 <p class="text-blue-700">Compliance-first sourcing policy</p>
             </div>
             <div class="page-surface rounded-2xl p-4 sm:p-5">
-                <p class="text-2xl sm:text-3xl font-black text-emerald-600 inline-flex items-center gap-2"><ion-icon name="people-outline" class="icon-lg"></ion-icon>1:1</p>
+                <p class="text-2xl sm:text-3xl font-black text-blue-600 inline-flex items-center gap-2"><ion-icon name="people-outline" class="icon-lg"></ion-icon>1:1</p>
                 <p class="text-blue-700">Dedicated buyer guidance</p>
             </div>
         </section>
 
         <section class="page-surface-strong rounded-3xl p-5 sm:p-7 lg:p-8">
             <div class="max-w-3xl mb-6">
-                <p class="section-kicker text-xs font-bold text-emerald-600">Our Core Services</p>
+                <p class="section-kicker text-xs font-bold text-blue-600">Our Core Services</p>
                 <h2 class="section-title text-2xl sm:text-3xl font-black mt-2 mb-2 inline-flex items-center gap-2"><ion-icon name="layers-outline" class="icon-lg"></ion-icon>End-to-End Japanese Car Import Support</h2>
                 <p class="sm:text-base text-black">Everything is structured to reduce risk, save time, and keep you informed from selection to delivery.</p>
             </div>
@@ -99,7 +99,7 @@
 
         <section class="grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-6">
             <div class="page-surface-strong rounded-3xl p-5 sm:p-7">
-                <p class="section-kicker text-xs font-bold text-emerald-600">How It Works</p>
+                <p class="section-kicker text-xs font-bold text-blue-600">How It Works</p>
                 <h2 class="section-title text-2xl sm:text-3xl font-black mt-2 mb-4 inline-flex items-center gap-2"><ion-icon name="git-network-outline" class="icon-lg"></ion-icon>Simple, Structured, Transparent</h2>
                 <ol class="space-y-3 sm:text-base text-blue-700 list-decimal pl-5">
                     <li>Share your target model, budget, and timeline.</li>
@@ -122,7 +122,7 @@
         </section>
 
         <section class="page-surface-strong rounded-3xl p-6 sm:p-8 text-center">
-            <p class="section-kicker text-xs font-bold text-emerald-600">Ready To Start?</p>
+            <p class="section-kicker text-xs font-bold text-blue-600">Ready To Start?</p>
             <h2 class="section-title text-2xl sm:text-3xl lg:text-4xl font-black mt-2 mb-3 headline-accent">Get a Japanese Car Import Quote Before You Commit</h2>
             <p class="sm:text-base text-blue-700 max-w-2xl mx-auto mb-6">
                 Book a consultation with Xplore Car Imports and get a clear plan for your next import,
