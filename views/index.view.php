@@ -13,7 +13,7 @@
                             Japan Direct Imports
                         </p>
                         <h1 class="hero-title text-3xl sm:text-4xl lg:text-5xl font-black text-blue-900 inline-flex items-center gap-3">
-                            Japanese Car Imports in Kenya Made Clear, Fast, and Reliable
+                            Premium Imports to Kenya Made Clear, Fast, and Reliable
                         </h1>
                         <p class="sm:text-base lg:text-lg text-blue-800/90 max-w-3xl">
                             Xplore Car Imports helps Kenyan buyers source premium Japanese vehicles with verified history,
@@ -66,7 +66,6 @@
         <section class="page-surface-strong rounded-3xl p-4 sm:p-6 lg:p-8 shadow-sm">
             <?php
             $instagramPosts = [
-                'https://www.instagram.com/p/DWi-r6sloTK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
                 'https://www.instagram.com/p/DWhaTF7CXO-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
                 'https://www.instagram.com/p/DWWagZxDGp0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
                 'https://www.instagram.com/p/DWRGmEXkuSO/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
@@ -76,6 +75,9 @@
                 'https://www.instagram.com/p/DVxjq5pjnyv/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
                 'https://www.instagram.com/p/DVibsowDItL/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
                 'https://www.instagram.com/p/DVTQIuiEU5u/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+                'https://www.instagram.com/p/DWBK8jzj3wU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+                'https://www.instagram.com/p/DWA-rnMjMgn/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+                'https://www.instagram.com/p/DWOQscdjeWO/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
             ];
             ?>
 
