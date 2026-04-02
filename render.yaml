@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: xplore-car-imports
+    env: docker
+    plan: free
+    autoDeploy: true
