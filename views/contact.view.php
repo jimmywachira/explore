@@ -151,7 +151,11 @@
 
                 <article class="page-surface rounded-2xl p-5 sm:p-6">
                     <h3 class="section-kicker text-sm font-bold uppercase tracking-wide text-sky-700 mb-2 inline-flex items-center gap-2"><ion-icon name="location-outline" class="icon-lg"></ion-icon>Office Location</h3>
-                    <p class="text-sm text-blue-700">2nd Floor, Zuhura Place, Thika </p>
+                    <p class="text-sm text-blue-700">2nd Floor, Zuhura Place, Thika</p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=2nd+Floor%2C+Zuhura+Place%2C+Thika" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex items-center gap-2 rounded-lg bg-blue-600 px-4 py-2 text-white text-sm font-semibold hover:bg-blue-700 transition">
+                        <ion-icon name="navigate-outline" class="icon-lg"></ion-icon>
+                        Get Directions
+                    </a>
                 </article>
 
                 <article class="page-surface-strong rounded-2xl p-5 sm:p-6">
@@ -160,6 +164,52 @@
                     <p class="text-sm text-blue-700"><span class="font-semibold">Sat</span> 10:00 AM - 4:00 PM</p>
                 </article>
             </aside>
+        </section>
+
+        <section class="page-surface-strong rounded-3xl p-6 sm:p-8 lg:p-10 shadow-sm">
+            <div class="mb-6">
+                <p class="section-kicker inline-flex items-center gap-2"><ion-icon name="pin-outline" class="icon-lg"></ion-icon>Visit Our Office</p>
+                <h2 class="section-title text-2xl sm:text-3xl font-black mt-2 mb-2 inline-flex items-center gap-2"><ion-icon name="map-outline" class="icon-lg"></ion-icon>Find Xplore Car Imports Easily</h2>
+                <p class="text-sm sm:text-base text-blue-700">Use the map below to locate our office and plan your visit. Appointments are recommended for personalized support.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-8 items-stretch">
+                <div class="lg:col-span-3 overflow-hidden rounded-2xl border border-blue-200 bg-white">
+                    <iframe
+                        title="Xplore Car Imports Location"
+                        src="https://www.google.com/maps?q=2nd+Floor,+Zuhura+Place,+Thika&output=embed"
+                        class="w-full h-[320px] sm:h-[360px] lg:h-full min-h-[320px]"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+                <div class="lg:col-span-2 page-surface rounded-2xl p-5 sm:p-6 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-xs uppercase tracking-[0.18em] text-blue-600 font-bold">Office Address</p>
+                            <p class="mt-1 text-base sm:text-lg text-blue-900 font-semibold">2nd Floor, Zuhura Place, Thika</p>
+                        </div>
+                        <div>
+                            <p class="text-xs uppercase tracking-[0.18em] text-blue-600 font-bold">Working Hours</p>
+                            <p class="mt-1 text-sm text-blue-700">Mon - Fri: 8:00 AM - 5:00 PM</p>
+                            <p class="text-sm text-blue-700">Sat: 10:00 AM - 4:00 PM</p>
+                        </div>
+                        <p class="text-sm text-blue-700">Need help navigating? Call us and our team will guide you to our office in real time.</p>
+                    </div>
+
+                    <div class="mt-5 flex flex-wrap gap-3">
+                        <a href="https://www.google.com/maps/search/?api=1&query=2nd+Floor%2C+Zuhura+Place%2C+Thika" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-4 py-2.5 text-white text-sm font-semibold hover:bg-blue-700 transition">
+                            <ion-icon name="navigate-outline" class="icon-lg"></ion-icon>
+                            Open in Google Maps
+                        </a>
+                        <a href="tel:+254757356989" class="inline-flex items-center gap-2 rounded-xl border border-blue-300 px-4 py-2.5 text-blue-900 text-sm font-semibold hover:bg-blue-50 transition">
+                            <ion-icon name="call-outline" class="icon-lg"></ion-icon>
+                            Call for Directions
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="page-surface-strong rounded-3xl p-6 sm:p-8 lg:p-10 text-center shadow-xl">
