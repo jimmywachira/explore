@@ -26,7 +26,10 @@
                     </p>
                 </div>
 
-                <form action="#" method="post" class="space-y-5 sm:space-y-6">
+                <!-- Success/Error Message -->
+                <div id="formMessage" class="hidden p-4 rounded-xl text-sm font-medium mb-6"></div>
+
+                <form id="contactForm" class="space-y-5 sm:space-y-6">
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
                         <div>
                             <label for="name" class="block text-sm font-semibold mb-2">Full Name <span class="text-red-600">*</span></label>
@@ -61,11 +64,66 @@
                         <p class="mt-2 text-xs text-slate-500">Tip: Include preferred make, model, and timeline for faster support.</p>
                     </div>
 
-                    <button type="submit" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-linear-to-r from-emerald-600 to-emerald-500 px-6 py-3.5 text-white font-bold hover:from-emerald-700 hover:to-emerald-600 transition">
+                    <button type="submit" id="submitBtn" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-linear-to-r from-emerald-600 to-emerald-500 px-6 py-3.5 text-white font-bold hover:from-emerald-700 hover:to-emerald-600 transition">
                         <ion-icon name="send-outline" class="icon-lg"></ion-icon>
                         Send Message
                     </button>
                 </form>
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const form = document.getElementById('contactForm');
+                        const messageDiv = document.getElementById('formMessage');
+                        const submitBtn = document.getElementById('submitBtn');
+
+                        if (!form) return;
+
+                        form.addEventListener('submit', async function(e) {
+                            e.preventDefault();
+
+                            // Show loading state
+                            submitBtn.disabled = true;
+                            const originalText = submitBtn.innerHTML;
+                            submitBtn.innerHTML = '<ion-icon name="hourglass-outline" class="icon-lg animate-spin"></ion-icon> Sending...';
+
+                            try {
+                                const formData = new FormData(form);
+                                const response = await fetch('/handle-contact.php', {
+                                    method: 'POST',
+                                    body: formData
+                                });
+
+                                const data = await response.json();
+
+                                // Show message
+                                messageDiv.classList.remove('hidden');
+                                if (data.success) {
+                                    messageDiv.className = 'p-4 rounded-xl text-sm font-medium bg-emerald-100 text-emerald-800 border border-emerald-300';
+                                    form.reset();
+                                } else {
+                                    messageDiv.className = 'p-4 rounded-xl text-sm font-medium bg-red-100 text-red-800 border border-red-300';
+                                }
+                                messageDiv.textContent = data.message;
+
+                                // Auto-hide success message after 5 seconds
+                                if (data.success) {
+                                    setTimeout(() => {
+                                        messageDiv.classList.add('hidden');
+                                    }, 5000);
+                                }
+                            } catch (error) {
+                                messageDiv.classList.remove('hidden');
+                                messageDiv.className = 'p-4 rounded-xl text-sm font-medium bg-red-100 text-red-800 border border-red-300';
+                                messageDiv.textContent = 'An error occurred. Please try again or contact us directly.';
+                                console.error('Form error:', error);
+                            } finally {
+                                // Restore button state
+                                submitBtn.disabled = false;
+                                submitBtn.innerHTML = originalText;
+                            }
+                        });
+                    });
+                </script>
             </div>
 
             <aside class="lg:col-span-1 space-y-4 sm:space-y-5">
