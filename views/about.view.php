@@ -126,134 +126,135 @@
 
             <div class="page-surface-strong rounded-3xl p-6 sm:p-8 shadow-sm">
                 <p class="section-kicker text-blue-600">Frequently Asked Questions</p>
-                <h2 class="section-title text-2xl sm:text-3xl font-black mt-2 mb-4 text-blue-900 inline-flex items-center gap-2"><ion-icon name="help-circle-outline" class="icon-lg"></ion-icon>Essential Answers for Import Buyers</h2>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-5 text-sm sm:text-base text-blue-800">
-                    <details class="group rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-5 transition hover:bg-white/10 dark:hover:border-green-400/40">
-                        <summary class="flex cursor-pointer items-center justify-between gap-4 group-hover:text-green-400 transition">
-                            <div class="flex items-center gap-3">
-                                <span class="flex h-8 w-8 items-center justify-center rounded-full bg-green-400/20 text-green-400 text-sm font-bold shrink-0">01</span>
+                <h2 class="section-title text-2xl sm:text-3xl font-black mt-2 mb-3 text-blue-900 inline-flex items-center gap-2"><ion-icon name="help-circle-outline" class="icon-lg"></ion-icon>Essential Answers for Import Buyers</h2>
+                <p class="text-sm sm:text-base text-blue-700 max-w-2xl mb-5">A concise guide to the questions buyers ask most often, presented with clear answers and no unnecessary noise.</p>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-4 text-sm sm:text-base text-blue-800">
+                    <details class="group rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-4 sm:p-5 transition hover:bg-white/10 dark:hover:border-green-400/40">
+                        <summary class="flex cursor-pointer items-center justify-between gap-3 group-hover:text-green-400 transition">
+                            <div class="flex items-center gap-2.5 sm:gap-3">
+                                <span class="flex h-7 w-7 sm:h-8 sm:w-8 items-center justify-center rounded-full bg-green-400/20 text-green-400 text-[0.68rem] sm:text-sm font-bold shrink-0">01</span>
                                 <span class="text-sm sm:text-base font-semibold">How does the process work?</span>
                             </div>
                             <ion-icon name="chevron-down-outline" class="text-xl text-green-400 transition-transform group-open:rotate-180"></ion-icon>
                         </summary>
-                        <div class="mt-4 pl-11 ui-muted text-sm leading-relaxed">
+                        <div class="mt-3 pl-9 sm:pl-11 ui-muted text-sm leading-relaxed">
                             We source, purchase, ship, clear, and deliver your vehicle end to end.
                         </div>
                     </details>
 
-                    <details class="group rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-5 transition hover:bg-white/10 dark:hover:border-green-400/40">
-                        <summary class="flex cursor-pointer items-center justify-between gap-4 group-hover:text-green-400 transition">
-                            <div class="flex items-center gap-3">
-                                <span class="flex h-8 w-8 items-center justify-center rounded-full bg-green-400/20 text-green-400 text-sm font-bold shrink-0">02</span>
+                    <details class="group rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-4 sm:p-5 transition hover:bg-white/10 dark:hover:border-green-400/40">
+                        <summary class="flex cursor-pointer items-center justify-between gap-3 group-hover:text-green-400 transition">
+                            <div class="flex items-center gap-2.5 sm:gap-3">
+                                <span class="flex h-7 w-7 sm:h-8 sm:w-8 items-center justify-center rounded-full bg-green-400/20 text-green-400 text-[0.68rem] sm:text-sm font-bold shrink-0">02</span>
                                 <span class="text-sm sm:text-base font-semibold">What documents do I need?</span>
                             </div>
                             <ion-icon name="chevron-down-outline" class="text-xl text-green-400 transition-transform group-open:rotate-180"></ion-icon>
                         </summary>
-                        <div class="mt-4 pl-11 ui-muted text-sm leading-relaxed">
+                        <div class="mt-3 pl-9 sm:pl-11 ui-muted text-sm leading-relaxed">
                             A valid ID or passport, KRA PIN, and proof of purchase are the core requirements. We handle the clearance paperwork.
                         </div>
                     </details>
 
-                    <details class="group rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-5 transition hover:bg-white/10 dark:hover:border-green-400/40">
-                        <summary class="flex cursor-pointer items-center justify-between gap-4 group-hover:text-green-400 transition">
-                            <div class="flex items-center gap-3">
-                                <span class="flex h-8 w-8 items-center justify-center rounded-full bg-green-400/20 text-green-400 text-sm font-bold shrink-0">03</span>
+                    <details class="group rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-4 sm:p-5 transition hover:bg-white/10 dark:hover:border-green-400/40">
+                        <summary class="flex cursor-pointer items-center justify-between gap-3 group-hover:text-green-400 transition">
+                            <div class="flex items-center gap-2.5 sm:gap-3">
+                                <span class="flex h-7 w-7 sm:h-8 sm:w-8 items-center justify-center rounded-full bg-green-400/20 text-green-400 text-[0.68rem] sm:text-sm font-bold shrink-0">03</span>
                                 <span class="text-sm sm:text-base font-semibold">Is full payment required upfront?</span>
                             </div>
                             <ion-icon name="chevron-down-outline" class="text-xl text-green-400 transition-transform group-open:rotate-180"></ion-icon>
                         </summary>
-                        <div class="mt-4 pl-11 ui-muted text-sm leading-relaxed">
+                        <div class="mt-3 pl-9 sm:pl-11 ui-muted text-sm leading-relaxed">
                             No. We work on a 70% deposit, then 30% plus clearing charges on arrival in Mombasa.
                         </div>
                     </details>
 
-                    <details class="group rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-5 transition hover:bg-white/10 dark:hover:border-green-400/40">
-                        <summary class="flex cursor-pointer items-center justify-between gap-4 group-hover:text-green-400 transition">
-                            <div class="flex items-center gap-3">
-                                <span class="flex h-8 w-8 items-center justify-center rounded-full bg-green-400/20 text-green-400 text-sm font-bold shrink-0">04</span>
+                    <details class="group rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-4 sm:p-5 transition hover:bg-white/10 dark:hover:border-green-400/40">
+                        <summary class="flex cursor-pointer items-center justify-between gap-3 group-hover:text-green-400 transition">
+                            <div class="flex items-center gap-2.5 sm:gap-3">
+                                <span class="flex h-7 w-7 sm:h-8 sm:w-8 items-center justify-center rounded-full bg-green-400/20 text-green-400 text-[0.68rem] sm:text-sm font-bold shrink-0">04</span>
                                 <span class="text-sm sm:text-base font-semibold">Are there hidden costs?</span>
                             </div>
                             <ion-icon name="chevron-down-outline" class="text-xl text-green-400 transition-transform group-open:rotate-180"></ion-icon>
                         </summary>
-                        <div class="mt-4 pl-11 ui-muted text-sm leading-relaxed">
+                        <div class="mt-3 pl-9 sm:pl-11 ui-muted text-sm leading-relaxed">
                             No. Your quotation is transparent and includes shipping, duty, port charges, and clearance.
                         </div>
                     </details>
 
-                    <details class="group rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-5 transition hover:bg-white/10 dark:hover:border-green-400/40">
-                        <summary class="flex cursor-pointer items-center justify-between gap-4 group-hover:text-green-400 transition">
-                            <div class="flex items-center gap-3">
-                                <span class="flex h-8 w-8 items-center justify-center rounded-full bg-green-400/20 text-green-400 text-sm font-bold shrink-0">05</span>
+                    <details class="group rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-4 sm:p-5 transition hover:bg-white/10 dark:hover:border-green-400/40">
+                        <summary class="flex cursor-pointer items-center justify-between gap-3 group-hover:text-green-400 transition">
+                            <div class="flex items-center gap-2.5 sm:gap-3">
+                                <span class="flex h-7 w-7 sm:h-8 sm:w-8 items-center justify-center rounded-full bg-green-400/20 text-green-400 text-[0.68rem] sm:text-sm font-bold shrink-0">05</span>
                                 <span class="text-sm sm:text-base font-semibold">Can I track my vehicle?</span>
                             </div>
                             <ion-icon name="chevron-down-outline" class="text-xl text-green-400 transition-transform group-open:rotate-180"></ion-icon>
                         </summary>
-                        <div class="mt-4 pl-11 ui-muted text-sm leading-relaxed">
+                        <div class="mt-3 pl-9 sm:pl-11 ui-muted text-sm leading-relaxed">
                             Yes. We share shipping updates so you can follow progress until delivery in Kenya.
                         </div>
                     </details>
 
-                    <details class="group rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-5 transition hover:bg-white/10 dark:hover:border-green-400/40">
-                        <summary class="flex cursor-pointer items-center justify-between gap-4 group-hover:text-green-400 transition">
-                            <div class="flex items-center gap-3">
-                                <span class="flex h-8 w-8 items-center justify-center rounded-full bg-green-400/20 text-green-400 text-sm font-bold shrink-0">06</span>
+                    <details class="group rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-4 sm:p-5 transition hover:bg-white/10 dark:hover:border-green-400/40">
+                        <summary class="flex cursor-pointer items-center justify-between gap-3 group-hover:text-green-400 transition">
+                            <div class="flex items-center gap-2.5 sm:gap-3">
+                                <span class="flex h-7 w-7 sm:h-8 sm:w-8 items-center justify-center rounded-full bg-green-400/20 text-green-400 text-[0.68rem] sm:text-sm font-bold shrink-0">06</span>
                                 <span class="text-sm sm:text-base font-semibold">What vehicle types can I import?</span>
                             </div>
                             <ion-icon name="chevron-down-outline" class="text-xl text-green-400 transition-transform group-open:rotate-180"></ion-icon>
                         </summary>
-                        <div class="mt-4 pl-11 ui-muted text-sm leading-relaxed">
+                        <div class="mt-3 pl-9 sm:pl-11 ui-muted text-sm leading-relaxed">
                             We import cars, SUVs, vans, trucks, and other KEBS-compliant vehicles.
                         </div>
                     </details>
 
-                    <details class="group rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-5 transition hover:bg-white/10 dark:hover:border-green-400/40">
-                        <summary class="flex cursor-pointer items-center justify-between gap-4 group-hover:text-green-400 transition">
-                            <div class="flex items-center gap-3">
-                                <span class="flex h-8 w-8 items-center justify-center rounded-full bg-green-400/20 text-green-400 text-sm font-bold shrink-0">07</span>
+                    <details class="group rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-4 sm:p-5 transition hover:bg-white/10 dark:hover:border-green-400/40">
+                        <summary class="flex cursor-pointer items-center justify-between gap-3 group-hover:text-green-400 transition">
+                            <div class="flex items-center gap-2.5 sm:gap-3">
+                                <span class="flex h-7 w-7 sm:h-8 sm:w-8 items-center justify-center rounded-full bg-green-400/20 text-green-400 text-[0.68rem] sm:text-sm font-bold shrink-0">07</span>
                                 <span class="text-sm sm:text-base font-semibold">Are vehicles inspected?</span>
                             </div>
                             <ion-icon name="chevron-down-outline" class="text-xl text-green-400 transition-transform group-open:rotate-180"></ion-icon>
                         </summary>
-                        <div class="mt-4 pl-11 ui-muted text-sm leading-relaxed">
+                        <div class="mt-3 pl-9 sm:pl-11 ui-muted text-sm leading-relaxed">
                             Yes. Every unit goes through pre-shipment inspection to confirm quality and compliance.
                         </div>
                     </details>
 
-                    <details class="group rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-5 transition hover:bg-white/10 dark:hover:border-green-400/40">
-                        <summary class="flex cursor-pointer items-center justify-between gap-4 group-hover:text-green-400 transition">
-                            <div class="flex items-center gap-3">
-                                <span class="flex h-8 w-8 items-center justify-center rounded-full bg-green-400/20 text-green-400 text-sm font-bold shrink-0">08</span>
+                    <details class="group rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-4 sm:p-5 transition hover:bg-white/10 dark:hover:border-green-400/40">
+                        <summary class="flex cursor-pointer items-center justify-between gap-3 group-hover:text-green-400 transition">
+                            <div class="flex items-center gap-2.5 sm:gap-3">
+                                <span class="flex h-7 w-7 sm:h-8 sm:w-8 items-center justify-center rounded-full bg-green-400/20 text-green-400 text-[0.68rem] sm:text-sm font-bold shrink-0">08</span>
                                 <span class="text-sm sm:text-base font-semibold">How long does it take?</span>
                             </div>
                             <ion-icon name="chevron-down-outline" class="text-xl text-green-400 transition-transform group-open:rotate-180"></ion-icon>
                         </summary>
-                        <div class="mt-4 pl-11 ui-muted text-sm leading-relaxed">
+                        <div class="mt-3 pl-9 sm:pl-11 ui-muted text-sm leading-relaxed">
                             Usually 45-60 days from selection to delivery, depending on sourcing and port processing.
                         </div>
                     </details>
 
-                    <details class="group rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-5 transition hover:bg-white/10 dark:hover:border-green-400/40">
-                        <summary class="flex cursor-pointer items-center justify-between gap-4 group-hover:text-green-400 transition">
-                            <div class="flex items-center gap-3">
-                                <span class="flex h-8 w-8 items-center justify-center rounded-full bg-green-400/20 text-green-400 text-sm font-bold shrink-0">09</span>
+                    <details class="group rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-4 sm:p-5 transition hover:bg-white/10 dark:hover:border-green-400/40">
+                        <summary class="flex cursor-pointer items-center justify-between gap-3 group-hover:text-green-400 transition">
+                            <div class="flex items-center gap-2.5 sm:gap-3">
+                                <span class="flex h-7 w-7 sm:h-8 sm:w-8 items-center justify-center rounded-full bg-green-400/20 text-green-400 text-[0.68rem] sm:text-sm font-bold shrink-0">09</span>
                                 <span class="text-sm sm:text-base font-semibold">Can I finance my import?</span>
                             </div>
                             <ion-icon name="chevron-down-outline" class="text-xl text-green-400 transition-transform group-open:rotate-180"></ion-icon>
                         </summary>
-                        <div class="mt-4 pl-11 ui-muted text-sm leading-relaxed">
+                        <div class="mt-3 pl-9 sm:pl-11 ui-muted text-sm leading-relaxed">
                             Yes. We can guide you to financing options based on eligibility.
                         </div>
                     </details>
 
-                    <details class="group rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-5 transition hover:bg-white/10 dark:hover:border-green-400/40">
-                        <summary class="flex cursor-pointer items-center justify-between gap-4 group-hover:text-green-400 transition">
-                            <div class="flex items-center gap-3">
-                                <span class="flex h-8 w-8 items-center justify-center rounded-full bg-green-400/20 text-green-400 text-sm font-bold shrink-0">10</span>
+                    <details class="group rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-4 sm:p-5 transition hover:bg-white/10 dark:hover:border-green-400/40">
+                        <summary class="flex cursor-pointer items-center justify-between gap-3 group-hover:text-green-400 transition">
+                            <div class="flex items-center gap-2.5 sm:gap-3">
+                                <span class="flex h-7 w-7 sm:h-8 sm:w-8 items-center justify-center rounded-full bg-green-400/20 text-green-400 text-[0.68rem] sm:text-sm font-bold shrink-0">10</span>
                                 <span class="text-sm sm:text-base font-semibold">Do vehicles come with warranty?</span>
                             </div>
                             <ion-icon name="chevron-down-outline" class="text-xl text-green-400 transition-transform group-open:rotate-180"></ion-icon>
                         </summary>
-                        <div class="mt-4 pl-11 ui-muted text-sm leading-relaxed">
+                        <div class="mt-3 pl-9 sm:pl-11 ui-muted text-sm leading-relaxed">
                             Some do. Where available, we’ll advise on manufacturer, dealer, and extended warranty options.
                         </div>
                     </details>
