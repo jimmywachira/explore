@@ -139,6 +139,16 @@
                         <p class="text-sm text-slate-600">Happy Client Story</p>
                     </div>
                 </article>
+
+                <article class="group overflow-hidden rounded-3xl border border-slate-200 bg-slate-50/70 transition-all duration-300 hover:border-emerald-400/50 hover:shadow-xl">
+                    <div class="aspect-video w-full overflow-hidden">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/OLlR2MyttAg" title="Client Testimonial 5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                    </div>
+                    <div class="p-5 sm:p-6">
+                        <p class="text-base font-bold mb-1">Another Happy Client Story</p>
+                        <p class="text-sm text-slate-600">Vehicle Import Customer</p>
+                    </div>
+                </article>
             </div>
         </section>
 
