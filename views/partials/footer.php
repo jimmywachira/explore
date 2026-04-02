@@ -62,6 +62,12 @@
                             </a>
                         </li>
                         <li>
+                            <a href="/testimonials.php" class="group flex items-center gap-2 text-black hover:text-blue-600 transition-colors duration-300">
+                                <ion-icon name="chevron-forward-outline" class="opacity-0 group-hover:opacity-100 transition-opacity -ml-2"></ion-icon>
+                                <span class="group-hover:translate-x-1 transition-transform">Testimonials</span>
+                            </a>
+                        </li>
+                        <li>
                             <a href="/about.php" class="group flex items-center gap-2 text-black hover:text-blue-600 transition-colors duration-300">
                                 <ion-icon name="chevron-forward-outline" class="opacity-0 group-hover:opacity-100 transition-opacity -ml-2"></ion-icon>
                                 <span class="group-hover:translate-x-1 transition-transform">About Us</span>
