@@ -126,18 +126,18 @@
 
             <div class="page-surface-strong rounded-3xl p-6 sm:p-8 shadow-sm">
                 <p class="section-kicker text-blue-600">Frequently Asked Questions</p>
-                <h2 class="section-title text-2xl sm:text-3xl font-black mt-2 mb-4 text-blue-900 inline-flex items-center gap-2"><ion-icon name="help-circle-outline" class="icon-lg"></ion-icon>Quick Answers About Japanese Car Imports</h2>
+                <h2 class="section-title text-2xl sm:text-3xl font-black mt-2 mb-4 text-blue-900 inline-flex items-center gap-2"><ion-icon name="help-circle-outline" class="icon-lg"></ion-icon>Essential Answers for Import Buyers</h2>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-5 text-sm sm:text-base text-blue-800">
                     <details class="group rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-5 transition hover:bg-white/10 dark:hover:border-green-400/40">
                         <summary class="flex cursor-pointer items-center justify-between gap-4 group-hover:text-green-400 transition">
                             <div class="flex items-center gap-3">
                                 <span class="flex h-8 w-8 items-center justify-center rounded-full bg-green-400/20 text-green-400 text-sm font-bold shrink-0">01</span>
-                                <span class="text-sm sm:text-base font-semibold">How does car importation work?</span>
+                                <span class="text-sm sm:text-base font-semibold">How does the process work?</span>
                             </div>
                             <ion-icon name="chevron-down-outline" class="text-xl text-green-400 transition-transform group-open:rotate-180"></ion-icon>
                         </summary>
                         <div class="mt-4 pl-11 ui-muted text-sm leading-relaxed">
-                            We help you source your preferred vehicle from overseas dealers, handle the purchase, shipping, and clearance at the port before delivery to you.
+                            We source, purchase, ship, clear, and deliver your vehicle end to end.
                         </div>
                     </details>
 
@@ -145,12 +145,12 @@
                         <summary class="flex cursor-pointer items-center justify-between gap-4 group-hover:text-green-400 transition">
                             <div class="flex items-center gap-3">
                                 <span class="flex h-8 w-8 items-center justify-center rounded-full bg-green-400/20 text-green-400 text-sm font-bold shrink-0">02</span>
-                                <span class="text-sm sm:text-base font-semibold">What documents are required?</span>
+                                <span class="text-sm sm:text-base font-semibold">What documents do I need?</span>
                             </div>
                             <ion-icon name="chevron-down-outline" class="text-xl text-green-400 transition-transform group-open:rotate-180"></ion-icon>
                         </summary>
                         <div class="mt-4 pl-11 ui-muted text-sm leading-relaxed">
-                            You'll need a valid national ID or passport, KRA PIN certificate, and proof of purchase. We'll assist with customs clearance documents.
+                            A valid ID or passport, KRA PIN, and proof of purchase are the core requirements. We handle the clearance paperwork.
                         </div>
                     </details>
 
@@ -158,12 +158,12 @@
                         <summary class="flex cursor-pointer items-center justify-between gap-4 group-hover:text-green-400 transition">
                             <div class="flex items-center gap-3">
                                 <span class="flex h-8 w-8 items-center justify-center rounded-full bg-green-400/20 text-green-400 text-sm font-bold shrink-0">03</span>
-                                <span class="text-sm sm:text-base font-semibold">Do I pay upfront?</span>
+                                <span class="text-sm sm:text-base font-semibold">Is full payment required upfront?</span>
                             </div>
                             <ion-icon name="chevron-down-outline" class="text-xl text-green-400 transition-transform group-open:rotate-180"></ion-icon>
                         </summary>
                         <div class="mt-4 pl-11 ui-muted text-sm leading-relaxed">
-                            No. We offer flexible payment: 70% deposit when confirmed, 30% plus clearing charges when your vehicle arrives at the Port of Mombasa.
+                            No. We work on a 70% deposit, then 30% plus clearing charges on arrival in Mombasa.
                         </div>
                     </details>
 
@@ -176,7 +176,7 @@
                             <ion-icon name="chevron-down-outline" class="text-xl text-green-400 transition-transform group-open:rotate-180"></ion-icon>
                         </summary>
                         <div class="mt-4 pl-11 ui-muted text-sm leading-relaxed">
-                            No. We provide transparent quotations upfront including shipping, customs duty, port charges, and clearance fees.
+                            No. Your quotation is transparent and includes shipping, duty, port charges, and clearance.
                         </div>
                     </details>
 
@@ -189,7 +189,7 @@
                             <ion-icon name="chevron-down-outline" class="text-xl text-green-400 transition-transform group-open:rotate-180"></ion-icon>
                         </summary>
                         <div class="mt-4 pl-11 ui-muted text-sm leading-relaxed">
-                            Yes, we provide shipping details and real-time updates so you can track your vehicle until it arrives in Kenya.
+                            Yes. We share shipping updates so you can follow progress until delivery in Kenya.
                         </div>
                     </details>
 
@@ -202,7 +202,7 @@
                             <ion-icon name="chevron-down-outline" class="text-xl text-green-400 transition-transform group-open:rotate-180"></ion-icon>
                         </summary>
                         <div class="mt-4 pl-11 ui-muted text-sm leading-relaxed">
-                            We help import cars, SUVs, vans, trucks, and specialized vehicles that meet KEBS age and standards requirements.
+                            We import cars, SUVs, vans, trucks, and other KEBS-compliant vehicles.
                         </div>
                     </details>
 
@@ -210,12 +210,12 @@
                         <summary class="flex cursor-pointer items-center justify-between gap-4 group-hover:text-green-400 transition">
                             <div class="flex items-center gap-3">
                                 <span class="flex h-8 w-8 items-center justify-center rounded-full bg-green-400/20 text-green-400 text-sm font-bold shrink-0">07</span>
-                                <span class="text-sm sm:text-base font-semibold">Are cars inspected before arrival?</span>
+                                <span class="text-sm sm:text-base font-semibold">Are vehicles inspected?</span>
                             </div>
                             <ion-icon name="chevron-down-outline" class="text-xl text-green-400 transition-transform group-open:rotate-180"></ion-icon>
                         </summary>
                         <div class="mt-4 pl-11 ui-muted text-sm leading-relaxed">
-                            Yes. All vehicles pass pre-shipment inspection (PSI) ensuring they meet Kenya's safety and environmental standards.
+                            Yes. Every unit goes through pre-shipment inspection to confirm quality and compliance.
                         </div>
                     </details>
 
@@ -223,12 +223,12 @@
                         <summary class="flex cursor-pointer items-center justify-between gap-4 group-hover:text-green-400 transition">
                             <div class="flex items-center gap-3">
                                 <span class="flex h-8 w-8 items-center justify-center rounded-full bg-green-400/20 text-green-400 text-sm font-bold shrink-0">08</span>
-                                <span class="text-sm sm:text-base font-semibold">How long does the process take?</span>
+                                <span class="text-sm sm:text-base font-semibold">How long does it take?</span>
                             </div>
                             <ion-icon name="chevron-down-outline" class="text-xl text-green-400 transition-transform group-open:rotate-180"></ion-icon>
                         </summary>
                         <div class="mt-4 pl-11 ui-muted text-sm leading-relaxed">
-                            Typically 45-60 days from selection to delivery, including sourcing, shipping, port clearance, NTSA registration, and final delivery.
+                            Usually 45-60 days from selection to delivery, depending on sourcing and port processing.
                         </div>
                     </details>
 
@@ -236,12 +236,12 @@
                         <summary class="flex cursor-pointer items-center justify-between gap-4 group-hover:text-green-400 transition">
                             <div class="flex items-center gap-3">
                                 <span class="flex h-8 w-8 items-center justify-center rounded-full bg-green-400/20 text-green-400 text-sm font-bold shrink-0">09</span>
-                                <span class="text-sm sm:text-base font-semibold">Can I finance my imported car?</span>
+                                <span class="text-sm sm:text-base font-semibold">Can I finance my import?</span>
                             </div>
                             <ion-icon name="chevron-down-outline" class="text-xl text-green-400 transition-transform group-open:rotate-180"></ion-icon>
                         </summary>
                         <div class="mt-4 pl-11 ui-muted text-sm leading-relaxed">
-                            Yes, we work with financial partners offering car import financing solutions depending on your eligibility.
+                            Yes. We can guide you to financing options based on eligibility.
                         </div>
                     </details>
 
@@ -254,7 +254,7 @@
                             <ion-icon name="chevron-down-outline" class="text-xl text-green-400 transition-transform group-open:rotate-180"></ion-icon>
                         </summary>
                         <div class="mt-4 pl-11 ui-muted text-sm leading-relaxed">
-                            Yes, some vehicles come with manufacturer or dealer warranties, and we guide you on extended warranty options.
+                            Some do. Where available, we’ll advise on manufacturer, dealer, and extended warranty options.
                         </div>
                     </details>
                 </div>
