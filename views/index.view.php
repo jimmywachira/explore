@@ -69,7 +69,7 @@ require_once('views/partials/banner.php');
             <div class="flex flex-wrap items-end justify-between gap-4 mb-5 sm:mb-6">
                 <div class="max-w-2xl">
                     <p class="section-kicker text-xs font-bold text-blue-600">Featured Inventory</p>
-                    <h2 class="section-title text-2xl sm:text-3xl lg:text-4xl font-black mt-2 mb-2 headline-accent inline-flex items-center gap-2"><ion-icon name="images-outline" class="icon-lg"></ion-icon>Vehicle Showcase</h2>
+                    <h2 class="section-title text-2xl sm:text-3xl lg:text-4xl font-black mt-2 mb-2 headline-accent inline-flex items-center gap-2"><ion-icon name="images-outline" class="icon-lg"></ion-icon>Instagram Vehicle Showcase</h2>
                     <p class="text-black sm:text-base">Tap any vehicle image to open a full premium detail page with specs, pricing guidance, and consultation options.</p>
                 </div>
                 <a href="/contact.php" class="inline-flex items-center gap-2 rounded-xl border border-blue-200 bg-white px-4 py-2.5 text-blue-900 font-bold hover:bg-blue-50 transition">
@@ -81,12 +81,14 @@ require_once('views/partials/banner.php');
             <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-5">
                 <?php foreach ($featuredCars as $car): ?>
                     <article class="group overflow-hidden rounded-3xl page-surface transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5">
-                        <a href="/car-details-<?= urlencode($car['id']) ?>.html" class="block w-full overflow-hidden bg-white">
-                            <img
-                                src="<?= htmlspecialchars($car['image'], ENT_QUOTES, 'UTF-8') ?>"
-                                alt="Featured vehicle image"
-                                loading="lazy"
-                                class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-[1.04]">
+                        <a href="/car-details.php?car=<?= urlencode($car['id']) ?>" class="block w-full overflow-hidden bg-white">
+                            <div class="relative">
+                                <img
+                                    src="<?= htmlspecialchars($car['image'], ENT_QUOTES, 'UTF-8') ?>"
+                                    alt="<?= htmlspecialchars($car['name'], ENT_QUOTES, 'UTF-8') ?>"
+                                    loading="lazy"
+                                    class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-[1.04]">
+                            </div>
                         </a>
                     </article>
                 <?php endforeach; ?>

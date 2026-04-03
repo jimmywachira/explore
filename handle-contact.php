@@ -1,18 +1,6 @@
 <?php
 // handle-contact.php - Form submission handler for contact form
 
-if (session_status() !== PHP_SESSION_ACTIVE && !headers_sent()) {
-    $isHttpsRequest = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off');
-    session_set_cookie_params([
-        'lifetime' => 0,
-        'path' => '/',
-        'secure' => $isHttpsRequest,
-        'httponly' => true,
-        'samesite' => 'Lax',
-    ]);
-    session_start();
-}
-
 function wantsJsonResponse(): bool
 {
     $accept = $_SERVER['HTTP_ACCEPT'] ?? '';
@@ -118,12 +106,6 @@ function sendResponse(bool $success, string $message): void
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     sendResponse(false, 'Invalid request method.');
-}
-
-$csrfToken = (string) ($_POST['csrf_token'] ?? '');
-$sessionToken = (string) ($_SESSION['csrf_token'] ?? '');
-if ($csrfToken === '' || $sessionToken === '' || !hash_equals($sessionToken, $csrfToken)) {
-    sendResponse(false, 'Security validation failed. Please refresh the page and try again.');
 }
 
 $honeypot = trim((string) ($_POST['website'] ?? ''));
