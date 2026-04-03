@@ -81,7 +81,7 @@ require_once('views/partials/banner.php');
             <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-5">
                 <?php foreach ($featuredCars as $car): ?>
                     <article class="group overflow-hidden rounded-3xl page-surface transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5">
-                        <a href="/car-details.php?car=<?= urlencode($car['id']) ?>" class="block w-full overflow-hidden bg-white">
+                        <a href="/car-details-<?= urlencode($car['id']) ?>.html" class="block w-full overflow-hidden bg-white">
                             <img
                                 src="<?= htmlspecialchars($car['image'], ENT_QUOTES, 'UTF-8') ?>"
                                 alt="Featured vehicle image"

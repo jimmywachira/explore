@@ -194,6 +194,8 @@
                     aria-live="polite"></div>
 
                 <form id="contactForm" action="/handle-contact.php" method="POST" class="space-y-5 sm:space-y-6" novalidate>
+                    <input type="hidden" name="csrf_token" value="7bd13ba5520d9e1fc5da6b28644202818889177df83329fd8863de3d10caada9" />
+
                     <div aria-hidden="true" class="absolute -left-[9999px] top-auto h-0 w-0 overflow-hidden">
                         <label for="website">Website</label>
                         <input id="website" name="website" type="text" tabindex="-1" autocomplete="off" />

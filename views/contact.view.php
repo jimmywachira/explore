@@ -4,6 +4,10 @@ require_once('views/partials/banner.php');
 
 $status = isset($_GET['status']) ? (string) $_GET['status'] : '';
 $statusMessage = isset($_GET['message']) ? (string) $_GET['message'] : '';
+
+if (!isset($_SESSION['csrf_token']) || !is_string($_SESSION['csrf_token']) || $_SESSION['csrf_token'] === '') {
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+}
 ?>
 
 <main class="w-full flex-1 text-blue-900">
@@ -38,6 +42,8 @@ $statusMessage = isset($_GET['message']) ? (string) $_GET['message'] : '';
                     aria-live="polite"><?= htmlspecialchars($statusMessage, ENT_QUOTES, 'UTF-8') ?></div>
 
                 <form id="contactForm" action="/handle-contact.php" method="POST" class="space-y-5 sm:space-y-6" novalidate>
+                    <input type="hidden" name="csrf_token" value="<?= htmlspecialchars($_SESSION['csrf_token'], ENT_QUOTES, 'UTF-8') ?>" />
+
                     <div aria-hidden="true" class="absolute -left-[9999px] top-auto h-0 w-0 overflow-hidden">
                         <label for="website">Website</label>
                         <input id="website" name="website" type="text" tabindex="-1" autocomplete="off" />
