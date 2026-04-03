@@ -13,6 +13,7 @@ $httpsFlag = str_starts_with($siteUrl, 'https://') ? 'on' : 'off';
 
 $pages = [
     ['controller' => 'index.php', 'uri' => '/', 'output' => 'index.html'],
+    ['controller' => 'car-details.php', 'uri' => '/car-details', 'output' => 'car-details.html'],
     ['controller' => 'about.php', 'uri' => '/about', 'output' => 'about.html'],
     ['controller' => 'contact.php', 'uri' => '/contact', 'output' => 'contact.html'],
     ['controller' => 'testimonials.php', 'uri' => '/testimonials', 'output' => 'testimonials.html'],
@@ -24,6 +25,7 @@ $pages = [
 
 $linkReplacements = [
     '/index.php' => '/',
+    '/car-details.php' => '/car-details',
     '/about.php' => '/about',
     '/contact.php' => '/contact',
     '/testimonials.php' => '/testimonials',
@@ -55,6 +57,7 @@ foreach ($pages as $page) {
 
 $entries = [
     ['path' => '/', 'priority' => '1.0', 'changefreq' => 'weekly'],
+    ['path' => '/car-details', 'priority' => '0.8', 'changefreq' => 'weekly'],
     ['path' => '/about', 'priority' => '0.8', 'changefreq' => 'monthly'],
     ['path' => '/contact', 'priority' => '0.9', 'changefreq' => 'monthly'],
     ['path' => '/testimonials', 'priority' => '0.8', 'changefreq' => 'monthly'],

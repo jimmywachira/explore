@@ -8,6 +8,7 @@ $today = date('Y-m-d');
 
 $pages = [
     ['loc' => '/', 'priority' => '1.0', 'changefreq' => 'weekly'],
+    ['loc' => '/car-details.php', 'priority' => '0.8', 'changefreq' => 'weekly'],
     ['loc' => '/about.php', 'priority' => '0.8', 'changefreq' => 'monthly'],
     ['loc' => '/contact.php', 'priority' => '0.9', 'changefreq' => 'monthly'],
     ['loc' => '/testimonials.php', 'priority' => '0.8', 'changefreq' => 'monthly'],
