@@ -1,5 +1,5 @@
 ﻿<!-- Premium Footer Section -->
-<footer class="relative w-full overflow-hidden transition-colors duration-300 mt-10 sm:mt-14">
+<footer class="relative w-full overflow-hidden transition-colors duration-300 mt-6 sm:mt-8">
     <!-- Decorative Background Elements -->
     <div class="absolute inset-0 overflow-hidden pointer-events-none">
         <div class="absolute top-0 right-0 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl opacity-30"></div>
@@ -8,11 +8,11 @@
 
     <div class="relative z-10">
         <!-- Main Footer Content -->
-        <div class="w-full lg:w-4/5 xl:w-3/4 mx-auto px-4 sm:px-6 lg:px-8 pt-14 sm:pt-16 lg:pt-20 pb-8 sm:pb-10">
+        <div class="w-full lg:w-4/5 xl:w-3/4 mx-auto px-4 sm:px-6 lg:px-8 pt-9 sm:pt-10 lg:pt-12 pb-5 sm:pb-6">
             <!-- Top Grid Section -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12 mb-12 sm:mb-14">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-7 lg:gap-8 mb-7 sm:mb-8">
                 <!-- Brand Column -->
-                <div class="space-y-6">
+                <div class="space-y-4">
                     <div class="space-y-3">
                         <div class="flex items-center gap-3">
                             <div class="w-12 h-12 rounded-full bg-linear-to-br from-green-500 to-blue-600 flex items-center justify-center shadow-lg shadow-blue-500/20">
@@ -29,7 +29,7 @@
                     </div>
 
                     <!-- Social Links -->
-                    <div class="flex gap-3 pt-2">
+                    <div class="flex gap-2 pt-1">
                         <a href="https://www.youtube.com/@Explore254Discover" target="_blank" class="group p-2 w-10 h-10 rounded-full bg-white/85 hover:bg-red-600/10 flex items-center justify-center transition-all duration-300 border border-red-500/20 hover:border-blue-600" aria-label="YouTube">
                             <ion-icon name="logo-youtube" class="text-red-600 group-hover:text-red-700 icon-lg"></ion-icon>
                         </a>
@@ -49,12 +49,12 @@
                 </div>
 
                 <!-- Quick Links -->
-                <div class="space-y-5">
+                <div class="space-y-4">
                     <div class="flex items-center gap-3">
                         <div class="w-8 h-1 bg-linear-to-r from-green-500 to-blue-600 rounded-full"></div>
                         <h3 class="text-base sm:text-lg font-bold text-black uppercase tracking-wide">Quick Links</h3>
                     </div>
-                    <ul class="space-y-3">
+                    <ul class="space-y-2.5">
                         <li>
                             <a href="/" class="group flex items-center gap-2 text-black hover:text-blue-600 transition-colors duration-300">
                                 <ion-icon name="chevron-forward-outline" class="opacity-0 group-hover:opacity-100 transition-opacity -ml-2"></ion-icon>
@@ -83,12 +83,12 @@
                 </div>
 
                 <!-- Services -->
-                <div class="space-y-5">
+                <div class="space-y-4">
                     <div class="flex items-center gap-3">
                         <div class="w-8 h-1 bg-linear-to-r from-green-500 to-blue-600 rounded-full"></div>
                         <h3 class="text-base sm:text-lg font-bold text-black uppercase tracking-wide">Services</h3>
                     </div>
-                    <ul class="space-y-3">
+                    <ul class="space-y-2.5">
                         <li>
                             <a href="/car-importation.php" class="group flex items-center gap-2 text-black hover:text-blue-600 transition-colors duration-300">
                                 <ion-icon name="chevron-forward-outline" class="opacity-0 group-hover:opacity-100 transition-opacity -ml-2"></ion-icon>
@@ -117,20 +117,20 @@
                 </div>
 
                 <!-- Contact Info -->
-                <div class="space-y-5">
+                <div class="space-y-4">
                     <div class="flex items-center gap-3">
                         <div class="w-8 h-1 bg-linear-to-r from-green-500 to-blue-600 rounded-full"></div>
                         <h3 class="text-base sm:text-lg font-bold text-black uppercase tracking-wide">Connect</h3>
                     </div>
-                    <div class="space-y-4">
-                        <a href="tel:+254757356989" class="group flex items-start gap-3 p-3 rounded-lg bg-white/85 hover:bg-blue-600/10 transition-all duration-300 border border-green-500/20 hover:border-blue-600">
+                    <div class="space-y-3">
+                        <a href="tel:+254757356989" class="group flex items-start gap-3 p-2.5 rounded-lg bg-white/85 hover:bg-blue-600/10 transition-all duration-300 border border-green-500/20 hover:border-blue-600">
                             <ion-icon name="call-outline" class="text-blue-600 shrink-0 mt-0.5 icon-lg group-hover:scale-110 transition-transform"></ion-icon>
                             <div class="text-sm">
                                 <p class="text-blue-500 text-xs uppercase tracking-wider mb-0.5">Phone</p>
                                 <p class="text-black font-semibold">+254 757 356 989</p>
                             </div>
                         </a>
-                        <a href="mailto:info@xplorecar.com" class="group flex items-start gap-3 p-3 rounded-lg bg-white/85 hover:bg-green-500/10 transition-all duration-300 border border-green-500/20 hover:border-green-500">
+                        <a href="mailto:info@xplorecar.com" class="group flex items-start gap-3 p-2.5 rounded-lg bg-white/85 hover:bg-green-500/10 transition-all duration-300 border border-green-500/20 hover:border-green-500">
                             <ion-icon name="mail-outline" class="text-green-500 shrink-0 mt-0.5 icon-lg group-hover:scale-110 transition-transform"></ion-icon>
                             <div class="text-sm">
                                 <p class="text-blue-500 text-xs uppercase tracking-wider mb-0.5">Email</p>
@@ -142,10 +142,10 @@
             </div>
 
             <!-- Divider -->
-            <div class="h-px bg-linear-to-r from-transparent via-blue-600/20 to-transparent my-10 sm:my-12"></div>
+            <div class="h-px bg-linear-to-r from-transparent via-blue-600/20 to-transparent my-6 sm:my-7"></div>
 
             <!-- Bottom Section -->
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-5">
                 <!-- Copyright -->
                 <div class="flex items-center gap-2">
                     <div class="w-6 h-6 rounded-full bg-blue-600/15 flex items-center justify-center">

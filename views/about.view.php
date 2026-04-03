@@ -1,8 +1,10 @@
-﻿<?php require_once('views/partials/head.php'); ?>
-<?php require_once('views/partials/banner.php'); ?>
+﻿<?php
+require_once('views/partials/head.php');
+require_once('views/partials/banner.php');
+?>
 
 <main class="w-full flex-1 text-black">
-    <div class="w-full lg:w-4/5 xl:w-3/4 mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10 lg:py-12 space-y-8 sm:space-y-10">
+    <div class="w-full lg:w-4/5 xl:w-3/4 mx-auto px-4 sm:px-6 lg:px-8 py-5 sm:py-8 lg:py-10 space-y-6 sm:space-y-8">
         <section class="relative overflow-hidden bg-green-500 rounded-3xl min-h-[420px] sm:min-h-[500px] lg:min-h-[580px] flex items-center">
             <img
                 src="https://www.mazdausa.com/siteassets/vehicles/2026/cx-5/04_btv/004_exterior/ext.-360s/2.5-s/360-rhodium-white/e360-my26-cx5-s-rhodiumwhite-v2-024.jpg"
@@ -57,7 +59,7 @@
             </article>
         </section>
 
-        <section class="page-surface-strong rounded-3xl p-6 sm:p-8 lg:p-10 shadow-sm">
+        <section class="page-surface-strong rounded-3xl p-5 sm:p-6 lg:p-8 shadow-sm">
             <p class="section-kicker text-blue-600">Our Story</p>
             <h2 class="section-title text-2xl sm:text-3xl lg:text-4xl font-black mt-2 mb-4 inline-flex items-center gap-2"><ion-icon name="book-outline" class="icon-lg"></ion-icon>Built for Clarity in Japanese Car Imports</h2>
             <div class="space-y-4 text-sm sm:text-base text-blue-700 leading-relaxed max-w-4xl">
@@ -77,7 +79,7 @@
             </div>
         </section>
 
-        <section class="page-surface-strong rounded-3xl p-6 sm:p-8 lg:p-10 shadow-sm">
+        <section class="page-surface-strong rounded-3xl p-5 sm:p-6 lg:p-8 shadow-sm">
             <div class="max-w-3xl mb-6">
                 <p class="section-kicker text-blue-600">Our Values</p>
                 <h2 class="section-title text-2xl sm:text-3xl lg:text-4xl font-black mt-2 mb-2 inline-flex items-center gap-2"><ion-icon name="compass-outline" class="icon-lg"></ion-icon>Our Standards for Trusted Car Imports in Kenya</h2>
@@ -112,7 +114,7 @@
             </div>
         </section>
 
-        <section class="grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-6">
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-5">
             <div class="page-surface-strong rounded-3xl p-6 sm:p-8 shadow-sm">
                 <p class="section-kicker text-blue-600">Why Choose Us</p>
                 <h2 class="section-title text-2xl sm:text-3xl font-black mt-2 mb-4 inline-flex items-center gap-2"><ion-icon name="thumbs-up-outline" class="icon-lg"></ion-icon>Why Kenyan Buyers Choose Xplore Car Imports</h2>
@@ -264,7 +266,7 @@
 
         <section class="page-surface-strong relative overflow-hidden rounded-3xl shadow-xl">
             <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_top,white,transparent_60%)]"></div>
-            <div class="relative p-6 sm:p-8 lg:p-10 text-center">
+            <div class="relative p-5 sm:p-6 lg:p-8 text-center">
                 <p class="section-kicker text-blue-600">Take The Next Step</p>
                 <h2 class="section-title text-2xl sm:text-3xl lg:text-4xl font-black mt-2 mb-3 headline-accent">Ready to Start Your Japanese Car Import?</h2>
                 <p class="text-sm sm:text-base text-blue-700 max-w-2xl mx-auto mb-6">

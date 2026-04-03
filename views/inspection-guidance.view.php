@@ -2,8 +2,8 @@
 <?php require_once('views/partials/banner.php'); ?>
 
 <main class="w-full flex-1 text-blue-900">
-    <div class="w-full lg:w-4/5 xl:w-3/4 mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10 lg:py-12 space-y-8 sm:space-y-10">
-        <section class="page-surface-strong rounded-3xl p-6 sm:p-8 lg:p-10 shadow-sm">
+    <div class="w-full lg:w-4/5 xl:w-3/4 mx-auto px-4 sm:px-6 lg:px-8 py-5 sm:py-8 lg:py-10 space-y-6 sm:space-y-8">
+        <section class="page-surface-strong rounded-3xl p-5 sm:p-6 lg:p-8 shadow-sm">
             <p class="hero-kicker inline-flex items-center text-xs uppercase tracking-[0.2em] text-emerald-600 font-bold"><ion-icon name="shield-checkmark" class="icon-lg mr-2"></ion-icon>Protection First</p>
             <h1 class="hero-title inline-flex items-center text-3xl sm:text-4xl lg:text-5xl font-black mt-2 mb-4"><ion-icon name="scan" class="icon-xl mr-3 text-emerald-600"></ion-icon>Imported Car Inspection Guidance in Kenya</h1>
             <p class="text-sm sm:text-base text-blue-700 max-w-3xl leading-relaxed">
@@ -37,3 +37,4 @@
 </body>
 
 </html>
+

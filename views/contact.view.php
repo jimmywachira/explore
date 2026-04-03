@@ -1,8 +1,10 @@
-﻿<?php require_once('views/partials/head.php'); ?>
-<?php require_once('views/partials/banner.php'); ?>
+﻿<?php
+require_once('views/partials/head.php');
+require_once('views/partials/banner.php');
+?>
 
 <main class="w-full flex-1 text-blue-900">
-    <div class="w-full lg:w-4/5 xl:w-3/4 mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10 lg:py-12 space-y-8 sm:space-y-10">
+    <div class="w-full lg:w-4/5 xl:w-3/4 mx-auto px-4 sm:px-6 lg:px-8 py-5 sm:py-8 lg:py-10 space-y-6 sm:space-y-8">
         <section class="text-center max-w-3xl mx-auto space-y-4 sm:space-y-5">
             <p class="hero-kicker inline-flex items-center gap-2 rounded-full bg-sky-100 px-4 py-1.5 text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-sky-700">
                 <ion-icon name="mail-open-outline" class="icon-lg"></ion-icon>
@@ -17,8 +19,8 @@
             </p>
         </section>
 
-        <section class="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
-            <div class="lg:col-span-2 page-surface-strong rounded-3xl p-6 sm:p-8 lg:p-10 shadow-sm">
+        <section class="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-5 lg:gap-8">
+            <div class="lg:col-span-2 page-surface-strong rounded-3xl p-5 sm:p-6 lg:p-8 shadow-sm">
                 <div class="mb-7 sm:mb-8">
                     <h2 class="section-title text-2xl sm:text-3xl font-black mb-2 inline-flex items-center gap-2"><ion-icon name="paper-plane-outline" class="icon-lg"></ion-icon>Send Us a Message About Your Import</h2>
                     <p class="text-sm text-blue-600">
@@ -30,7 +32,7 @@
                 <div id="formMessage" class="hidden p-4 rounded-xl text-sm font-medium mb-6"></div>
 
                 <form id="contactForm" class="space-y-5 sm:space-y-6">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
                         <div>
                             <label for="name" class="block text-sm font-semibold mb-2">Full Name <span class="text-red-600">*</span></label>
                             <input id="name" name="name" type="text" placeholder="John Doe" required class="w-full rounded-xl border border-blue-300 bg-white px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition" />
@@ -41,7 +43,7 @@
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
                         <div>
                             <label for="phone" class="block text-sm font-semibold mb-2">Phone Number <span class="text-red-600">*</span></label>
                             <input id="phone" name="phone" type="tel" placeholder="+254 757 356 989" required class="w-full rounded-xl border border-blue-300 bg-white px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition" />
@@ -157,7 +159,7 @@
             </aside>
         </section>
 
-        <section class="page-surface-strong rounded-3xl p-6 sm:p-8 lg:p-10 shadow-sm">
+        <section class="page-surface-strong rounded-3xl p-5 sm:p-6 lg:p-8 shadow-sm">
             <div class="mb-6">
                 <h2 class="section-title text-2xl sm:text-3xl font-black mt-2 mb-2 inline-flex items-center gap-2"><ion-icon name="map-outline" class="icon-lg"></ion-icon>Find Xplore Car Imports Easily</h2>
                 <p class="section-kicker inline-flex items-center gap-2 ml-2"><ion-icon name="pin-outline" class="icon-lg"></ion-icon>Visit Our Office</p>
@@ -203,7 +205,7 @@
             </div>
         </section>
 
-        <section class="page-surface-strong rounded-3xl p-6 sm:p-8 lg:p-10 text-center shadow-xl">
+        <section class="page-surface-strong rounded-3xl p-5 sm:p-6 lg:p-8 text-center shadow-xl">
             <p class="section-kicker text-xs uppercase tracking-[0.2em] font-bold text-blue-100">Need A Faster Start?</p>
             <h2 class="section-title text-2xl sm:text-3xl lg:text-4xl font-black mt-2 mb-3 text-blue-900">Get Your Car Import Plan Today</h2>
             <p class="text-sm sm:text-base text-blue-700 max-w-2xl mx-auto mb-6">
