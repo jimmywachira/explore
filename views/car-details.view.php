@@ -149,10 +149,6 @@ require_once('views/partials/banner.php');
                         <article class="group overflow-hidden rounded-3xl page-surface transition-all duration-300 hover:shadow-xl">
                             <a href="/car-details.php?car=<?= urlencode($similarCar['id']) ?>" class="block">
                                 <img src="<?= htmlspecialchars($similarCar['image'], ENT_QUOTES, 'UTF-8') ?>" alt="Featured vehicle image" class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-[1.04]" loading="lazy">
-                                <div class="p-4">
-                                    <p class="text-base font-bold text-blue-900">Featured Vehicle Option</p>
-                                    <p class="text-sm text-blue-700"><?= htmlspecialchars($similarCar['year'], ENT_QUOTES, 'UTF-8') ?> • <?= htmlspecialchars($similarCar['price'], ENT_QUOTES, 'UTF-8') ?></p>
-                                </div>
                             </a>
                         </article>
                     <?php endforeach; ?>

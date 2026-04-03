@@ -82,17 +82,11 @@ require_once('views/partials/banner.php');
                 <?php foreach ($featuredCars as $car): ?>
                     <article class="group overflow-hidden rounded-3xl page-surface transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5">
                         <a href="/car-details.php?car=<?= urlencode($car['id']) ?>" class="block w-full overflow-hidden bg-white">
-                            <div class="relative">
-                                <img
-                                    src="<?= htmlspecialchars($car['image'], ENT_QUOTES, 'UTF-8') ?>"
-                                    alt="<?= htmlspecialchars($car['name'], ENT_QUOTES, 'UTF-8') ?>"
-                                    loading="lazy"
-                                    class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-[1.04]">
-                                <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-blue-950/80 via-blue-900/20 to-transparent p-3 sm:p-4 text-white">
-                                    <p class="text-sm sm:text-base font-bold"><?= htmlspecialchars($car['name'], ENT_QUOTES, 'UTF-8') ?></p>
-                                    <p class="text-xs sm:text-sm text-blue-100"><?= htmlspecialchars($car['year'], ENT_QUOTES, 'UTF-8') ?> • <?= htmlspecialchars($car['price'], ENT_QUOTES, 'UTF-8') ?></p>
-                                </div>
-                            </div>
+                            <img
+                                src="<?= htmlspecialchars($car['image'], ENT_QUOTES, 'UTF-8') ?>"
+                                alt="Featured vehicle image"
+                                loading="lazy"
+                                class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-[1.04]">
                         </a>
                     </article>
                 <?php endforeach; ?>
