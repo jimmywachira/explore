@@ -266,12 +266,28 @@ function getFeaturedCars(): array
 function getShuffledFeaturedCars(): array
 {
     $cars = getFeaturedCars();
-    $keys = array_keys($cars);
-    shuffle($keys);
+    $regularCars = [];
+    $featuredCars = [];
+
+    foreach ($cars as $key => $car) {
+        if (str_starts_with($key, 'featured-')) {
+            $featuredCars[$key] = $car;
+            continue;
+        }
+
+        $regularCars[$key] = $car;
+    }
+
+    $regularKeys = array_keys($regularCars);
+    shuffle($regularKeys);
 
     $shuffled = [];
-    foreach ($keys as $key) {
-        $shuffled[$key] = $cars[$key];
+    foreach ($regularKeys as $key) {
+        $shuffled[$key] = $regularCars[$key];
+    }
+
+    foreach ($featuredCars as $key => $car) {
+        $shuffled[$key] = $car;
     }
 
     return $shuffled;
