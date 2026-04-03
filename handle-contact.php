@@ -8,6 +8,82 @@ function wantsJsonResponse(): bool
     return stripos($accept, 'application/json') !== false || strtolower($xhr) === 'xmlhttprequest';
 }
 
+function getClientIp(): string
+{
+    $forwarded = $_SERVER['HTTP_X_FORWARDED_FOR'] ?? '';
+    if ($forwarded !== '') {
+        $parts = explode(',', $forwarded);
+        $ip = trim($parts[0]);
+        if ($ip !== '') {
+            return $ip;
+        }
+    }
+
+    $remoteAddr = $_SERVER['REMOTE_ADDR'] ?? 'unknown';
+    return trim($remoteAddr) !== '' ? trim($remoteAddr) : 'unknown';
+}
+
+function isRateLimited(string $ip, int $maxRequests, int $windowSeconds): bool
+{
+    $storePath = sys_get_temp_dir() . DIRECTORY_SEPARATOR . 'xplore-contact-rate-limit.json';
+    $now = time();
+    $windowStart = $now - $windowSeconds;
+
+    $fp = @fopen($storePath, 'c+');
+    if ($fp === false) {
+        // Fail open if filesystem storage is unavailable.
+        return false;
+    }
+
+    if (!flock($fp, LOCK_EX)) {
+        fclose($fp);
+        return false;
+    }
+
+    $raw = stream_get_contents($fp);
+    $data = [];
+    if (is_string($raw) && trim($raw) !== '') {
+        $decoded = json_decode($raw, true);
+        if (is_array($decoded)) {
+            $data = $decoded;
+        }
+    }
+
+    foreach ($data as $key => $timestamps) {
+        if (!is_array($timestamps)) {
+            unset($data[$key]);
+            continue;
+        }
+        $filtered = array_values(array_filter($timestamps, static function ($timestamp) use ($windowStart): bool {
+            return is_int($timestamp) && $timestamp >= $windowStart;
+        }));
+        if ($filtered === []) {
+            unset($data[$key]);
+            continue;
+        }
+        $data[$key] = $filtered;
+    }
+
+    $timestamps = $data[$ip] ?? [];
+    if (count($timestamps) >= $maxRequests) {
+        flock($fp, LOCK_UN);
+        fclose($fp);
+        return true;
+    }
+
+    $timestamps[] = $now;
+    $data[$ip] = $timestamps;
+
+    rewind($fp);
+    ftruncate($fp, 0);
+    fwrite($fp, json_encode($data, JSON_UNESCAPED_SLASHES));
+    fflush($fp);
+    flock($fp, LOCK_UN);
+    fclose($fp);
+
+    return false;
+}
+
 function sendResponse(bool $success, string $message): void
 {
     if (wantsJsonResponse()) {
@@ -30,6 +106,17 @@ function sendResponse(bool $success, string $message): void
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     sendResponse(false, 'Invalid request method.');
+}
+
+$honeypot = trim((string) ($_POST['website'] ?? ''));
+if ($honeypot !== '') {
+    // Silently accept bot submissions to reduce probing feedback.
+    sendResponse(true, 'Thank you. Your message has been sent to info@xplorecar.com. We will respond during business hours.');
+}
+
+$clientIp = getClientIp();
+if (isRateLimited($clientIp, 4, 600)) {
+    sendResponse(false, 'Too many requests. Please wait a few minutes before sending another message.');
 }
 
 $name = trim((string) ($_POST['name'] ?? ''));

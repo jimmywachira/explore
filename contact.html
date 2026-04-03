@@ -194,6 +194,11 @@
                     aria-live="polite"></div>
 
                 <form id="contactForm" action="/handle-contact.php" method="POST" class="space-y-5 sm:space-y-6" novalidate>
+                    <div aria-hidden="true" class="absolute -left-[9999px] top-auto h-0 w-0 overflow-hidden">
+                        <label for="website">Website</label>
+                        <input id="website" name="website" type="text" tabindex="-1" autocomplete="off" />
+                    </div>
+
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
                         <div>
                             <label for="name" class="block text-sm font-semibold mb-2">Full Name <span class="text-red-600">*</span></label>
