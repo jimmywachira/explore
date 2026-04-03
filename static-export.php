@@ -6,6 +6,11 @@ $baseDir = __DIR__;
 $hostFromEnv = getenv('STATIC_SITE_HOST') ?: 'your-domain.com';
 $siteUrlFromEnv = getenv('STATIC_SITE_URL') ?: ('https://' . $hostFromEnv);
 
+require_once $baseDir . DIRECTORY_SEPARATOR . 'controllers' . DIRECTORY_SEPARATOR . 'cars-data.php';
+
+$featuredCars = getFeaturedCars();
+$carIds = array_keys($featuredCars);
+
 $siteUrl = rtrim($siteUrlFromEnv, '/');
 $parsedHost = parse_url($siteUrl, PHP_URL_HOST);
 $httpHost = $parsedHost ?: $hostFromEnv;
@@ -13,7 +18,6 @@ $httpsFlag = str_starts_with($siteUrl, 'https://') ? 'on' : 'off';
 
 $pages = [
     ['controller' => 'index.php', 'uri' => '/', 'output' => 'index.html'],
-    ['controller' => 'car-details.php', 'uri' => '/car-details', 'output' => 'car-details.html'],
     ['controller' => 'about.php', 'uri' => '/about', 'output' => 'about.html'],
     ['controller' => 'contact.php', 'uri' => '/contact', 'output' => 'contact.html'],
     ['controller' => 'testimonials.php', 'uri' => '/testimonials', 'output' => 'testimonials.html'],
@@ -23,9 +27,21 @@ $pages = [
     ['controller' => 'vehicle-sourcing-support.php', 'uri' => '/vehicle-sourcing-support', 'output' => 'vehicle-sourcing-support.html'],
 ];
 
+foreach ($carIds as $carId) {
+    $safeCarId = preg_replace('/[^a-z0-9\-]/', '', strtolower((string) $carId));
+    if ($safeCarId === null || $safeCarId === '') {
+        continue;
+    }
+
+    $pages[] = [
+        'controller' => 'car-details.php',
+        'uri' => '/car-details?car=' . rawurlencode($carId),
+        'output' => 'car-details-' . $safeCarId . '.html',
+    ];
+}
+
 $linkReplacements = [
     '/index.php' => '/',
-    '/car-details.php' => '/car-details',
     '/about.php' => '/about',
     '/contact.php' => '/contact',
     '/testimonials.php' => '/testimonials',
@@ -35,10 +51,23 @@ $linkReplacements = [
     '/vehicle-sourcing-support.php' => '/vehicle-sourcing-support',
 ];
 
+foreach ($carIds as $carId) {
+    $safeCarId = preg_replace('/[^a-z0-9\-]/', '', strtolower((string) $carId));
+    if ($safeCarId === null || $safeCarId === '') {
+        continue;
+    }
+
+    $linkReplacements['/car-details.php?car=' . rawurlencode($carId)] = '/car-details-' . $safeCarId;
+    $linkReplacements['/car-details.php?car=' . $carId] = '/car-details-' . $safeCarId;
+}
+
 foreach ($pages as $page) {
     $controllerPath = $baseDir . DIRECTORY_SEPARATOR . $page['controller'];
     $runnerCode = '$uri = ' . var_export($page['uri'], true) . ';'
         . '$_SERVER[\'REQUEST_URI\'] = $uri;'
+        . '$_GET = [];'
+        . '$__query = parse_url($uri, PHP_URL_QUERY);'
+        . 'if (is_string($__query)) { parse_str($__query, $_GET); }'
         . '$_SERVER[\'HTTP_HOST\'] = ' . var_export($httpHost, true) . ';'
         . '$_SERVER[\'HTTPS\'] = ' . var_export($httpsFlag, true) . ';'
         . 'require ' . var_export($controllerPath, true) . ';';
@@ -57,7 +86,6 @@ foreach ($pages as $page) {
 
 $entries = [
     ['path' => '/', 'priority' => '1.0', 'changefreq' => 'weekly'],
-    ['path' => '/car-details', 'priority' => '0.8', 'changefreq' => 'weekly'],
     ['path' => '/about', 'priority' => '0.8', 'changefreq' => 'monthly'],
     ['path' => '/contact', 'priority' => '0.9', 'changefreq' => 'monthly'],
     ['path' => '/testimonials', 'priority' => '0.8', 'changefreq' => 'monthly'],
@@ -66,6 +94,19 @@ $entries = [
     ['path' => '/shipping-clearing', 'priority' => '0.8', 'changefreq' => 'monthly'],
     ['path' => '/vehicle-sourcing-support', 'priority' => '0.8', 'changefreq' => 'monthly'],
 ];
+
+foreach ($carIds as $carId) {
+    $safeCarId = preg_replace('/[^a-z0-9\-]/', '', strtolower((string) $carId));
+    if ($safeCarId === null || $safeCarId === '') {
+        continue;
+    }
+
+    $entries[] = [
+        'path' => '/car-details-' . $safeCarId,
+        'priority' => '0.8',
+        'changefreq' => 'weekly',
+    ];
+}
 
 $today = date('Y-m-d');
 $xml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
