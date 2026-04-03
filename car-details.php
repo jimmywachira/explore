@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 require_once __DIR__ . '/controllers/cars-data.php';
 
-$cars = getFeaturedCars();
+$cars = getShuffledFeaturedCars();
 $carKeys = array_keys($cars);
 $fallbackCarId = $carKeys[0] ?? '';
 $requestedCarId = isset($_GET['car']) ? (string) $_GET['car'] : $fallbackCarId;

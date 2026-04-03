@@ -209,5 +209,70 @@ function getFeaturedCars(): array
             'instagram' => 'https://www.instagram.com/p/DWOQscdjeWO/',
             'image' => 'https://www.instagram.com/p/DWOQscdjeWO/media/?size=l',
         ],
+        'featured-dwdxsfkdoqh' => [
+            'id' => 'featured-dwdxsfkdoqh',
+            'name' => 'Featured Vehicle',
+            'make' => 'Unknown',
+            'model' => 'Unknown',
+            'year' => 'N/A',
+            'mileage' => 'N/A',
+            'engine' => 'N/A',
+            'transmission' => 'N/A',
+            'fuel' => 'N/A',
+            'grade' => 'N/A',
+            'vin' => 'N/A',
+            'price' => 'On Request',
+            'color' => 'N/A',
+            'instagram' => 'https://www.instagram.com/p/DWDxsfKDOqH/',
+            'image' => 'https://www.instagram.com/p/DWDxsfKDOqH/media/?size=l',
+        ],
+        'featured-dwbyrnpjyrz' => [
+            'id' => 'featured-dwbyrnpjyrz',
+            'name' => 'Featured Vehicle',
+            'make' => 'Unknown',
+            'model' => 'Unknown',
+            'year' => 'N/A',
+            'mileage' => 'N/A',
+            'engine' => 'N/A',
+            'transmission' => 'N/A',
+            'fuel' => 'N/A',
+            'grade' => 'N/A',
+            'vin' => 'N/A',
+            'price' => 'On Request',
+            'color' => 'N/A',
+            'instagram' => 'https://www.instagram.com/p/DWBYrnpjYrZ/',
+            'image' => 'https://www.instagram.com/p/DWBYrnpjYrZ/media/?size=l',
+        ],
+        'featured-dvvm4eyjv7g' => [
+            'id' => 'featured-dvvm4eyjv7g',
+            'name' => 'Featured Vehicle',
+            'make' => 'Unknown',
+            'model' => 'Unknown',
+            'year' => 'N/A',
+            'mileage' => 'N/A',
+            'engine' => 'N/A',
+            'transmission' => 'N/A',
+            'fuel' => 'N/A',
+            'grade' => 'N/A',
+            'vin' => 'N/A',
+            'price' => 'On Request',
+            'color' => 'N/A',
+            'instagram' => 'https://www.instagram.com/p/DVvM4eYjv7G/',
+            'image' => 'https://www.instagram.com/p/DVvM4eYjv7G/media/?size=l',
+        ],
     ];
+}
+
+function getShuffledFeaturedCars(): array
+{
+    $cars = getFeaturedCars();
+    $keys = array_keys($cars);
+    shuffle($keys);
+
+    $shuffled = [];
+    foreach ($keys as $key) {
+        $shuffled[$key] = $cars[$key];
+    }
+
+    return $shuffled;
 }
