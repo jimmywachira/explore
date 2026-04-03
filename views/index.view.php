@@ -69,8 +69,8 @@ require_once('views/partials/banner.php');
             <div class="flex flex-wrap items-end justify-between gap-4 mb-5 sm:mb-6">
                 <div class="max-w-2xl">
                     <p class="section-kicker text-xs font-bold text-blue-600">Featured Inventory</p>
-                    <h2 class="section-title text-2xl sm:text-3xl lg:text-4xl font-black mt-2 mb-2 headline-accent inline-flex items-center gap-2"><ion-icon name="images-outline" class="icon-lg"></ion-icon>Instagram Vehicle Showcase</h2>
-                    <p class="text-black sm:text-base">Tap any vehicle image to open a full premium detail page with specs, pricing guidance, and consultation options.</p>
+                    <h2 class="section-title text-2xl sm:text-3xl lg:text-4xl font-black mt-2 mb-2 headline-accent inline-flex items-center gap-2"><ion-icon name="images-outline" class="icon-lg"></ion-icon>Featured Vehicles</h2>
+                    <p class="text-black sm:text-base">Discover our selection of premium vehicles, each carefully chosen for quality and value.</p>
                 </div>
                 <a href="/contact.php" class="inline-flex items-center gap-2 rounded-xl border border-blue-200 bg-white px-4 py-2.5 text-blue-900 font-bold hover:bg-blue-50 transition">
                     <ion-icon name="chatbubbles-outline" class="icon-lg"></ion-icon>
@@ -90,6 +90,12 @@ require_once('views/partials/banner.php');
                                     class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-[1.04]">
                             </div>
                         </a>
+                        <div class="border-t border-blue-100 bg-white px-3 py-2.5 text-center">
+                            <span class="inline-flex items-center gap-2 rounded-full bg-blue-50 px-3 py-1 text-xs sm:text-sm font-bold text-blue-900">
+                                <ion-icon name="car-sport-outline" class="icon-lg"></ion-icon>
+                                Featured Vehicle
+                            </span>
+                        </div>
                     </article>
                 <?php endforeach; ?>
             </div>
