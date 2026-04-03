@@ -34,10 +34,7 @@ require_once('views/partials/banner.php');
                             <ion-icon name="sparkles-outline" class="icon-lg"></ion-icon>
                             Premium Stock
                         </div>
-                        <div class="absolute inset-x-0 bottom-0 p-4 sm:p-5 bg-gradient-to-t from-blue-950/85 via-blue-900/20 to-transparent text-white">
-                            <h1 class="text-xl sm:text-3xl lg:text-4xl font-black">Featured Vehicle</h1>
-                            <p class="text-sm sm:text-base text-blue-100 mt-1"><?= htmlspecialchars($car['year'], ENT_QUOTES, 'UTF-8') ?> Model • <?= htmlspecialchars($car['color'], ENT_QUOTES, 'UTF-8') ?></p>
-                        </div>
+
                     </div>
                 </article>
 

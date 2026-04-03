@@ -1,52 +1,71 @@
 <?php
 // handle-contact.php - Form submission handler for contact form
 
-header('Content-Type: application/json');
+function wantsJsonResponse(): bool
+{
+    $accept = $_SERVER['HTTP_ACCEPT'] ?? '';
+    $xhr = $_SERVER['HTTP_X_REQUESTED_WITH'] ?? '';
+    return stripos($accept, 'application/json') !== false || strtolower($xhr) === 'xmlhttprequest';
+}
 
-// Handle form submission
-$response = ['success' => false, 'message' => ''];
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Validate form data
-    $name = trim($_POST['name'] ?? '');
-    $email = trim($_POST['email'] ?? '');
-    $phone = trim($_POST['phone'] ?? '');
-    $subject = trim($_POST['subject'] ?? '');
-    $message = trim($_POST['message'] ?? '');
-
-    // Validation
-    if (empty($name) || empty($email) || empty($phone) || empty($subject) || empty($message)) {
-        $response['message'] = 'Please fill in all fields.';
-    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $response['message'] = 'Please enter a valid email address.';
-    } else {
-        // Prepare email
-        $to = 'info@xplorecar.com';
-        $emailSubject = "New Contact Form Submission: {$subject}";
-        $emailBody = "Name: {$name}\n";
-        $emailBody .= "Email: {$email}\n";
-        $emailBody .= "Phone: {$phone}\n";
-        $emailBody .= "Subject: {$subject}\n";
-        $emailBody .= "Message:\n{$message}\n";
-
-        $headers = "From: {$email}\n";
-        $headers .= "Reply-To: {$email}\n";
-        $headers .= "Content-Type: text/plain; charset=UTF-8\n";
-
-        // Send email
-        if (mail($to, $emailSubject, $emailBody, $headers)) {
-            $response['success'] = true;
-            $response['message'] = 'Thank you! Your message has been sent successfully. We will respond within 24 business hours.';
-        } else {
-            $response['message'] = 'Sorry, there was an error sending your message. Please try again or contact us directly.';
-        }
+function sendResponse(bool $success, string $message): void
+{
+    if (wantsJsonResponse()) {
+        header('Content-Type: application/json');
+        echo json_encode([
+            'success' => $success,
+            'message' => $message,
+        ]);
+        exit;
     }
 
-    echo json_encode($response);
+    $status = $success ? 'success' : 'error';
+    $query = http_build_query([
+        'status' => $status,
+        'message' => $message,
+    ]);
+    header('Location: /contact.php?' . $query);
     exit;
 }
 
-// If not POST, return error
-$response['message'] = 'Invalid request method.';
-echo json_encode($response);
-exit;
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    sendResponse(false, 'Invalid request method.');
+}
+
+$name = trim((string) ($_POST['name'] ?? ''));
+$email = trim((string) ($_POST['email'] ?? ''));
+$phone = trim((string) ($_POST['phone'] ?? ''));
+$subject = trim((string) ($_POST['subject'] ?? ''));
+$message = trim((string) ($_POST['message'] ?? ''));
+
+if ($name === '' || $email === '' || $phone === '' || $subject === '' || $message === '') {
+    sendResponse(false, 'Please fill in all fields.');
+}
+
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    sendResponse(false, 'Please enter a valid email address.');
+}
+
+// Avoid header injection
+$email = str_replace(["\r", "\n"], '', $email);
+$name = str_replace(["\r", "\n"], ' ', $name);
+$subject = str_replace(["\r", "\n"], ' ', $subject);
+
+$to = 'info@xplorecar.com';
+$emailSubject = "New Contact Form Submission: {$subject}";
+$emailBody = "Name: {$name}\n";
+$emailBody .= "Email: {$email}\n";
+$emailBody .= "Phone: {$phone}\n";
+$emailBody .= "Subject: {$subject}\n\n";
+$emailBody .= "Message:\n{$message}\n";
+
+// Use a trusted sender and set reply-to to user email
+$headers = "From: Xplore Car Imports <info@xplorecar.com>\r\n";
+$headers .= "Reply-To: {$email}\r\n";
+$headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+
+if (mail($to, $emailSubject, $emailBody, $headers)) {
+    sendResponse(true, 'Thank you. Your message has been sent to info@xplorecar.com. We will respond during business hours.');
+}
+
+sendResponse(false, 'Sorry, there was an error sending your message. Please try again or contact us directly at info@xplorecar.com.');

@@ -1,6 +1,9 @@
 ﻿<?php
 require_once('views/partials/head.php');
 require_once('views/partials/banner.php');
+
+$status = isset($_GET['status']) ? (string) $_GET['status'] : '';
+$statusMessage = isset($_GET['message']) ? (string) $_GET['message'] : '';
 ?>
 
 <main class="w-full flex-1 text-blue-900">
@@ -29,9 +32,12 @@ require_once('views/partials/banner.php');
                 </div>
 
                 <!-- Success/Error Message -->
-                <div id="formMessage" class="hidden p-4 rounded-xl text-sm font-medium mb-6"></div>
+                <div
+                    id="formMessage"
+                    class="<?= $statusMessage !== '' ? 'p-4 rounded-xl text-sm font-medium mb-6 ' . ($status === 'success' ? 'bg-blue-100 text-blue-800 border border-blue-300' : 'bg-red-100 text-red-800 border border-red-300') : 'hidden p-4 rounded-xl text-sm font-medium mb-6' ?>"
+                    aria-live="polite"><?= htmlspecialchars($statusMessage, ENT_QUOTES, 'UTF-8') ?></div>
 
-                <form id="contactForm" class="space-y-5 sm:space-y-6">
+                <form id="contactForm" action="/handle-contact.php" method="POST" class="space-y-5 sm:space-y-6" novalidate>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
                         <div>
                             <label for="name" class="block text-sm font-semibold mb-2">Full Name <span class="text-red-600">*</span></label>
@@ -90,9 +96,12 @@ require_once('views/partials/banner.php');
 
                             try {
                                 const formData = new FormData(form);
-                                const response = await fetch('/handle-contact.php', {
+                                const response = await fetch(form.action, {
                                     method: 'POST',
-                                    body: formData
+                                    body: formData,
+                                    headers: {
+                                        'Accept': 'application/json'
+                                    }
                                 });
 
                                 const data = await response.json();
@@ -114,6 +123,8 @@ require_once('views/partials/banner.php');
                                     }, 5000);
                                 }
                             } catch (error) {
+                                // Fallback for environments where fetch/json handling fails
+                                form.submit();
                                 messageDiv.classList.remove('hidden');
                                 messageDiv.className = 'p-4 rounded-xl text-sm font-medium bg-red-100 text-red-800 border border-red-300';
                                 messageDiv.textContent = 'An error occurred. Please try again or contact us directly.';
