@@ -14,7 +14,7 @@ $isActive = static function (string $href) use ($currentPath): bool {
 ?>
 
 <!-- Main Navigation -->
-<nav class="sticky top-0 z-50 w-full backdrop-blur-xl shadow-[0_10px_30px_rgba(2,6,23,0.06)] p-2">
+<nav class="sticky top-0 z-50 w-full  p-2">
         <!-- Top Contact Bar -->
         <div class="w-full lg:w-4/5 xl:w-3/4 text-blue-700 mx-auto mb-2 px-3 sm:px-6 lg:px-8">
                 <div class="flex flex-col sm:flex-row items-center justify-center sm:justify-end gap-2 sm:gap-6 py-2 text-xs sm:text-sm">
@@ -64,7 +64,7 @@ $isActive = static function (string $href) use ($currentPath): bool {
                         <!-- Mobile Menu Button -->
                         <button
                                 id="mobile-menu-btn"
-                                class="md:hidden h-10 w-10 rounded-xl border border-blue-200/70 bg-white/90 text-blue-900 hover:bg-blue-50 transition-colors flex items-center justify-center"
+                                class="md:hidden h-10 w-10 rounded-full border border-blue-200/70 bg-white/90 text-blue-900 hover:bg-blue-50 transition-colors flex items-center justify-center"
                                 aria-label="Toggle menu"
                                 aria-expanded="false">
                                 <ion-icon name="menu-outline" class="icon-xl"></ion-icon>

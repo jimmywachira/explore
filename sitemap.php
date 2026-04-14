@@ -16,6 +16,7 @@ $pages = [
     ['loc' => '/inspection-guidance.php', 'priority' => '0.8', 'changefreq' => 'monthly'],
     ['loc' => '/shipping-clearing.php', 'priority' => '0.8', 'changefreq' => 'monthly'],
     ['loc' => '/vehicle-sourcing-support.php', 'priority' => '0.8', 'changefreq' => 'monthly'],
+    ['loc' => '/tazi-business-advisory.php', 'priority' => '0.8', 'changefreq' => 'monthly'],
 ];
 
 echo '<?xml version="1.0" encoding="UTF-8"?>' . PHP_EOL;

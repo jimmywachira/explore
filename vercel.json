@@ -41,6 +41,11 @@
       "source": "/vehicle-sourcing-support.php",
       "destination": "/vehicle-sourcing-support",
       "permanent": true
+    },
+    {
+      "source": "/tazi-business-advisory.php",
+      "destination": "/tazi-business-advisory",
+      "permanent": true
     }
   ]
 }

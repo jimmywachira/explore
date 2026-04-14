@@ -125,8 +125,12 @@ require_once('views/partials/banner.php');
                     <p class="text-black">Our team supports the clearing process with practical guidance on documents, timelines, and expected costs.</p>
                 </article>
                 <article class="page-surface rounded-2xl p-4 sm:p-5">
-                    <h3 class="font-bold text-lg mb-2 inline-flex items-center gap-2"><ion-icon name="briefcase-outline" class="icon-lg"></ion-icon>Business Advisory</h3>
-                    <p class="text-black">Need a taxi-ready or business-focused unit? We advise on model selection, efficiency, and operating considerations.</p>
+                    <h3 class="font-bold text-lg mb-2 inline-flex items-center gap-2"><ion-icon name="briefcase-outline" class="icon-lg"></ion-icon>Tazi Business Advisory</h3>
+                    <p class="text-black">Masterclass plus practical advisory for Kenya's online taxi space, covering setup, compliance, driver systems, and profitability.</p>
+                    <a href="/tazi-business-advisory.php" class="inline-flex items-center gap-2 mt-3 text-sm font-bold text-blue-700 hover:text-blue-900 transition">
+                        <ion-icon name="arrow-forward-outline" class="icon-lg"></ion-icon>
+                        Explore Tazi Advisory
+                    </a>
                 </article>
                 <article class="page-surface rounded-2xl p-4 sm:p-5">
                     <h3 class="font-bold text-lg mb-2 inline-flex items-center gap-2"><ion-icon name="key-outline" class="icon-lg"></ion-icon>Handover Support</h3>

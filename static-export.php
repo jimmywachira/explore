@@ -21,6 +21,7 @@ $pages = [
     ['controller' => 'inspection-guidance.php', 'uri' => '/inspection-guidance', 'output' => 'inspection-guidance.html'],
     ['controller' => 'shipping-clearing.php', 'uri' => '/shipping-clearing', 'output' => 'shipping-clearing.html'],
     ['controller' => 'vehicle-sourcing-support.php', 'uri' => '/vehicle-sourcing-support', 'output' => 'vehicle-sourcing-support.html'],
+    ['controller' => 'tazi-business-advisory.php', 'uri' => '/tazi-business-advisory', 'output' => 'tazi-business-advisory.html'],
 ];
 
 $linkReplacements = [
@@ -33,6 +34,7 @@ $linkReplacements = [
     '/inspection-guidance.php' => '/inspection-guidance',
     '/shipping-clearing.php' => '/shipping-clearing',
     '/vehicle-sourcing-support.php' => '/vehicle-sourcing-support',
+    '/tazi-business-advisory.php' => '/tazi-business-advisory',
 ];
 
 foreach ($pages as $page) {
@@ -65,6 +67,7 @@ $entries = [
     ['path' => '/inspection-guidance', 'priority' => '0.8', 'changefreq' => 'monthly'],
     ['path' => '/shipping-clearing', 'priority' => '0.8', 'changefreq' => 'monthly'],
     ['path' => '/vehicle-sourcing-support', 'priority' => '0.8', 'changefreq' => 'monthly'],
+    ['path' => '/tazi-business-advisory', 'priority' => '0.8', 'changefreq' => 'monthly'],
 ];
 
 $today = date('Y-m-d');

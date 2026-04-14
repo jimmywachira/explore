@@ -113,6 +113,12 @@
                                 <span class="group-hover:translate-x-1 transition-transform">Vehicle Sourcing Support</span>
                             </a>
                         </li>
+                        <li>
+                            <a href="/tazi-business-advisory.php" class="group flex items-center gap-2 text-black hover:text-blue-600 transition-colors duration-300">
+                                <ion-icon name="chevron-forward-outline" class="opacity-0 group-hover:opacity-100 transition-opacity -ml-2"></ion-icon>
+                                <span class="group-hover:translate-x-1 transition-transform">Tazi Business Advisory</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
